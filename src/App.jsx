@@ -565,7 +565,9 @@ function FilmsScene({ active, next, openWork }) {
           const visibleSlot = Math.max(-visibleRadius, Math.min(visibleRadius, slot))
           const hiddenBehindOrbit = distance > visibleRadius
           const left = 50 + visibleSlot * (46 / visibleRadius)
-          const top = -3 + Math.pow(Math.min(distance, visibleRadius) / visibleRadius, 1.45) * 40
+          const orbitDepth = Math.min(distance, visibleRadius) / visibleRadius
+          // Lower the center poster and lift the outer posters into an inverted U.
+          const top = -3 + (1 - Math.pow(orbitDepth, 1.45)) * 40
           const depthScale = 1 - Math.min(distance, visibleRadius) * 0.045
           return (
             <button
