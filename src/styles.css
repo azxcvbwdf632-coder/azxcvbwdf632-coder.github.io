@@ -585,13 +585,13 @@ a:focus-visible {
 .film-orbit {
   position: absolute;
   z-index: 5;
-  top: 19%;
+  top: 28%;
   left: 50%;
   width: min(1280px, 92vw);
   height: 54vh;
   cursor: grab;
   outline: none;
-  touch-action: pan-y;
+  touch-action: pan-x;
   user-select: none;
   transform: translateX(-50%);
 }
@@ -1601,7 +1601,7 @@ a:focus-visible {
   }
 
   .film-orbit {
-    top: 20%;
+    top: 23%;
     left: 0;
     display: flex;
     width: 100%;

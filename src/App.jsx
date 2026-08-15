@@ -512,7 +512,7 @@ function FilmsScene({ active, next, openWork }) {
     }
     if (!dragRef.current.moved) return
     const delta = event.clientX - dragRef.current.lastX
-    if (Math.abs(delta) < 58) return
+    if (Math.abs(delta) < 36) return
     rotateOrbit(delta > 0 ? -1 : 1)
     dragRef.current.lastX = event.clientX
   }
