@@ -1,0 +1,16 @@
+node_modules/
+dist/
+tmp/
+source-assets/
+design-concepts/
+public/assets/邱孝淼-作品集.pdf
+public/assets/film-autumn-gutian.png
+public/assets/film-empty-flower.png
+public/assets/sea-hero.webp
+public/assets/with-whale-shark.jpg
+public/assets/work-qingma.png
+public/assets/work-qingnian.png
+public/assets/operations/douyin-life.jpg
+public/assets/visual/millennium-pen-frame.jpg
+.DS_Store
+Thumbs.db
