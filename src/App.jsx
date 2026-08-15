@@ -842,7 +842,7 @@ export default function App() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [evidenceOpen, setEvidenceOpen] = useState(false)
   const [workOpen, setWorkOpen] = useState(null)
-  const touchStart = useRef(0)
+  const touchStart = useRef({ x: 0, y: 0, inHorizontalScroller: false })
 
   const navigate = useCallback((target) => {
     const next = Math.max(0, Math.min(sceneIds.length - 1, target))
@@ -882,12 +882,23 @@ export default function App() {
       if (event.key === 'End') navigate(sceneIds.length - 1)
     }
     const onTouchStart = (event) => {
-      touchStart.current = event.changedTouches[0].clientY
+      const touch = event.changedTouches[0]
+      touchStart.current = {
+        x: touch.clientX,
+        y: touch.clientY,
+        inHorizontalScroller: event.target instanceof Element
+          && Boolean(event.target.closest('.film-orbit, .metrics')),
+      }
     }
     const onTouchEnd = (event) => {
       if (evidenceOpen || workOpen !== null || mobileOpen || transitioning) return
-      const delta = touchStart.current - event.changedTouches[0].clientY
-      if (Math.abs(delta) > 54) navigate(active + (delta > 0 ? 1 : -1))
+      if (touchStart.current.inHorizontalScroller) return
+      const touch = event.changedTouches[0]
+      const deltaX = touchStart.current.x - touch.clientX
+      const deltaY = touchStart.current.y - touch.clientY
+      const isIntentionalVerticalSwipe = Math.abs(deltaY) > 54
+        && Math.abs(deltaY) > Math.abs(deltaX) * 1.2
+      if (isIntentionalVerticalSwipe) navigate(active + (deltaY > 0 ? 1 : -1))
     }
 
     window.addEventListener('wheel', onWheel, { passive: false })

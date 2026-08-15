@@ -1571,6 +1571,13 @@ a:focus-visible {
     transform: none;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
+    touch-action: pan-x;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .film-orbit::-webkit-scrollbar {
+    display: none;
   }
 
   .film-orbit::before {
