@@ -759,7 +759,8 @@ a:focus-visible {
   margin-top: 34px;
 }
 
-.contact-actions a {
+.contact-actions a,
+.contact-actions button {
   display: inline-flex;
   min-width: 170px;
   min-height: 54px;
@@ -770,7 +771,8 @@ a:focus-visible {
   transition: transform 180ms ease, color 180ms ease, background 180ms ease;
 }
 
-.contact-actions a:hover {
+.contact-actions a:hover,
+.contact-actions button:hover {
   transform: scale(1.06);
 }
 
@@ -781,6 +783,9 @@ a:focus-visible {
 
 .secondary-action {
   border: 1px solid #fff;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
   color: #fff;
 }
 
@@ -857,6 +862,43 @@ a:focus-visible {
   border: 1px solid var(--cyan);
   background: #000;
   box-shadow: 10px 10px 0 rgba(21, 143, 210, .28);
+}
+
+.wechat-dialog {
+  position: relative;
+  width: min(360px, 88vw);
+  padding: 34px 34px 28px;
+  border: 1px solid var(--cyan);
+  background: #000;
+  text-align: center;
+  box-shadow: 10px 10px 0 rgba(21, 143, 210, .28);
+}
+
+.wechat-dialog small {
+  color: var(--cyan);
+  font-family: var(--pixel-font);
+  letter-spacing: .12em;
+}
+
+.wechat-dialog h2 {
+  margin: 10px 0 20px;
+  font-family: var(--pixel-font);
+  font-size: 30px;
+}
+
+.wechat-dialog img {
+  display: block;
+  width: min(280px, 70vw);
+  aspect-ratio: 1;
+  margin: 0 auto;
+  object-fit: cover;
+  background: #fff;
+}
+
+.wechat-dialog p {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 13px;
 }
 
 .evidence-dialog p {
@@ -1638,12 +1680,17 @@ a:focus-visible {
     margin-top: 24px;
   }
 
-  .contact-actions a {
+  .contact-actions a,
+  .contact-actions button {
     min-width: 0;
     min-height: 48px;
     flex: 1;
     padding: 10px 12px;
     font-size: 14px;
+  }
+
+  .contact-actions .secondary-action {
+    min-width: 0;
   }
 
   .email-link {
@@ -1662,6 +1709,15 @@ a:focus-visible {
   .evidence-dialog {
     display: block;
     padding: 18px 14px;
+  }
+
+  .wechat-dialog {
+    width: min(320px, 86vw);
+    padding: 30px 22px 24px;
+  }
+
+  .wechat-dialog img {
+    width: min(250px, 70vw);
   }
 
   .case-dialog {

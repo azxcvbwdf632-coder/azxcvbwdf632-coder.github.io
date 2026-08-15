@@ -615,7 +615,7 @@ function FilmsScene({ active, next, openWork }) {
   )
 }
 
-function ContactScene({ active }) {
+function ContactScene({ active, onWechat }) {
   return (
     <section id="contact" className={`scene contact-scene ${active ? 'active' : ''}`} aria-hidden={!active}>
       <img
@@ -629,11 +629,36 @@ function ContactScene({ active }) {
         <h2>一起做有审美、<br />也有效果的内容。</h2>
         <div className="contact-actions">
           <a className="primary-action" href="mailto:1182179009@qq.com">发送邮件</a>
+          <button className="secondary-action" type="button" onClick={onWechat}>添加微信</button>
         </div>
         <a className="email-link" href="mailto:1182179009@qq.com">1182179009@qq.com</a>
       </div>
       <footer>邱孝淼 / 淼淼 · 2026</footer>
     </section>
+  )
+}
+
+function WechatDialog({ open, onClose }) {
+  useEffect(() => {
+    if (!open) return undefined
+    const handleKey = (event) => {
+      if (event.key === 'Escape') onClose()
+    }
+    window.addEventListener('keydown', handleKey)
+    return () => window.removeEventListener('keydown', handleKey)
+  }, [open, onClose])
+
+  if (!open) return null
+  return (
+    <div className="dialog-backdrop" role="presentation" onMouseDown={onClose}>
+      <div className="wechat-dialog" role="dialog" aria-modal="true" aria-label="添加微信" onMouseDown={(event) => event.stopPropagation()}>
+        <button className="dialog-close" type="button" onClick={onClose} aria-label="关闭微信二维码">×</button>
+        <small>联系我</small>
+        <h2>添加微信</h2>
+        <img src="/assets/wechat-qr.jpg" alt="微信二维码" />
+        <p>请使用微信扫码添加我</p>
+      </div>
+    </div>
   )
 }
 
@@ -842,6 +867,7 @@ export default function App() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [evidenceOpen, setEvidenceOpen] = useState(false)
   const [workOpen, setWorkOpen] = useState(null)
+  const [wechatOpen, setWechatOpen] = useState(false)
   const touchStart = useRef({ x: 0, y: 0, inHorizontalScroller: false })
 
   const navigate = useCallback((target) => {
@@ -861,6 +887,15 @@ export default function App() {
     setTransitioning(true)
     transitionRef.current.play(commit, () => setTransitioning(false))
   }, [active, reducedMotion, transitioning])
+
+  const openWechat = useCallback(() => {
+    if (window.matchMedia('(max-width: 760px)').matches) {
+      window.location.href = 'weixin://'
+      window.setTimeout(() => setWechatOpen(true), 900)
+      return
+    }
+    setWechatOpen(true)
+  }, [])
 
   useEffect(() => {
     const onWheel = (event) => {
@@ -925,7 +960,7 @@ export default function App() {
       <AboutScene active={active === 1} next={() => navigate(2)} />
       <OperationsScene active={active === 2} next={() => navigate(3)} openEvidence={() => setEvidenceOpen(true)} />
       <FilmsScene active={active === 3} next={() => navigate(4)} openWork={setWorkOpen} />
-      <ContactScene active={active === 4} />
+      <ContactScene active={active === 4} onWechat={openWechat} />
       <div className="scene-counter" aria-live="polite">
         <span>{String(active).padStart(2, '0')}</span>
         <i />
@@ -934,6 +969,7 @@ export default function App() {
       <WaterTransition ref={transitionRef} />
       <EvidenceDialog open={evidenceOpen} onClose={() => setEvidenceOpen(false)} />
       <WorkDialog workIndex={workOpen} onClose={() => setWorkOpen(null)} />
+      <WechatDialog open={wechatOpen} onClose={() => setWechatOpen(false)} />
     </main>
   )
 }
