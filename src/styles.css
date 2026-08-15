@@ -1780,26 +1780,27 @@ a:focus-visible {
   }
 
   .selected-frame {
-    width: 76vw;
+    /* Keep the main still clear of the side thumbnails on narrow screens. */
+    width: 68vw;
   }
 
   .inner-frame {
-    width: 25vw;
+    width: 19vw;
   }
 
-  .inner-frame:nth-child(2) { top: 48%; left: 1vw; }
+  .inner-frame:nth-child(2) { top: 48%; left: -5vw; }
   .inner-frame:nth-child(3) { top: 4%; left: 20vw; }
   .inner-frame:nth-child(4) { top: 4%; right: 20vw; }
-  .inner-frame:nth-child(5) { top: 48%; right: 1vw; }
+  .inner-frame:nth-child(5) { top: 48%; right: -5vw; }
 
   .inner-orbit[data-frame-count="2"] .inner-frame:nth-child(2) {
     top: 40%;
-    left: 3vw;
+    left: -5vw;
   }
 
   .inner-orbit[data-frame-count="2"] .inner-frame:nth-child(3) {
     top: 40%;
-    right: 3vw;
+    right: -5vw;
     left: auto;
   }
 
