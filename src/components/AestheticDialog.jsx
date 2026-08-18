@@ -9,7 +9,6 @@ const tabs = [
 
 export default function AestheticDialog({ open, onClose }) {
   const [activeTab, setActiveTab] = useState('music')
-  const [activeArtist, setActiveArtist] = useState(0)
 
   useEffect(() => {
     if (!open) return undefined
@@ -26,8 +25,6 @@ export default function AestheticDialog({ open, onClose }) {
   }, [open, onClose])
 
   if (!open) return null
-  const artist = aestheticArtists[activeArtist]
-
   return (
     <div className="dialog-backdrop aesthetic-backdrop" role="presentation" onMouseDown={onClose}>
       <section
@@ -67,25 +64,28 @@ export default function AestheticDialog({ open, onClose }) {
             <div className="music-layout" role="tabpanel" aria-label="音乐">
               <section className="input-section artist-section">
                 <div className="section-marker">A / ARTISTS</div>
-                <h3>喜欢的歌手</h3>
-                <div className="artist-list">
-                  {aestheticArtists.map((item, index) => (
-                    <button
-                      type="button"
-                      className={activeArtist === index ? 'active' : ''}
-                      key={item.name}
-                      onClick={() => setActiveArtist(index)}
-                    >
-                      <span>{String(index + 1).padStart(2, '0')}</span>
-                      <strong>{item.name}</strong>
-                      <small>{item.romanized}</small>
-                    </button>
+                <h3>喜欢的歌手与专辑</h3>
+                <div className="artist-shelves">
+                  {aestheticArtists.map((artist, artistIndex) => (
+                    <section className="artist-shelf" key={artist.name}>
+                      <header className="artist-identity">
+                        <span>{String(artistIndex + 1).padStart(2, '0')}</span>
+                        <strong>{artist.name}</strong>
+                        <small>{artist.romanized}</small>
+                      </header>
+                      <div className="artist-albums" aria-label={`${artist.name}的专辑`}>
+                        {artist.albums.map((album, albumIndex) => (
+                          <article className="album-card album-card-compact" key={album.title}>
+                            <div className="album-cover">
+                              <img src={album.cover} alt={`${artist.name}《${album.title}》专辑封面`} loading="lazy" />
+                              <span>{String(albumIndex + 1).padStart(2, '0')}</span>
+                            </div>
+                            <p>{album.title}</p>
+                          </article>
+                        ))}
+                      </div>
+                    </section>
                   ))}
-                </div>
-                <div className="artist-note" aria-live="polite">
-                  <span>—</span>
-                  <p>{artist.note}</p>
-                  <small>{artist.albums.join(' / ')}</small>
                 </div>
               </section>
 
@@ -96,12 +96,11 @@ export default function AestheticDialog({ open, onClose }) {
                   {aestheticAlbums.map((album) => (
                     <article className="album-card" key={album.title}>
                       <div className="album-cover">
+                        <img src={album.cover} alt={`${album.artist}《${album.title}》专辑封面`} loading="lazy" />
                         <span>{album.index}</span>
-                        <strong>{album.title}</strong>
-                        <i aria-hidden="true" />
                       </div>
-                      <p>{album.artist}</p>
-                      <small>单曲 / {album.highlight}</small>
+                      <p>{album.title}</p>
+                      <small>{album.artist}</small>
                     </article>
                   ))}
                 </div>
@@ -122,12 +121,14 @@ export default function AestheticDialog({ open, onClose }) {
               <div className="film-input-rail" aria-label="电影清单，可左右滑动">
                 {aestheticFilms.map((film, index) => (
                   <article className="film-input-card" key={`${film.title}-${index}`}>
-                    <div className="film-poster" aria-hidden="true">
+                    <div className="film-poster">
+                      <img src={film.poster} alt={`《${film.title}》电影海报`} loading="lazy" />
                       <span>{String(index + 1).padStart(2, '0')}</span>
-                      <strong>{film.title}</strong>
-                      <small>{film.original}</small>
+                      <div className="film-poster-title">
+                        <strong>{film.title}</strong>
+                        <small>{film.original}</small>
+                      </div>
                     </div>
-                    <p>{film.note}</p>
                   </article>
                 ))}
               </div>
@@ -156,4 +157,3 @@ export default function AestheticDialog({ open, onClose }) {
     </div>
   )
 }
-
