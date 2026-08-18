@@ -585,9 +585,9 @@ a:focus-visible {
   z-index: 2;
   inset: -4%;
   background:
-    linear-gradient(to bottom, rgba(0, 7, 13, .52), rgba(0, 14, 23, .28) 42%, rgba(0, 3, 8, .74) 100%),
+    linear-gradient(to bottom, rgba(0, 7, 13, .34), rgba(0, 14, 23, .16) 42%, rgba(0, 3, 8, .62) 100%),
     url('/assets/sea-hero.webp') center top / auto 190% no-repeat;
-  filter: saturate(.82) brightness(.66) contrast(1.08);
+  filter: saturate(.92) brightness(.82) contrast(1.06);
   animation: operations-water-drift 18s ease-in-out infinite alternate;
 }
 
