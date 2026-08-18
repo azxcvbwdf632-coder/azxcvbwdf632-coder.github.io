@@ -149,7 +149,7 @@ const operationCases = [
   },
 ]
 
-const works = [
+const workCatalog = [
   {
     title: '《空花阳焰》',
     type: '微电影',
@@ -245,11 +245,13 @@ const works = [
     frames: [
       {
         label: '视频片段 01',
-        video: '/assets/visual/fang-died-clip-01.mp4',
+        video: '/assets/visual/fang-died-clip-01-web.mp4',
+        poster: '/assets/visual/fang-died-clip-01-poster.webp',
       },
       {
         label: '视频片段 02',
-        video: '/assets/visual/fang-died-clip-02.mp4',
+        video: '/assets/visual/fang-died-clip-02-web.mp4',
+        poster: '/assets/visual/fang-died-clip-02-poster.webp',
       },
       { label: '剧情静帧 01', image: '/assets/visual/fang-died-new-01.webp', position: 'center', size: 'cover' },
       { label: '剧情静帧 02', image: '/assets/visual/fang-died-new-152438.png', position: 'center', size: 'cover' },
@@ -382,6 +384,22 @@ const works = [
     ],
   },
 ]
+
+const featuredWorkOrder = [
+  '《空花阳焰》',
+  '《等等》',
+  '《凭谈》',
+  '《芳死去的那天》',
+  '《绘涩》',
+  '《三百六十行 行行有关羽》',
+  '《升级日志》',
+]
+
+const featuredWorkRank = new Map(featuredWorkOrder.map((title, index) => [title, index]))
+const works = [...workCatalog].sort((left, right) => (
+  (featuredWorkRank.get(left.title) ?? Number.MAX_SAFE_INTEGER)
+  - (featuredWorkRank.get(right.title) ?? Number.MAX_SAFE_INTEGER)
+))
 
 function useReducedMotion() {
   const [reduced, setReduced] = useState(false)
@@ -658,7 +676,7 @@ function OperationsScene({ active, next, openEvidence }) {
 }
 
 function FilmsScene({ active, next, openWork }) {
-  const [orbitOffset, setOrbitOffset] = useState(() => Math.floor(works.length / 2))
+  const [orbitOffset, setOrbitOffset] = useState(() => Math.floor((featuredWorkOrder.length - 1) / 2))
   const [dragging, setDragging] = useState(false)
   const dragRef = useRef({ pointerId: null, startX: 0, lastX: 0, moved: false, captured: false })
   const suppressClickRef = useRef(false)
@@ -965,9 +983,10 @@ function WorkVideo({ frame }) {
         ref={videoRef}
         className="selected-video"
         src={frame.video}
+        poster={frame.poster}
         controls
         playsInline
-        preload="metadata"
+        preload="none"
         onLoadedMetadata={revealVideoFirstFrame}
         onPlay={() => setPlaying(true)}
         onPause={() => setPlaying(false)}
@@ -1033,7 +1052,7 @@ function WorkDialog({ workIndex, onClose }) {
                 '--frame-count': work.frames.length,
                 left: `${50 + 47 * Math.cos((index / work.frames.length) * Math.PI * 2 - Math.PI / 2)}%`,
                 top: `${50 + 42 * Math.sin((index / work.frames.length) * Math.PI * 2 - Math.PI / 2)}%`,
-                backgroundImage: frame.video ? 'none' : `url(${frame.image})`,
+                backgroundImage: `url(${frame.video ? frame.poster : frame.image})`,
                 backgroundPosition: frame.position || 'center',
                 backgroundSize: frame.size || 'cover',
               }}
@@ -1041,16 +1060,7 @@ function WorkDialog({ workIndex, onClose }) {
               onClick={() => setFrameIndex(index)}
               aria-label={`查看${frame.label}`}
             >
-              {frame.video ? (
-                <video
-                  src={frame.video}
-                  muted
-                  playsInline
-                  preload="metadata"
-                  onLoadedMetadata={revealVideoFirstFrame}
-                  aria-hidden="true"
-                />
-              ) : null}
+              {frame.video ? <span className="inner-video-indicator" aria-hidden="true">▶</span> : null}
             </button>
           ))}
         </div>
