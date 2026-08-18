@@ -1677,7 +1677,7 @@ a:focus-visible {
 
 .work-heading {
   position: absolute;
-  z-index: 4;
+  z-index: 7;
   top: 7vh;
   left: 5vw;
 }
@@ -1699,6 +1699,29 @@ a:focus-visible {
   margin: 0;
   color: var(--muted);
   font-size: 14px;
+}
+
+.work-heading .work-synopsis {
+  width: min(290px, 25vw);
+  max-height: min(168px, 23vh);
+  margin-top: 16px;
+  padding: 0 12px 0 14px;
+  overflow-y: auto;
+  border-left: 2px solid rgba(70, 215, 232, .68);
+  background: linear-gradient(90deg, rgba(0, 0, 0, .94), rgba(0, 0, 0, .66));
+  color: rgba(255, 255, 255, .72);
+  font-size: 12px;
+  line-height: 1.8;
+  scrollbar-color: rgba(70, 215, 232, .55) transparent;
+  scrollbar-width: thin;
+}
+
+.work-synopsis::-webkit-scrollbar {
+  width: 3px;
+}
+
+.work-synopsis::-webkit-scrollbar-thumb {
+  background: rgba(70, 215, 232, .55);
 }
 
 .long-title .work-heading h2 {
@@ -2803,6 +2826,16 @@ a:focus-visible {
     max-width: 84vw;
     font-size: 12px;
     line-height: 1.5;
+  }
+
+  .work-heading .work-synopsis {
+    width: min(310px, 80vw);
+    max-width: none;
+    max-height: 15svh;
+    margin-top: 12px;
+    padding-left: 11px;
+    font-size: 11px;
+    line-height: 1.7;
   }
 
   .inner-orbit {

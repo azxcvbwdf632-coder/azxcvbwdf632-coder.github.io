@@ -154,6 +154,7 @@ const works = [
     title: '《空花阳焰》',
     type: '微电影',
     role: '摄影',
+    description: '落魄的独立音乐人陈雀，唯一的慰藉是音乐和梦想。然而在现实中，她屡遭重击：被工作室无故解雇，房租催缴接踵而至，家人的关切也让她倍感压力。迫于生计，她打工、做主播，在狭小空间演唱。得知作品被工作室窃取并批量售卖后，陈雀返回工作室，找到被批量压盘的专辑，最后的心理防线被击穿。她毅然将积压的手稿付之一炬，背起行囊与电吉他，头也不回地告别过去，在烈焰的余烬中走向未卜的明天。',
     poster: '/assets/visual/empty-flower-poster.png',
     posterPosition: '50% 36%',
     frames: [
@@ -188,6 +189,7 @@ const works = [
     title: '《凭谈》',
     type: '剧情片',
     role: '跟焦',
+    description: '三个人在平潭海岛相遇，记忆交错、线索错位。他们在真实与虚构之间慢慢探寻，试图看清影像与记忆背后的真相。',
     poster: '/assets/visual/pintan-poster.webp',
     posterPosition: 'center',
     posterSize: 'cover',
@@ -204,6 +206,7 @@ const works = [
     title: '《绘涩》',
     type: '剧情片',
     role: '灯光',
+    description: '女高中生李莱生长于一个重男轻女的贫穷家庭，拥有着极高的绘画天赋，却被母亲漠视、被弟弟嘲讽。好在因为有好友章宜的帮助，李莱获得了资助，得以进入艺考机构学习，也顺利参加了艺考。然而，这一切机遇的背后，似乎还暗藏着残忍无情的真相。面对亲情与友情带来的双重打击，李莱又该何去何从？',
     poster: '/assets/visual/shaded-canvas-poster.webp',
     posterPosition: 'center',
     posterSize: 'cover',
@@ -220,6 +223,7 @@ const works = [
     title: '《等等》',
     type: '微电影',
     role: '摄影助理',
+    description: '这是一部现实主义剧情短片。故事发生在 2012 年夏末的闽南小镇，在香港工作的周瑶短暂返乡，与留守家乡的旧日恋人林明远重逢。两人从一场电影开始，历经散步、闲聊，至家中短暂共处，在看似平淡的日常与静默的间隙中，情感悄然流动、试探，又最终归于疏离。影片通过极度克制的叙事与视听语言，探讨城镇化进程中当代青年普遍面临的情感表达困境与精神漂泊状态。',
     poster: '/assets/visual/void-between-poster.jpg',
     posterPosition: 'center',
     frames: [
@@ -234,6 +238,7 @@ const works = [
     title: '《芳死去的那天》',
     type: '剧情片',
     role: '跟焦',
+    description: '旧唱机反复循环，将一位母亲困在 2020 年的冬夜。屋内，她与想要离开的女儿依旧重复着往日的争执。直到唱针再次转动，她才猛然意识到，门外的现实世界早已过去了六年。这段停滞的时光，究竟是记忆的留恋，还是不愿面对真相的执念？',
     poster: '/assets/visual/fang-died-new-poster.webp',
     posterPosition: 'center',
     posterSize: 'cover',
@@ -989,6 +994,7 @@ function WorkDialog({ workIndex, onClose }) {
           <small>{work.type}</small>
           <h2>{work.title}</h2>
           <p>{work.role}</p>
+          {work.description ? <p className="work-synopsis">{work.description}</p> : null}
         </header>
         <div className="inner-orbit" data-frame-count={work.frames.length} aria-label={`${work.title}静帧环`}>
           {selectedFrame.video ? (
