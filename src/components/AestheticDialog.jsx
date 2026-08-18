@@ -124,27 +124,37 @@ export default function AestheticDialog({ open, onClose }) {
                 <div className="live-input-intro">
                   <div>
                     <h3>耳机之外，我也喜欢去现场。</h3>
-                    <p>张震岳的演唱会，以及陈绮贞在简单生活节的现场，是我喜欢音乐最直接的样子。</p>
+                    <p>张震岳全国演唱会与陈绮贞在广州草莓音乐节的现场，是我喜欢音乐最直接的样子。</p>
                   </div>
                   <span>04 MOMENTS</span>
                 </div>
-                <div className="live-input-grid" aria-label="演唱会与音乐节现场照片">
-                  <figure className="live-input-photo live-photo-portrait">
-                    <img src="/assets/inputs/live-zhang-zhenyue-01.webp" alt="张震岳演唱会现场留影" loading="lazy" />
-                    <figcaption><span>01</span> 张震岳演唱会</figcaption>
-                  </figure>
-                  <figure className="live-input-photo live-photo-wide">
-                    <img src="/assets/inputs/live-zhang-zhenyue-02.webp" alt="张震岳演唱会彩带落下的现场" loading="lazy" />
-                    <figcaption><span>02</span> 张震岳演唱会</figcaption>
-                  </figure>
-                  <figure className="live-input-photo">
-                    <img src="/assets/inputs/live-simple-life-01.webp" alt="陈绮贞在简单生活节的舞台现场" loading="lazy" />
-                    <figcaption><span>03</span> 陈绮贞 · 简单生活节</figcaption>
-                  </figure>
-                  <figure className="live-input-photo">
-                    <img src="/assets/inputs/live-simple-life-02.webp" alt="陈绮贞在简单生活节的夜间舞台现场" loading="lazy" />
-                    <figcaption><span>04</span> 陈绮贞 · 简单生活节</figcaption>
-                  </figure>
+                <div className="live-event-groups" aria-label="演唱会与音乐节现场照片">
+                  <section className="live-event-group">
+                    <header><strong>张震岳全国演唱会</strong><span>01—02</span></header>
+                    <div className="live-event-pair live-event-pair-portrait">
+                      <figure className="live-input-photo">
+                        <img src="/assets/inputs/live-zhang-zhenyue-01.webp" alt="张震岳全国演唱会现场留影" loading="lazy" />
+                        <figcaption><span>01</span> 张震岳全国演唱会</figcaption>
+                      </figure>
+                      <figure className="live-input-photo">
+                        <img src="/assets/inputs/live-zhang-zhenyue-02.webp" alt="张震岳全国演唱会蓝色舞台现场" loading="lazy" />
+                        <figcaption><span>02</span> 张震岳全国演唱会</figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                  <section className="live-event-group">
+                    <header><strong>陈绮贞 · 广州草莓音乐节</strong><span>03—04</span></header>
+                    <div className="live-event-pair live-event-pair-landscape">
+                      <figure className="live-input-photo">
+                        <img src="/assets/inputs/live-simple-life-01.webp" alt="陈绮贞在广州草莓音乐节的舞台现场" loading="lazy" />
+                        <figcaption><span>03</span> 陈绮贞 · 广州草莓音乐节</figcaption>
+                      </figure>
+                      <figure className="live-input-photo">
+                        <img src="/assets/inputs/live-simple-life-02.webp" alt="陈绮贞在广州草莓音乐节的夜间舞台现场" loading="lazy" />
+                        <figcaption><span>04</span> 陈绮贞 · 广州草莓音乐节</figcaption>
+                      </figure>
+                    </div>
+                  </section>
                 </div>
               </section>
             </div>
