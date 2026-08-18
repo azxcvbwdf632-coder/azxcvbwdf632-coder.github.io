@@ -281,6 +281,20 @@ a:focus-visible {
   50% { transform: translateY(4px); opacity: 1; }
 }
 
+@keyframes about-swipe-cue {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(5px); }
+}
+
+.about-mobile-scroll {
+  display: contents;
+}
+
+.about-photo-panel,
+.about-swipe-hint {
+  display: none;
+}
+
 .about-grid {
   position: relative;
   z-index: 4;
@@ -606,7 +620,7 @@ a:focus-visible {
   inset: -4%;
   background:
     linear-gradient(to bottom, rgba(0, 7, 13, .34), rgba(0, 14, 23, .16) 42%, rgba(0, 3, 8, .62) 100%),
-    url('/assets/sea-hero-pixel.png') center top / auto 190% no-repeat;
+    url('/assets/sea-hero-pixel.webp') center top / auto 190% no-repeat;
   filter: saturate(.92) brightness(.82) contrast(1.06);
   animation: operations-water-drift 18s ease-in-out infinite alternate;
 }
@@ -1727,6 +1741,23 @@ a:focus-visible {
   min-width: 0;
   min-height: 0;
   object-fit: contain;
+  opacity: 0;
+  transition: opacity .18s ease-out;
+}
+
+.case-image-stage.image-loaded img {
+  opacity: 1;
+}
+
+.case-image-loader {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: #6d7476;
+  font-family: var(--pixel-font);
+  font-size: 12px;
+  letter-spacing: .08em;
 }
 
 .case-image-label {
@@ -2286,10 +2317,36 @@ a:focus-visible {
 
   .about-grid {
     display: grid;
+    flex: 0 0 100%;
     grid-template-columns: 1fr;
+    width: 100%;
+    height: 100%;
     gap: 0;
     align-content: start;
     padding: 82px 16px 66px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+
+  .about-mobile-scroll {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    touch-action: pan-x;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .about-mobile-scroll::-webkit-scrollbar {
+    display: none;
   }
 
   .about-copy {
@@ -2355,6 +2412,73 @@ a:focus-visible {
     background:
       linear-gradient(to right, #000 0%, rgba(0, 0, 0, .55) 35%, transparent 74%),
       linear-gradient(to bottom, rgba(0, 0, 0, .68), transparent 28%, rgba(0, 0, 0, .62) 76%, #000 100%);
+  }
+
+  .about-photo-panel {
+    position: relative;
+    display: block;
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: #061b19;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+
+  .about-photo-panel > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 52%;
+  }
+
+  .about-photo-panel::after {
+    position: absolute;
+    z-index: 2;
+    inset: 0;
+    content: '';
+    pointer-events: none;
+    background:
+      linear-gradient(to bottom, rgba(0, 0, 0, .28), transparent 26%, transparent 70%, rgba(0, 0, 0, .72)),
+      linear-gradient(to right, rgba(0, 0, 0, .18), transparent 28%, transparent 72%, rgba(0, 0, 0, .18));
+  }
+
+  .about-photo-panel figcaption {
+    position: absolute;
+    z-index: 5;
+    right: 20px;
+    bottom: 78px;
+    padding: 8px 10px;
+    background: rgba(0, 0, 0, .62);
+    font-family: var(--pixel-font);
+    font-size: 12px;
+    letter-spacing: .12em;
+  }
+
+  .about-swipe-hint {
+    position: absolute;
+    z-index: 8;
+    right: 16px;
+    bottom: 72px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 8px 10px;
+    border: 1px solid rgba(255, 255, 255, .38);
+    background: rgba(0, 0, 0, .72);
+    font-family: var(--pixel-font);
+    font-size: 10px;
+    letter-spacing: .1em;
+    pointer-events: none;
+    animation: about-swipe-cue 1.8s ease-in-out infinite;
+  }
+
+  .about-swipe-hint b {
+    color: var(--cyan);
+    font-size: 16px;
+    font-weight: 400;
   }
 
   .experience-stack {

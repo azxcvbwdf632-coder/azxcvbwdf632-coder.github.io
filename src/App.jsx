@@ -71,27 +71,27 @@ const operationCases = [
     ],
     images: [
       {
-        src: '/assets/douyin-313.jpg',
+        src: '/assets/douyin-313.webp',
         title: '斜视焦虑点切入 · 313.7万播放',
         detail: '用极短时长保障完播率，以侧躺玩手机可能导致斜视的焦虑点触发讨论与转发。',
       },
       {
-        src: '/assets/operations/douyin-hot-topic.jpg',
+        src: '/assets/operations/douyin-hot-topic.webp',
         title: '热点讨论 · 14.4万播放',
         detail: '及时跟进“蝴蝶酥”争议，梳理事件脉络并补充个人观点，降低路人理解门槛。',
       },
       {
-        src: '/assets/operations/douyin-food.jpg',
+        src: '/assets/operations/douyin-food.webp',
         title: '闽南美食图文 · 8.3万播放',
         detail: '用地域化语言和生活化表达吸引精准兴趣流量。',
       },
       {
-        src: '/assets/operations/douyin-film-review.jpg',
+        src: '/assets/operations/douyin-film-review.webp',
         title: '口播影评 · 6.6万播放',
         detail: '分享观影感受与影片结构理解，并在影片宣传窗口期承接热点流量。',
       },
       {
-        src: '/assets/operations/douyin-saving.jpg',
+        src: '/assets/operations/douyin-saving.webp',
         title: '省钱干货 · 5.9万播放',
         detail: '实用型外卖省钱内容获得大量真实反馈，受限流后仍凭干货价值持续跑量。',
       },
@@ -111,7 +111,7 @@ const operationCases = [
     ],
     images: [
       {
-        src: '/assets/operations/x-profile.png',
+        src: '/assets/operations/x-profile.webp',
         title: '海外社媒账号主页',
         detail: '账号从泛流量引流逐步转向男性健康垂直内容，以专业知识建立关注理由。',
         objectPosition: 'center top',
@@ -133,14 +133,14 @@ const operationCases = [
     ],
     images: [
       {
-        src: '/assets/operations/campus-project.jpg',
+        src: '/assets/operations/campus-project.webp',
         title: '校园内容制作与发布',
         detail: '参与闽南师范大学官方账号内容制作和发布，覆盖策划、拍摄与成片交付。',
         objectPosition: 'center bottom',
         stageAlign: 'end',
       },
       ...Array.from({ length: 6 }, (_, index) => ({
-        src: `/assets/operations/campus-live-${String(index + 1).padStart(2, '0')}.png`,
+        src: `/assets/operations/campus-live-${String(index + 1).padStart(2, '0')}.webp`,
         title: `大型活动直播数据 · 0${index + 1}`,
         detail: '直播后台原始数据截图，展示观看、互动、预约及传播表现。',
         stageLabel: '图为部分直播数据',
@@ -155,14 +155,14 @@ const workCatalog = [
     type: '微电影',
     role: '摄影',
     description: '落魄的独立音乐人陈雀，唯一的慰藉是音乐和梦想。然而在现实中，她屡遭重击：被工作室无故解雇，房租催缴接踵而至，家人的关切也让她倍感压力。迫于生计，她打工、做主播，在狭小空间演唱。得知作品被工作室窃取并批量售卖后，陈雀返回工作室，找到被批量压盘的专辑，最后的心理防线被击穿。她毅然将积压的手稿付之一炬，背起行囊与电吉他，头也不回地告别过去，在烈焰的余烬中走向未卜的明天。',
-    poster: '/assets/visual/empty-flower-poster.png',
+    poster: '/assets/visual/empty-flower-poster.webp',
     posterPosition: '50% 36%',
     frames: [
-      { label: '蓝紫夜色', image: '/assets/visual/empty-flower-01.jpg', position: 'center', size: 'cover' },
-      { label: '镜面人物', image: '/assets/visual/empty-flower-02.jpg', position: 'center', size: 'cover' },
-      { label: '卧室静帧', image: '/assets/visual/empty-flower-03.jpg', position: 'center', size: 'cover' },
-      { label: '暗调人物', image: '/assets/visual/empty-flower-04.jpg', position: 'center', size: 'cover' },
-      { label: '剧情静帧 05', image: '/assets/visual/empty-flower-05.png', position: 'center', size: 'cover' },
+      { label: '蓝紫夜色', image: '/assets/visual/empty-flower-01.webp', position: 'center', size: 'cover' },
+      { label: '镜面人物', image: '/assets/visual/empty-flower-02.webp', position: 'center', size: 'cover' },
+      { label: '卧室静帧', image: '/assets/visual/empty-flower-03.webp', position: 'center', size: 'cover' },
+      { label: '暗调人物', image: '/assets/visual/empty-flower-04.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 05', image: '/assets/visual/empty-flower-05.webp', position: 'center', size: 'cover' },
     ],
   },
   {
@@ -224,14 +224,14 @@ const workCatalog = [
     type: '微电影',
     role: '摄影助理',
     description: '这是一部现实主义剧情短片。故事发生在 2012 年夏末的闽南小镇，在香港工作的周瑶短暂返乡，与留守家乡的旧日恋人林明远重逢。两人从一场电影开始，历经散步、闲聊，至家中短暂共处，在看似平淡的日常与静默的间隙中，情感悄然流动、试探，又最终归于疏离。影片通过极度克制的叙事与视听语言，探讨城镇化进程中当代青年普遍面临的情感表达困境与精神漂泊状态。',
-    poster: '/assets/visual/void-between-poster.jpg',
+    poster: '/assets/visual/void-between-poster.webp',
     posterPosition: 'center',
     frames: [
-      { label: '剧院外景', image: '/assets/visual/void-between-01.jpg', position: 'center', size: 'cover' },
-      { label: '门前人物', image: '/assets/visual/void-between-02.jpg', position: 'center', size: 'cover' },
-      { label: '街巷同行', image: '/assets/visual/void-between-03.jpg', position: 'center', size: 'cover' },
-      { label: '远去背影', image: '/assets/visual/void-between-04.jpg', position: 'center', size: 'cover' },
-      { label: '另一版海报', image: '/assets/visual/void-between-alt-poster.jpg', position: 'center', size: 'contain' },
+      { label: '剧院外景', image: '/assets/visual/void-between-01.webp', position: 'center', size: 'cover' },
+      { label: '门前人物', image: '/assets/visual/void-between-02.webp', position: 'center', size: 'cover' },
+      { label: '街巷同行', image: '/assets/visual/void-between-03.webp', position: 'center', size: 'cover' },
+      { label: '远去背影', image: '/assets/visual/void-between-04.webp', position: 'center', size: 'cover' },
+      { label: '另一版海报', image: '/assets/visual/void-between-alt-poster.webp', position: 'center', size: 'contain' },
     ],
   },
   {
@@ -254,26 +254,24 @@ const workCatalog = [
         poster: '/assets/visual/fang-died-clip-02-poster.webp',
       },
       { label: '剧情静帧 01', image: '/assets/visual/fang-died-new-01.webp', position: 'center', size: 'cover' },
-      { label: '剧情静帧 02', image: '/assets/visual/fang-died-new-152438.png', position: 'center', size: 'cover' },
-      { label: '剧情静帧 03', image: '/assets/visual/fang-died-new-02.webp', position: 'center', size: 'cover' },
-      { label: '剧情静帧 04', image: '/assets/visual/fang-died-new-03.webp', position: 'center', size: 'cover' },
-      { label: '剧情静帧 05', image: '/assets/visual/fang-died-new-04.webp', position: 'center', size: 'cover' },
-      { label: '剧情静帧 06', image: '/assets/visual/fang-died-new-153730.png', position: 'center', size: 'cover' },
-      { label: '剧情静帧 07', image: '/assets/visual/fang-died-new-05.webp', position: 'center', size: 'cover' },
-      { label: '剧情静帧 08', image: '/assets/visual/fang-died-new-153943.png', position: 'center', size: 'cover' },
-      { label: '剧情静帧 09', image: '/assets/visual/fang-died-new-06.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 02', image: '/assets/visual/fang-died-new-152438.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 03', image: '/assets/visual/fang-died-new-03.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 04', image: '/assets/visual/fang-died-new-04.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 05', image: '/assets/visual/fang-died-new-153730.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 06', image: '/assets/visual/fang-died-new-05.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 07', image: '/assets/visual/fang-died-new-153943.webp', position: 'center', size: 'cover' },
     ],
   },
   {
     title: '《生如夏花》',
     type: '剧情片',
     role: '男主',
-    poster: '/assets/visual/summer-flower-poster.jpg',
+    poster: '/assets/visual/summer-flower-poster.webp',
     posterPosition: 'center',
     posterSize: 'cover',
     frames: [
-      { label: '剧情静帧 01', image: '/assets/visual/summer-flower-01.png', position: 'center', size: 'cover' },
-      { label: '剧情静帧 02', image: '/assets/visual/summer-flower-02.png', position: 'center', size: 'cover' },
+      { label: '剧情静帧 01', image: '/assets/visual/summer-flower-01.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 02', image: '/assets/visual/summer-flower-02.webp', position: 'center', size: 'cover' },
     ],
   },
   {
@@ -311,68 +309,68 @@ const workCatalog = [
     title: '《秋听古田》',
     type: '城市宣传片',
     role: '摄影 · 古田县“爱我古田”短视频大赛三等奖 · 第八届全国大学生数字编辑创新大赛闽台赛区三等奖',
-    poster: '/assets/visual/autumn-gutian-title.jpg',
+    poster: '/assets/visual/autumn-gutian-title.webp',
     posterPosition: '50% 50%',
     frames: [
-      { label: '片名字帧', image: '/assets/visual/autumn-gutian-title.jpg', position: 'center', size: 'cover' },
-      { label: '官方发布数据', image: '/assets/visual/autumn-gutian-publish.jpg', position: 'center', size: 'contain' },
+      { label: '片名字帧', image: '/assets/visual/autumn-gutian-title.webp', position: 'center', size: 'cover' },
+      { label: '官方发布数据', image: '/assets/visual/autumn-gutian-publish.webp', position: 'center', size: 'contain' },
     ],
   },
   {
     title: '《青马学员说》',
     type: '系列专题视频',
     role: '导演 · 策划 · 采访 · 团队拍摄统筹',
-    poster: '/assets/visual/campus-video-source.jpg',
+    poster: '/assets/visual/campus-video-source.webp',
     posterPosition: 'center top',
     posterSize: 'auto 200%',
     frames: [
-      { label: '《青马学员说》项目页', image: '/assets/visual/campus-video-source.jpg', position: 'center top', size: 'auto 200%' },
+      { label: '《青马学员说》项目页', image: '/assets/visual/campus-video-source.webp', position: 'center top', size: 'auto 200%' },
     ],
   },
   {
     title: '《青年先锋说》',
     type: '人物专访系列',
     role: '导演 · 执行方案',
-    poster: '/assets/visual/campus-video-source.jpg',
+    poster: '/assets/visual/campus-video-source.webp',
     posterPosition: 'center bottom',
     posterSize: 'auto 200%',
     frames: [
-      { label: '《青年先锋说》项目页', image: '/assets/visual/campus-video-source.jpg', position: 'center bottom', size: 'auto 200%' },
+      { label: '《青年先锋说》项目页', image: '/assets/visual/campus-video-source.webp', position: 'center bottom', size: 'auto 200%' },
     ],
   },
   {
     title: '《三百六十行 行行有关羽》',
     type: 'AIGC 短片',
     role: '导演',
-    poster: '/assets/visual/guanyu-01.png',
+    poster: '/assets/visual/guanyu-01.webp',
     posterPosition: 'center',
     dialogClass: 'long-title',
     frames: [
-      { label: '夜色城市', image: '/assets/visual/guanyu-01.png', position: 'center', size: 'cover' },
-      { label: '文化场景', image: '/assets/visual/guanyu-02.png', position: 'center', size: 'cover' },
-      { label: '快递关羽', image: '/assets/visual/guanyu-03.png', position: 'center', size: 'cover' },
-      { label: 'AIGC 场景 04', image: '/assets/visual/guanyu-04.png', position: 'center', size: 'cover' },
-      { label: '角色三视图', image: '/assets/visual/guanyu-character-sheet.png', position: 'center', size: 'contain' },
+      { label: '夜色城市', image: '/assets/visual/guanyu-01.webp', position: 'center', size: 'cover' },
+      { label: '文化场景', image: '/assets/visual/guanyu-02.webp', position: 'center', size: 'cover' },
+      { label: '快递关羽', image: '/assets/visual/guanyu-03.webp', position: 'center', size: 'cover' },
+      { label: 'AIGC 场景 04', image: '/assets/visual/guanyu-04.webp', position: 'center', size: 'cover' },
+      { label: '角色三视图', image: '/assets/visual/guanyu-character-sheet.webp', position: 'center', size: 'contain' },
     ],
   },
   {
     title: '《升级日志》',
     type: '大广赛 AIGC 短片',
     role: '导演',
-    poster: '/assets/visual/upgrade-log-04.png',
+    poster: '/assets/visual/upgrade-log-04.webp',
     posterPosition: 'center',
     frames: [
-      { label: '系统启动', image: '/assets/visual/upgrade-log-01.png', position: 'center', size: 'cover' },
-      { label: '模型升级', image: '/assets/visual/upgrade-log-02.png', position: 'center', size: 'cover' },
-      { label: '职业上限', image: '/assets/visual/upgrade-log-03.png', position: 'center', size: 'cover' },
-      { label: '安装界面', image: '/assets/visual/upgrade-log-04.png', position: 'center', size: 'cover' },
+      { label: '系统启动', image: '/assets/visual/upgrade-log-01.webp', position: 'center', size: 'cover' },
+      { label: '模型升级', image: '/assets/visual/upgrade-log-02.webp', position: 'center', size: 'cover' },
+      { label: '职业上限', image: '/assets/visual/upgrade-log-03.webp', position: 'center', size: 'cover' },
+      { label: '安装界面', image: '/assets/visual/upgrade-log-04.webp', position: 'center', size: 'cover' },
     ],
   },
   {
     title: '《千年笔魂》',
     type: '纪录片',
     role: '导演 · 摄影',
-    poster: '/assets/visual/millennium-pen-poster.jpg',
+    poster: '/assets/visual/millennium-pen-poster.webp',
     posterPosition: 'center',
     posterSize: 'contain',
     frames: [
@@ -380,7 +378,7 @@ const workCatalog = [
         label: '纪录片片段',
         video: '/assets/visual/millennium-pen-clip.mp4',
       },
-      { label: '匠心传承', image: '/assets/visual/millennium-pen-frame.png', position: 'center', size: 'cover' },
+      { label: '匠心传承', image: '/assets/visual/millennium-pen-frame.webp', position: 'center', size: 'cover' },
     ],
   },
 ]
@@ -572,7 +570,7 @@ function HeroScene({ active, next, intro }) {
         <source media="(max-width: 760px)" srcSet="/assets/sea-hero-pixel-mobile.webp" type="image/webp" />
         <img
           className="scene-image hero-image"
-          src="/assets/sea-hero-pixel.png"
+          src="/assets/sea-hero-pixel.webp"
           alt="像素海面中漂浮的人物"
           loading="eager"
           decoding="async"
@@ -594,49 +592,61 @@ function HeroScene({ active, next, intro }) {
 function AboutScene({ active, next, openAesthetic }) {
   return (
     <section id="about" className={`scene about-scene ${active ? 'active' : ''}`} aria-hidden={!active}>
-      <div className="about-grid">
-        <div className="about-copy">
-          <h2>关于我</h2>
-          <span className="descent-mark" aria-hidden="true">⋮<br />⌄</span>
-          <p>我用影像理解内容，<br />也用数据验证表达。</p>
-          <ul className="skill-list" aria-label="能力标签">
-            <li>摄影</li>
-            <li>内容运营</li>
-            <li>AI 工具</li>
-          </ul>
-          <a
-            className="aesthetic-entry"
-            href="#about-inputs"
-            onClick={openAesthetic}
-            onTouchStart={(event) => event.stopPropagation()}
-            onTouchEnd={(event) => {
-              event.stopPropagation()
-              openAesthetic()
-            }}
-          >
-            进入我的输入源
-            <span aria-hidden="true">↘</span>
-          </a>
-          <small>闽南师范大学 · 广播电视编导专业 · 2027届</small>
+      <div
+        className="about-mobile-scroll"
+        role="region"
+        aria-label="关于我，可横向滑动查看树藤跳水照片"
+      >
+        <div className="about-grid">
+          <div className="about-copy">
+            <h2>关于我</h2>
+            <span className="descent-mark" aria-hidden="true">⋮<br />⌄</span>
+            <p>我用影像理解内容，<br />也用数据验证表达。</p>
+            <ul className="skill-list" aria-label="能力标签">
+              <li>摄影</li>
+              <li>内容运营</li>
+              <li>AI 工具</li>
+            </ul>
+            <a
+              className="aesthetic-entry"
+              href="#about-inputs"
+              onClick={openAesthetic}
+              onTouchStart={(event) => event.stopPropagation()}
+              onTouchEnd={(event) => {
+                event.stopPropagation()
+                openAesthetic()
+              }}
+            >
+              进入我的输入源
+              <span aria-hidden="true">↘</span>
+            </a>
+            <small>闽南师范大学 · 广播电视编导专业 · 2027届</small>
+          </div>
+          <figure className="about-media">
+            <img src="/assets/vine-jump.webp" alt="在菲律宾体验树藤跳水" loading="lazy" decoding="async" />
+            <PixelEdge />
+          </figure>
+          <div className="experience-stack" aria-label="个人经历">
+            {experienceGroups.map((group) => (
+              <article className="experience-card" key={group.title}>
+                <h3>{group.title}</h3>
+                {group.entries.map((entry) => (
+                  <div className="experience-entry" key={`${entry.period}-${entry.role}`}>
+                    <time>{entry.period}</time>
+                    <strong>{entry.role}</strong>
+                    <p>{entry.detail}</p>
+                  </div>
+                ))}
+              </article>
+            ))}
+          </div>
+          <span className="about-swipe-hint" aria-hidden="true">左滑看现场 <b>→</b></span>
         </div>
-        <figure className="about-media">
-          <img src="/assets/vine-jump.jpg" alt="在菲律宾体验树藤跳水" />
+        <figure className="about-photo-panel">
+          <img src="/assets/vine-jump.webp" alt="在菲律宾体验树藤跳水的现场照片" loading="lazy" decoding="async" />
           <PixelEdge />
+          <figcaption>菲律宾 · 树藤跳水</figcaption>
         </figure>
-        <div className="experience-stack" aria-label="个人经历">
-          {experienceGroups.map((group) => (
-            <article className="experience-card" key={group.title}>
-              <h3>{group.title}</h3>
-              {group.entries.map((entry) => (
-                <div className="experience-entry" key={`${entry.period}-${entry.role}`}>
-                  <time>{entry.period}</time>
-                  <strong>{entry.role}</strong>
-                  <p>{entry.detail}</p>
-                </div>
-              ))}
-            </article>
-          ))}
-        </div>
       </div>
       <ScrollCue label="继续下潜" onClick={next} />
     </section>
@@ -735,7 +745,7 @@ function FilmsScene({ active, next, openWork }) {
 
   return (
     <section id="films" className={`scene films-scene ${active ? 'active' : ''}`} aria-hidden={!active}>
-      <img className="scene-image sardine-image" src="/assets/sardine-run.jpg" alt="水下沙丁鱼风暴" />
+      <img className="scene-image sardine-image" src="/assets/sardine-run.webp" alt="水下沙丁鱼风暴" decoding="async" />
       <div className="film-vignette" aria-hidden="true" />
       <PixelEdge />
       <h2>影像作品</h2>
@@ -775,7 +785,7 @@ function FilmsScene({ active, next, openWork }) {
                 opacity: hiddenBehindOrbit ? 0 : 1,
                 pointerEvents: hiddenBehindOrbit ? 'none' : 'auto',
                 transform: `translateX(-50%) scale(${depthScale})`,
-                backgroundImage: `url(${item.poster})`,
+                backgroundImage: hiddenBehindOrbit ? 'none' : `url(${item.poster})`,
                 backgroundPosition: item.posterPosition,
                 backgroundSize: item.posterSize || 'cover',
               }}
@@ -820,8 +830,10 @@ function ContactScene({ active, onWechat }) {
     <section id="contact" className={`scene contact-scene ${active ? 'active' : ''}`} aria-hidden={!active}>
       <img
         className="scene-image contact-video"
-        src="/assets/whale-shark.jpg"
+        src="/assets/whale-shark.webp"
         alt="鲸鲨在深海中游动"
+        loading="lazy"
+        decoding="async"
       />
       <div className="contact-vignette" aria-hidden="true" />
       <PixelEdge />
@@ -855,7 +867,7 @@ function WechatDialog({ open, onClose }) {
         <button className="dialog-close" type="button" onClick={onClose} aria-label="关闭微信二维码">×</button>
         <small>联系我</small>
         <h2>添加微信</h2>
-        <img src="/assets/wechat-qr.jpg" alt="微信二维码" />
+        <img src="/assets/wechat-qr.jpg" alt="微信二维码" decoding="async" />
         <p>请使用微信扫码添加我</p>
       </div>
     </div>
@@ -865,6 +877,7 @@ function WechatDialog({ open, onClose }) {
 function EvidenceDialog({ open, onClose }) {
   const [caseIndex, setCaseIndex] = useState(0)
   const [imageIndex, setImageIndex] = useState(0)
+  const [imageLoaded, setImageLoaded] = useState(false)
 
   const activeCase = operationCases[caseIndex]
   const activeImage = activeCase.images[imageIndex]
@@ -874,6 +887,21 @@ function EvidenceDialog({ open, onClose }) {
     setCaseIndex(0)
     setImageIndex(0)
   }, [open])
+
+  useEffect(() => {
+    if (!open) return undefined
+    const preloaders = operationCases.flatMap((item) => item.images).map((item) => {
+      const image = new Image()
+      image.decoding = 'async'
+      image.src = item.src
+      return image
+    })
+    return () => preloaders.forEach((image) => { image.src = '' })
+  }, [open])
+
+  useEffect(() => {
+    setImageLoaded(false)
+  }, [activeImage.src])
 
   useEffect(() => {
     if (!open) return undefined
@@ -911,10 +939,14 @@ function EvidenceDialog({ open, onClose }) {
         </div>
         <div className="case-layout">
           <div className="case-visual">
-            <div className="case-image-stage">
+            <div className={`case-image-stage ${imageLoaded ? 'image-loaded' : 'image-loading'}`}>
+              {!imageLoaded ? <span className="case-image-loader">图片载入中…</span> : null}
               <img
+                key={activeImage.src}
                 src={activeImage.src}
                 alt={activeImage.title}
+                decoding="async"
+                onLoad={() => setImageLoaded(true)}
                 style={{
                   objectPosition: activeImage.objectPosition || 'center',
                   alignSelf: activeImage.stageAlign || 'center',
@@ -930,7 +962,7 @@ function EvidenceDialog({ open, onClose }) {
                   onClick={() => setImageIndex(index)}
                   aria-label={`查看${item.title}`}
                 >
-                  <img src={item.src} alt="" />
+                  <img src={item.src} alt="" loading="lazy" decoding="async" />
                 </button>
               ))}
             </div>
@@ -1180,7 +1212,7 @@ export default function App() {
         lastAt: now,
         velocityY: 0,
         inHorizontalScroller: event.target instanceof Element
-          && Boolean(event.target.closest('.film-orbit, .metrics, .album-rail, .film-input-rail, .experience-stack, .mobile-operation-metrics, .artist-selector, .artist-albums')),
+          && Boolean(event.target.closest('.film-orbit, .metrics, .album-rail, .film-input-rail, .about-mobile-scroll, .experience-stack, .mobile-operation-metrics, .artist-selector, .artist-albums')),
         interactiveTarget: event.target instanceof Element
           && Boolean(event.target.closest('button, a, input, textarea, select, [role="button"]')),
         dragging: false,
