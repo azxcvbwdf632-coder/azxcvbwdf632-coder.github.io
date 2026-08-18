@@ -782,7 +782,7 @@ function FilmsScene({ active, next, openWork }) {
                 opacity: hiddenBehindOrbit ? 0 : 1,
                 pointerEvents: hiddenBehindOrbit ? 'none' : 'auto',
                 transform: `translateX(-50%) scale(${depthScale})`,
-                backgroundImage: active && !hiddenBehindOrbit ? `url(${item.poster})` : 'none',
+                backgroundImage: hiddenBehindOrbit ? 'none' : `url(${item.poster})`,
                 backgroundPosition: item.posterPosition,
                 backgroundSize: item.posterSize || 'cover',
               }}
@@ -1033,16 +1033,9 @@ function WorkVideo({ frame }) {
 
 function WorkDialog({ workIndex, onClose }) {
   const [frameIndex, setFrameIndex] = useState(0)
-  const [showFrameThumbnails, setShowFrameThumbnails] = useState(false)
   const work = workIndex === null ? null : works[workIndex]
 
   useEffect(() => setFrameIndex(0), [workIndex])
-  useEffect(() => {
-    if (workIndex === null) return undefined
-    setShowFrameThumbnails(false)
-    const thumbnailTimer = window.setTimeout(() => setShowFrameThumbnails(true), 300)
-    return () => window.clearTimeout(thumbnailTimer)
-  }, [workIndex])
   useEffect(() => {
     if (!work) return undefined
     const handleKey = (event) => {
@@ -1088,7 +1081,7 @@ function WorkDialog({ workIndex, onClose }) {
                 '--frame-count': work.frames.length,
                 left: `${50 + 47 * Math.cos((index / work.frames.length) * Math.PI * 2 - Math.PI / 2)}%`,
                 top: `${50 + 42 * Math.sin((index / work.frames.length) * Math.PI * 2 - Math.PI / 2)}%`,
-                backgroundImage: showFrameThumbnails ? `url(${frame.video ? frame.poster : frame.image})` : 'none',
+                backgroundImage: `url(${frame.video ? frame.poster : frame.image})`,
                 backgroundPosition: frame.position || 'center',
                 backgroundSize: frame.size || 'cover',
               }}
