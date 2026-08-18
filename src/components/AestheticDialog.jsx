@@ -137,7 +137,7 @@ export default function AestheticDialog({ open, onClose }) {
                         <figcaption><span>01</span> 张震岳全国演唱会</figcaption>
                       </figure>
                       <figure className="live-input-photo">
-                        <img src="/assets/inputs/live-zhang-zhenyue-02.webp" alt="张震岳全国演唱会蓝色舞台现场" loading="lazy" />
+                        <img src="/assets/inputs/live-zhang-zhenyue-quanzhou.webp" alt="张震岳全国演唱会蓝色舞台现场" loading="lazy" />
                         <figcaption><span>02</span> 张震岳全国演唱会</figcaption>
                       </figure>
                     </div>
