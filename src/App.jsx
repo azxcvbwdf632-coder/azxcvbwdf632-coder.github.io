@@ -221,7 +221,7 @@ const works = [
   {
     title: '《等等》',
     type: '微电影',
-    role: '灯光',
+    role: '摄助、跟焦',
     poster: '/assets/visual/void-between-poster.jpg',
     posterPosition: 'center',
     frames: [
@@ -401,25 +401,24 @@ const WaterTransition = forwardRef(function WaterTransition(_, ref) {
 
       const width = window.innerWidth
       const height = window.innerHeight
-      const cell = width < 640 ? 14 : 22
+      const cell = width < 640 ? 12 : 18
       const palette = ['#000000', '#031b2e', '#07517a', '#0f6f9d', '#158fd2', '#46d7e8']
       const started = performance.now()
-      const duration = width < 640 ? 780 : 940
+      const duration = 1120
       const travelDirection = direction >= 0 ? 1 : -1
       let swapped = false
 
       const draw = (now) => {
         const progress = Math.min((now - started) / duration, 1)
         const phase = progress < 0.5 ? progress * 2 : (progress - 0.5) * 2
-        const easedPhase = phase < 0.5
-          ? 4 * phase * phase * phase
-          : 1 - ((-2 * phase + 2) ** 3) / 2
+        const easedPhase = 0.5 - Math.cos(Math.PI * phase) / 2
         const cover = progress < 0.5 ? easedPhase : 1
         const reveal = progress > 0.5 ? easedPhase : 0
         ctx.clearRect(0, 0, width, height)
 
         for (let x = 0; x < width + cell; x += cell) {
-          const wave = Math.sin(x * 0.018 + progress * 8) * cell * 1.65
+          const wave = Math.sin(x * 0.014 + progress * 4.2) * cell * 2.45
+            + Math.sin(x * 0.039 - progress * 3.1) * cell * 0.85
           const coverLine = travelDirection > 0
             ? height * (1 - cover) + wave
             : height * cover + wave
@@ -427,16 +426,19 @@ const WaterTransition = forwardRef(function WaterTransition(_, ref) {
             ? height * reveal + wave
             : height * (1 - reveal) + wave
           for (let y = 0; y < height + cell; y += cell) {
-            const noise = (((x / cell) * 17 + (y / cell) * 31) % 7) * 2
+            const noise = ((((x / cell) * 17 + (y / cell) * 31) % 7) - 3) * 1.15
+            const activeLine = progress <= 0.5 ? coverLine : revealLine
+            const pixelEdge = activeLine + noise
             const visible = travelDirection > 0
-              ? (progress <= 0.5 ? y >= coverLine + noise : y >= revealLine + noise)
-              : (progress <= 0.5 ? y <= coverLine + noise : y <= revealLine + noise)
+              ? y >= pixelEdge
+              : y <= pixelEdge
             if (!visible) continue
-            const depth = Math.max(0, Math.min(1, y / height))
-            const colorIndex = Math.min(
-              palette.length - 1,
-              Math.floor(depth * palette.length + ((x + y) / cell) % 2),
-            )
+            const distanceFromWave = Math.abs(y - pixelEdge)
+            let colorIndex = 1
+            if (distanceFromWave < cell * 1.35) colorIndex = 5
+            else if (distanceFromWave < cell * 3.2) colorIndex = 4
+            else if (distanceFromWave < height * 0.22) colorIndex = 3
+            else if (distanceFromWave < height * 0.52) colorIndex = 2
             ctx.fillStyle = palette[colorIndex]
             ctx.fillRect(x, y, cell + 1, cell + 1)
           }
@@ -1136,13 +1138,14 @@ export default function App() {
     }
     const onTouchMove = (event) => {
       if (!touchStart.current.active || transitioning) return
-      if (touchStart.current.inHorizontalScroller || touchStart.current.interactiveTarget) return
+      if (touchStart.current.interactiveTarget) return
       if (event.target instanceof Element && event.target.closest('.dialog-backdrop, .site-header')) return
 
       const touch = event.changedTouches[0]
       const deltaX = touchStart.current.x - touch.clientX
       const deltaY = touchStart.current.y - touch.clientY
-      if (Math.abs(deltaY) < 9 || Math.abs(deltaY) <= Math.abs(deltaX) * 1.08) return
+      const verticalDominance = touchStart.current.inHorizontalScroller ? 1.18 : 1.03
+      if (Math.abs(deltaY) < 7 || Math.abs(deltaY) <= Math.abs(deltaX) * verticalDominance) return
 
       event.preventDefault()
       const now = performance.now()
@@ -1152,8 +1155,8 @@ export default function App() {
       touchStart.current.lastAt = now
       touchStart.current.dragging = true
 
-      const progress = Math.min(Math.abs(deltaY) / 150, 1)
-      const dragY = Math.max(-54, Math.min(54, -deltaY * 0.28))
+      const progress = Math.min(Math.abs(deltaY) / 136, 1)
+      const dragY = Math.max(-64, Math.min(64, -deltaY * 0.32))
       const shell = appShellRef.current
       if (shell) {
         shell.classList.add('touch-dragging')
@@ -1168,14 +1171,15 @@ export default function App() {
       if (evidenceOpen || workOpen !== null || aestheticOpen || mobileOpen || transitioning) return
       if (touchStart.current.interactiveTarget || event.target instanceof Element && event.target.closest('button, a, input, textarea, select, [role="button"]')) return
       if (event.target instanceof Element && event.target.closest('.dialog-backdrop, .site-header')) return
-      if (touchStart.current.inHorizontalScroller) return
       const touch = event.changedTouches[0]
       const deltaX = touchStart.current.x - touch.clientX
       const deltaY = touchStart.current.y - touch.clientY
-      const distanceIntent = Math.abs(deltaY) > 38
-      const velocityIntent = Math.abs(touchStart.current.velocityY) > 0.32 && Math.abs(deltaY) > 20
+      const verticalDominance = touchStart.current.inHorizontalScroller ? 1.18 : 1.03
+      if (Math.abs(deltaY) <= Math.abs(deltaX) * verticalDominance) return
+      const distanceIntent = Math.abs(deltaY) > 32
+      const velocityIntent = Math.abs(touchStart.current.velocityY) > 0.25 && Math.abs(deltaY) > 16
       const isIntentionalVerticalSwipe = (distanceIntent || velocityIntent)
-        && Math.abs(deltaY) > Math.abs(deltaX) * 1.08
+        && Math.abs(deltaY) > Math.abs(deltaX) * verticalDominance
       if (isIntentionalVerticalSwipe) navigate(active + (deltaY > 0 ? 1 : -1))
     }
     const onTouchCancel = () => {

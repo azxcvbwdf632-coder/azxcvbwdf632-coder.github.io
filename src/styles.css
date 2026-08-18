@@ -583,15 +583,28 @@ a:focus-visible {
 .operations-water {
   position: absolute;
   z-index: 2;
-  right: 0;
-  bottom: -10%;
-  left: 0;
-  height: 37%;
+  inset: -4%;
   background:
-    linear-gradient(to bottom, transparent, rgba(0, 0, 0, .58) 58%, #000 100%),
-    url('/assets/sea-hero-pixel.png') center 64% / cover no-repeat;
-  filter: saturate(.76) brightness(.66);
+    linear-gradient(to bottom, rgba(0, 7, 13, .52), rgba(0, 14, 23, .28) 42%, rgba(0, 3, 8, .74) 100%),
+    url('/assets/sea-hero.webp') center top / auto 190% no-repeat;
+  filter: saturate(.82) brightness(.66) contrast(1.08);
+  animation: operations-water-drift 18s ease-in-out infinite alternate;
+}
+
+.operations-water::after {
+  position: absolute;
+  inset: 0;
+  content: '';
+  background-image: repeating-conic-gradient(from 90deg, rgba(70, 215, 232, .18) 0 25%, transparent 0 50%);
+  background-size: 18px 18px;
+  mask-image: linear-gradient(to bottom, transparent 2%, rgba(0, 0, 0, .28) 30%, #000 100%);
+  opacity: .32;
   image-rendering: pixelated;
+}
+
+@keyframes operations-water-drift {
+  from { transform: scale(1.035) translate3d(-.6%, 0, 0); }
+  to { transform: scale(1.075) translate3d(.8%, -1.2%, 0); }
 }
 
 .films-scene {
@@ -2306,10 +2319,6 @@ a:focus-visible {
 
   .metric strong {
     font-size: 38px;
-  }
-
-  .operations-water {
-    height: 34%;
   }
 
   .films-scene {
