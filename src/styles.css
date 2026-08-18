@@ -186,6 +186,19 @@ a:focus-visible {
   image-rendering: pixelated;
 }
 
+.hero-scene.hero-loading .hero-image,
+.hero-scene.hero-loading .hero-copy,
+.hero-scene.hero-loading .scroll-cue {
+  opacity: 0;
+}
+
+.hero-scene.hero-ready:not(.intro) .hero-image,
+.hero-scene.hero-ready:not(.intro) .hero-copy,
+.hero-scene.hero-ready:not(.intro) .scroll-cue {
+  opacity: 1;
+  transition: opacity 320ms ease;
+}
+
 .hero-vignette {
   position: absolute;
   z-index: 2;
@@ -2069,8 +2082,8 @@ a:focus-visible {
 }
 
 @keyframes hero-vignette-lift {
-  from { opacity: 1; background-color: #000; }
-  58% { opacity: 1; background-color: rgba(0, 0, 0, .54); }
+  from { opacity: 1; background-color: rgba(0, 0, 0, .38); }
+  58% { opacity: 1; background-color: rgba(0, 0, 0, .18); }
   to { opacity: 1; background-color: transparent; }
 }
 
@@ -2239,6 +2252,10 @@ a:focus-visible {
 
   .hero-image {
     object-position: center;
+  }
+
+  .hero-scene {
+    background: #073448 url('/assets/sea-hero-preview-mobile.webp') center / cover no-repeat;
   }
 
   .hero-copy {

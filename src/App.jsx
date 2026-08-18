@@ -542,11 +542,25 @@ function ScrollCue({ label = '向下潜入', onClick }) {
 }
 
 function HeroScene({ active, next, intro }) {
+  const [heroReady, setHeroReady] = useState(false)
+
   return (
-    <section id="home" className={`scene hero-scene ${active ? 'active' : ''} ${intro ? 'intro' : ''}`} aria-hidden={!active}>
+    <section
+      id="home"
+      className={`scene hero-scene ${active ? 'active' : ''} ${heroReady ? 'hero-ready' : 'hero-loading'} ${intro && heroReady ? 'intro' : ''}`}
+      aria-hidden={!active}
+    >
       <picture>
-        <source media="(max-width: 760px)" srcSet="/assets/sea-hero-pixel-mobile.png" />
-        <img className="scene-image hero-image" src="/assets/sea-hero-pixel.png" alt="像素海面中漂浮的人物" />
+        <source media="(max-width: 760px)" srcSet="/assets/sea-hero-pixel-mobile.webp" type="image/webp" />
+        <img
+          className="scene-image hero-image"
+          src="/assets/sea-hero-pixel.png"
+          alt="像素海面中漂浮的人物"
+          loading="eager"
+          decoding="async"
+          fetchPriority="high"
+          onLoad={() => setHeroReady(true)}
+        />
       </picture>
       <div className="hero-vignette" aria-hidden="true" />
       <PixelEdge />
