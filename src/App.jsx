@@ -231,7 +231,6 @@ const workCatalog = [
       { label: '门前人物', image: '/assets/visual/void-between-02.webp', position: 'center', size: 'cover' },
       { label: '街巷同行', image: '/assets/visual/void-between-03.webp', position: 'center', size: 'cover' },
       { label: '远去背影', image: '/assets/visual/void-between-04.webp', position: 'center', size: 'cover' },
-      { label: '另一版海报', image: '/assets/visual/void-between-alt-poster.webp', position: 'center', size: 'contain' },
     ],
   },
   {
