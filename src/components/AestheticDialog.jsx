@@ -9,6 +9,7 @@ const tabs = [
 
 export default function AestheticDialog({ open, onClose }) {
   const [activeTab, setActiveTab] = useState('music')
+  const [activeArtist, setActiveArtist] = useState(0)
 
   useEffect(() => {
     if (!open) return undefined
@@ -65,9 +66,21 @@ export default function AestheticDialog({ open, onClose }) {
               <section className="input-section artist-section">
                 <div className="section-marker">A / ARTISTS</div>
                 <h3>喜欢的歌手与专辑</h3>
+                <div className="artist-selector mobile-only" aria-label="选择歌手">
+                  {aestheticArtists.map((artist, index) => (
+                    <button
+                      type="button"
+                      className={activeArtist === index ? 'active' : ''}
+                      key={artist.name}
+                      onClick={() => setActiveArtist(index)}
+                    >
+                      {artist.name}
+                    </button>
+                  ))}
+                </div>
                 <div className="artist-shelves">
                   {aestheticArtists.map((artist, artistIndex) => (
-                    <section className="artist-shelf" key={artist.name}>
+                    <section className={`artist-shelf ${activeArtist === artistIndex ? 'mobile-active' : ''}`} key={artist.name}>
                       <header className="artist-identity">
                         <span>{String(artistIndex + 1).padStart(2, '0')}</span>
                         <strong>{artist.name}</strong>

@@ -563,7 +563,7 @@ function AboutScene({ active, next, openAesthetic }) {
             进入我的输入源
             <span aria-hidden="true">↘</span>
           </a>
-          <small>闽南师范大学 · 2027</small>
+          <small>闽南师范大学 · 广播电视编导专业 · 2027届</small>
         </div>
         <figure className="about-media">
           <img src="/assets/vine-jump.jpg" alt="在菲律宾体验树藤跳水" />
@@ -594,6 +594,21 @@ function OperationsScene({ active, next, openEvidence }) {
     <section id="operations" className={`scene operations-scene ${active ? 'active' : ''}`} aria-hidden={!active}>
       <div className="operations-cover">
         <h2>账号运营</h2>
+        <p className="mobile-operation-copy">让内容被看见，<br />也让结果可以被验证。</p>
+        <div className="mobile-operation-metrics" aria-label="账号运营代表数据，可左右滑动">
+          <article>
+            <strong>313.7万</strong>
+            <span>单条最高播放</span>
+          </article>
+          <article>
+            <strong>67万</strong>
+            <span>海外长文浏览</span>
+          </article>
+          <article>
+            <strong>22,053+</strong>
+            <span>校园直播累计观看</span>
+          </article>
+        </div>
         <button className="case-entry" onClick={openEvidence}>
           查看案例
           <span aria-hidden="true">↘</span>
@@ -736,7 +751,10 @@ function FilmsScene({ active, next, openWork }) {
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg>
       </button>
       <div className="film-selected" aria-live="polite">
-        <p>拖动海报环浏览，点击进入每一部作品</p>
+        <p>
+          <span className="desktop-only">拖动海报环浏览，点击进入每一部作品</span>
+          <span className="mobile-only">左右滑动选择作品 · 点击查看镜帧</span>
+        </p>
       </div>
       <ScrollCue label="继续下潜" onClick={next} />
     </section>
@@ -1071,7 +1089,7 @@ export default function App() {
         x: touch.clientX,
         y: touch.clientY,
         inHorizontalScroller: event.target instanceof Element
-          && Boolean(event.target.closest('.film-orbit, .metrics, .album-rail, .film-input-rail')),
+          && Boolean(event.target.closest('.film-orbit, .metrics, .album-rail, .film-input-rail, .experience-stack, .mobile-operation-metrics, .artist-selector, .artist-albums')),
         interactiveTarget: event.target instanceof Element
           && Boolean(event.target.closest('button, a, input, textarea, select, [role="button"]')),
         interactiveRegion: event.target instanceof Element
