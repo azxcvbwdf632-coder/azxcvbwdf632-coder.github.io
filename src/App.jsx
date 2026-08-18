@@ -171,6 +171,13 @@ const works = [
     posterPosition: 'center',
     posterSize: 'cover',
     frames: [
+      {
+        label: '短片片段',
+        image: '/assets/visual/run-away-01.webp',
+        video: '/assets/visual/run-away-clip.mp4',
+        position: 'center',
+        size: 'cover',
+      },
       { label: '剧情镜帧 01', image: '/assets/visual/run-away-01.webp', position: 'center', size: 'cover' },
       { label: '剧情镜帧 02', image: '/assets/visual/run-away-02.webp', position: 'center', size: 'cover' },
       { label: '剧情镜帧 03', image: '/assets/visual/run-away-03.webp', position: 'center', size: 'cover' },
@@ -232,6 +239,20 @@ const works = [
     posterPosition: 'center',
     posterSize: 'cover',
     frames: [
+      {
+        label: '视频片段 01',
+        image: '/assets/visual/fang-died-new-01.webp',
+        video: '/assets/visual/fang-died-clip-01.mp4',
+        position: 'center',
+        size: 'cover',
+      },
+      {
+        label: '视频片段 02',
+        image: '/assets/visual/fang-died-new-02.webp',
+        video: '/assets/visual/fang-died-clip-02.mp4',
+        position: 'center',
+        size: 'cover',
+      },
       { label: '剧情镜帧 01', image: '/assets/visual/fang-died-new-01.webp', position: 'center', size: 'cover' },
       { label: '剧情镜帧 02', image: '/assets/visual/fang-died-new-02.webp', position: 'center', size: 'cover' },
       { label: '剧情镜帧 03', image: '/assets/visual/fang-died-new-03.webp', position: 'center', size: 'cover' },
