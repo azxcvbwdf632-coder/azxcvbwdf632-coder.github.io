@@ -34,12 +34,6 @@ export const aestheticAlbums = [
     cover: '/assets/inputs/album-pink-floyd-dark-side.webp',
     index: '01',
   },
-  {
-    title: 'All the Best!',
-    artist: 'Paul McCartney',
-    cover: '/assets/inputs/album-paul-mccartney-best.webp',
-    index: '02',
-  },
 ]
 
 export const aestheticFilms = [

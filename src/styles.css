@@ -62,6 +62,7 @@ a:focus-visible {
   width: 100%;
   height: 100svh;
   overflow: hidden;
+  overscroll-behavior: none;
   background: #000;
 }
 
@@ -1842,6 +1843,61 @@ a:focus-visible {
   font-size: 26px;
 }
 
+@keyframes hero-light-up {
+  0% {
+    opacity: .18;
+    filter: brightness(.2) contrast(1.22) saturate(.56);
+    transform: scale(1.035);
+  }
+  58% {
+    opacity: 1;
+    filter: brightness(.72) contrast(1.08) saturate(.86);
+  }
+  100% {
+    opacity: 1;
+    filter: none;
+    transform: scale(1);
+  }
+}
+
+@keyframes hero-vignette-lift {
+  from { opacity: 1; background-color: #000; }
+  to { opacity: 1; background-color: transparent; }
+}
+
+@keyframes hero-pixels-arrive {
+  from { opacity: 0; }
+  to { opacity: .86; }
+}
+
+@keyframes hero-name-arrive {
+  from {
+    opacity: 0;
+    filter: blur(4px);
+    letter-spacing: .18em;
+    transform: translate3d(-36px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    filter: none;
+    letter-spacing: .08em;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes hero-role-arrive {
+  from {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translate3d(34px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    filter: none;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 @media (max-width: 1050px) {
   .about-grid {
     grid-template-columns: minmax(250px, .78fr) minmax(330px, 1fr) minmax(270px, .85fr);
@@ -1864,6 +1920,13 @@ a:focus-visible {
 }
 
 @media (max-width: 760px) {
+  .app-shell.touch-dragging .scene.active {
+    opacity: var(--scene-drag-opacity, 1);
+    transform: translate3d(0, var(--scene-drag-y, 0), 0);
+    transition: none;
+    will-change: transform, opacity;
+  }
+
   .site-header {
     height: 64px;
     padding: 0 20px;
@@ -1927,6 +1990,10 @@ a:focus-visible {
     transform: translateY(0);
   }
 
+  .mobile-nav:not(.open) button {
+    pointer-events: none;
+  }
+
   .mobile-nav button {
     display: flex;
     min-height: 66px;
@@ -1945,6 +2012,26 @@ a:focus-visible {
 
   .hero-image {
     object-position: center;
+  }
+
+  .hero-scene.intro .hero-image {
+    animation: hero-light-up 1050ms cubic-bezier(.2, .72, .2, 1) both;
+  }
+
+  .hero-scene.intro .hero-vignette {
+    animation: hero-vignette-lift 980ms cubic-bezier(.2, .72, .2, 1) 120ms both;
+  }
+
+  .hero-scene.intro .pixel-edge {
+    animation: hero-pixels-arrive 1050ms steps(8, end) 260ms both;
+  }
+
+  .hero-scene.intro .hero-copy h1 {
+    animation: hero-name-arrive 760ms cubic-bezier(.16, .78, .22, 1) 560ms both;
+  }
+
+  .hero-scene.intro .hero-copy p {
+    animation: hero-role-arrive 820ms cubic-bezier(.16, .78, .22, 1) 720ms both;
   }
 
   .hero-copy {

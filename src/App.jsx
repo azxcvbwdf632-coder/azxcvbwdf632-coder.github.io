@@ -159,7 +159,7 @@ const works = [
     frames: [
       { label: '蓝紫夜色', image: '/assets/visual/empty-flower-01.jpg', position: 'center', size: 'cover' },
       { label: '镜面人物', image: '/assets/visual/empty-flower-02.jpg', position: 'center', size: 'cover' },
-      { label: '卧室镜帧', image: '/assets/visual/empty-flower-03.jpg', position: 'center', size: 'cover' },
+      { label: '卧室静帧', image: '/assets/visual/empty-flower-03.jpg', position: 'center', size: 'cover' },
       { label: '暗调人物', image: '/assets/visual/empty-flower-04.jpg', position: 'center', size: 'cover' },
     ],
   },
@@ -178,12 +178,12 @@ const works = [
         position: 'center',
         size: 'cover',
       },
-      { label: '剧情镜帧 01', image: '/assets/visual/run-away-01.webp', position: 'center', size: 'cover' },
-      { label: '剧情镜帧 02', image: '/assets/visual/run-away-02.webp', position: 'center', size: 'cover' },
-      { label: '剧情镜帧 03', image: '/assets/visual/run-away-03.webp', position: 'center', size: 'cover' },
-      { label: '剧情镜帧 04', image: '/assets/visual/run-away-04.webp', position: 'center', size: 'cover' },
-      { label: '剧情镜帧 05', image: '/assets/visual/run-away-05.webp', position: 'center', size: 'cover' },
-      { label: '剧情镜帧 06', image: '/assets/visual/run-away-06.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 01', image: '/assets/visual/run-away-01.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 02', image: '/assets/visual/run-away-02.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 03', image: '/assets/visual/run-away-03.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 04', image: '/assets/visual/run-away-04.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 05', image: '/assets/visual/run-away-05.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 06', image: '/assets/visual/run-away-06.webp', position: 'center', size: 'cover' },
     ],
   },
   {
@@ -194,12 +194,12 @@ const works = [
     posterPosition: 'center',
     posterSize: 'cover',
     frames: [
-      { label: '剧情镜帧 01', image: '/assets/visual/pintan-01.webp', position: 'center', size: 'cover' },
-      { label: '剧情镜帧 02', image: '/assets/visual/pintan-02.webp', position: 'center', size: 'cover' },
-      { label: '剧情镜帧 03', image: '/assets/visual/pintan-03.webp', position: 'center', size: 'cover' },
-      { label: '剧情镜帧 04', image: '/assets/visual/pintan-04.webp', position: 'center', size: 'cover' },
-      { label: '剧情镜帧 05', image: '/assets/visual/pintan-05.webp', position: 'center', size: 'cover' },
-      { label: '剧情镜帧 06', image: '/assets/visual/pintan-06.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 01', image: '/assets/visual/pintan-01.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 02', image: '/assets/visual/pintan-02.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 03', image: '/assets/visual/pintan-03.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 04', image: '/assets/visual/pintan-04.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 05', image: '/assets/visual/pintan-05.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 06', image: '/assets/visual/pintan-06.webp', position: 'center', size: 'cover' },
     ],
   },
   {
@@ -210,12 +210,12 @@ const works = [
     posterPosition: 'center',
     posterSize: 'cover',
     frames: [
-      { label: '剧情镜帧 01', image: '/assets/visual/shaded-canvas-01.webp', position: 'center', size: 'cover' },
-      { label: '剧情镜帧 02', image: '/assets/visual/shaded-canvas-02.webp', position: 'center', size: 'cover' },
-      { label: '剧情镜帧 03', image: '/assets/visual/shaded-canvas-03.webp', position: 'center', size: 'cover' },
-      { label: '剧情镜帧 04', image: '/assets/visual/shaded-canvas-04.webp', position: 'center', size: 'cover' },
-      { label: '剧情镜帧 05', image: '/assets/visual/shaded-canvas-05.webp', position: 'center', size: 'cover' },
-      { label: '剧情镜帧 06', image: '/assets/visual/shaded-canvas-06.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 01', image: '/assets/visual/shaded-canvas-01.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 02', image: '/assets/visual/shaded-canvas-02.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 03', image: '/assets/visual/shaded-canvas-03.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 04', image: '/assets/visual/shaded-canvas-04.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 05', image: '/assets/visual/shaded-canvas-05.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 06', image: '/assets/visual/shaded-canvas-06.webp', position: 'center', size: 'cover' },
     ],
   },
   {
@@ -253,12 +253,12 @@ const works = [
         position: 'center',
         size: 'cover',
       },
-      { label: '剧情镜帧 01', image: '/assets/visual/fang-died-new-01.webp', position: 'center', size: 'cover' },
-      { label: '剧情镜帧 02', image: '/assets/visual/fang-died-new-02.webp', position: 'center', size: 'cover' },
-      { label: '剧情镜帧 03', image: '/assets/visual/fang-died-new-03.webp', position: 'center', size: 'cover' },
-      { label: '剧情镜帧 04', image: '/assets/visual/fang-died-new-04.webp', position: 'center', size: 'cover' },
-      { label: '剧情镜帧 05', image: '/assets/visual/fang-died-new-05.webp', position: 'center', size: 'cover' },
-      { label: '剧情镜帧 06', image: '/assets/visual/fang-died-new-06.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 01', image: '/assets/visual/fang-died-new-01.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 02', image: '/assets/visual/fang-died-new-02.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 03', image: '/assets/visual/fang-died-new-03.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 04', image: '/assets/visual/fang-died-new-04.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 05', image: '/assets/visual/fang-died-new-05.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 06', image: '/assets/visual/fang-died-new-06.webp', position: 'center', size: 'cover' },
     ],
   },
   {
@@ -269,11 +269,11 @@ const works = [
     posterPosition: 'center',
     posterSize: 'cover',
     frames: [
-      { label: '人物镜帧 01', image: '/assets/visual/counselor-day-01.webp', position: 'center', size: 'cover' },
-      { label: '人物镜帧 02', image: '/assets/visual/counselor-day-02.webp', position: 'center', size: 'cover' },
-      { label: '人物镜帧 03', image: '/assets/visual/counselor-day-03.webp', position: 'center', size: 'cover' },
-      { label: '人物镜帧 04', image: '/assets/visual/counselor-day-04.webp', position: 'center', size: 'cover' },
-      { label: '人物镜帧 05', image: '/assets/visual/counselor-day-05.webp', position: 'center', size: 'cover' },
+      { label: '人物静帧 01', image: '/assets/visual/counselor-day-01.webp', position: 'center', size: 'cover' },
+      { label: '人物静帧 02', image: '/assets/visual/counselor-day-02.webp', position: 'center', size: 'cover' },
+      { label: '人物静帧 03', image: '/assets/visual/counselor-day-03.webp', position: 'center', size: 'cover' },
+      { label: '人物静帧 04', image: '/assets/visual/counselor-day-04.webp', position: 'center', size: 'cover' },
+      { label: '人物静帧 05', image: '/assets/visual/counselor-day-05.webp', position: 'center', size: 'cover' },
     ],
   },
   {
@@ -284,12 +284,12 @@ const works = [
     posterPosition: 'center',
     posterSize: 'cover',
     frames: [
-      { label: '纪录片镜帧 01', image: '/assets/visual/joyful-sangyu-01.webp', position: 'center', size: 'cover' },
-      { label: '纪录片镜帧 02', image: '/assets/visual/joyful-sangyu-02.webp', position: 'center', size: 'cover' },
-      { label: '纪录片镜帧 03', image: '/assets/visual/joyful-sangyu-03.webp', position: 'center', size: 'cover' },
-      { label: '纪录片镜帧 04', image: '/assets/visual/joyful-sangyu-04.webp', position: 'center', size: 'cover' },
-      { label: '纪录片镜帧 05', image: '/assets/visual/joyful-sangyu-05.webp', position: 'center', size: 'cover' },
-      { label: '纪录片镜帧 06', image: '/assets/visual/joyful-sangyu-06.webp', position: 'center', size: 'cover' },
+      { label: '纪录片静帧 01', image: '/assets/visual/joyful-sangyu-01.webp', position: 'center', size: 'cover' },
+      { label: '纪录片静帧 02', image: '/assets/visual/joyful-sangyu-02.webp', position: 'center', size: 'cover' },
+      { label: '纪录片静帧 03', image: '/assets/visual/joyful-sangyu-03.webp', position: 'center', size: 'cover' },
+      { label: '纪录片静帧 04', image: '/assets/visual/joyful-sangyu-04.webp', position: 'center', size: 'cover' },
+      { label: '纪录片静帧 05', image: '/assets/visual/joyful-sangyu-05.webp', position: 'center', size: 'cover' },
+      { label: '纪录片静帧 06', image: '/assets/visual/joyful-sangyu-06.webp', position: 'center', size: 'cover' },
     ],
   },
   {
@@ -389,7 +389,7 @@ const WaterTransition = forwardRef(function WaterTransition(_, ref) {
   const frameRef = useRef(0)
 
   useImperativeHandle(ref, () => ({
-    play(onCover, onDone) {
+    play(direction, onCover, onDone) {
       const canvas = canvasRef.current
       const ctx = canvas.getContext('2d')
       const scale = Math.min(window.devicePixelRatio || 1, 1.5)
@@ -404,24 +404,33 @@ const WaterTransition = forwardRef(function WaterTransition(_, ref) {
       const cell = width < 640 ? 14 : 22
       const palette = ['#000000', '#031b2e', '#07517a', '#0f6f9d', '#158fd2', '#46d7e8']
       const started = performance.now()
-      const duration = 940
+      const duration = width < 640 ? 780 : 940
+      const travelDirection = direction >= 0 ? 1 : -1
       let swapped = false
 
       const draw = (now) => {
         const progress = Math.min((now - started) / duration, 1)
-        const cover = progress < 0.5 ? progress / 0.5 : 1
-        const reveal = progress > 0.5 ? (progress - 0.5) / 0.5 : 0
+        const phase = progress < 0.5 ? progress * 2 : (progress - 0.5) * 2
+        const easedPhase = phase < 0.5
+          ? 4 * phase * phase * phase
+          : 1 - ((-2 * phase + 2) ** 3) / 2
+        const cover = progress < 0.5 ? easedPhase : 1
+        const reveal = progress > 0.5 ? easedPhase : 0
         ctx.clearRect(0, 0, width, height)
 
         for (let x = 0; x < width + cell; x += cell) {
-          const wave = Math.sin(x * 0.018 + progress * 8) * cell * 1.8
-          const coverLine = height * (1 - cover) + wave
-          const revealLine = height * reveal + wave
+          const wave = Math.sin(x * 0.018 + progress * 8) * cell * 1.65
+          const coverLine = travelDirection > 0
+            ? height * (1 - cover) + wave
+            : height * cover + wave
+          const revealLine = travelDirection > 0
+            ? height * reveal + wave
+            : height * (1 - reveal) + wave
           for (let y = 0; y < height + cell; y += cell) {
             const noise = (((x / cell) * 17 + (y / cell) * 31) % 7) * 2
-            const visible = progress <= 0.5
-              ? y >= coverLine + noise
-              : y >= revealLine + noise
+            const visible = travelDirection > 0
+              ? (progress <= 0.5 ? y >= coverLine + noise : y >= revealLine + noise)
+              : (progress <= 0.5 ? y <= coverLine + noise : y <= revealLine + noise)
             if (!visible) continue
             const depth = Math.max(0, Math.min(1, y / height))
             const colorIndex = Math.min(
@@ -519,9 +528,9 @@ function ScrollCue({ label = '向下潜入', onClick }) {
   )
 }
 
-function HeroScene({ active, next }) {
+function HeroScene({ active, next, intro }) {
   return (
-    <section id="home" className={`scene hero-scene ${active ? 'active' : ''}`} aria-hidden={!active}>
+    <section id="home" className={`scene hero-scene ${active ? 'active' : ''} ${intro ? 'intro' : ''}`} aria-hidden={!active}>
       <picture>
         <source media="(max-width: 760px)" srcSet="/assets/sea-hero-pixel-mobile.png" />
         <img className="scene-image hero-image" src="/assets/sea-hero-pixel.png" alt="像素海面中漂浮的人物" />
@@ -753,7 +762,7 @@ function FilmsScene({ active, next, openWork }) {
       <div className="film-selected" aria-live="polite">
         <p>
           <span className="desktop-only">拖动海报环浏览，点击进入每一部作品</span>
-          <span className="mobile-only">左右滑动选择作品 · 点击查看镜帧</span>
+          <span className="mobile-only">左右滑动选择作品 · 点击查看静帧</span>
         </p>
       </div>
       <ScrollCue label="继续下潜" onClick={next} />
@@ -957,14 +966,14 @@ function WorkDialog({ workIndex, onClose }) {
 
   return (
     <div className="dialog-backdrop work-backdrop" role="presentation" onMouseDown={onClose}>
-      <section className={`work-dialog ${work.dialogClass || ''}`} role="dialog" aria-modal="true" aria-label={`${work.title}作品镜帧`} onMouseDown={(event) => event.stopPropagation()}>
+      <section className={`work-dialog ${work.dialogClass || ''}`} role="dialog" aria-modal="true" aria-label={`${work.title}作品静帧`} onMouseDown={(event) => event.stopPropagation()}>
         <button className="dialog-close" onClick={onClose} aria-label="返回作品海报环">×</button>
         <header className="work-heading">
           <small>{work.type}</small>
           <h2>{work.title}</h2>
           <p>{work.role}</p>
         </header>
-        <div className="inner-orbit" data-frame-count={work.frames.length} aria-label={`${work.title}镜帧环`}>
+        <div className="inner-orbit" data-frame-count={work.frames.length} aria-label={`${work.title}静帧环`}>
           {selectedFrame.video ? (
             <WorkVideo frame={selectedFrame} />
           ) : (
@@ -1003,16 +1012,28 @@ function WorkDialog({ workIndex, onClose }) {
 
 export default function App() {
   const reducedMotion = useReducedMotion()
+  const appShellRef = useRef(null)
   const transitionRef = useRef(null)
   const initialRoute = getInitialRoute()
   const [active, setActive] = useState(initialRoute.index)
+  const [introActive, setIntroActive] = useState(initialRoute.index === 0)
   const [transitioning, setTransitioning] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [evidenceOpen, setEvidenceOpen] = useState(false)
   const [workOpen, setWorkOpen] = useState(null)
   const [wechatOpen, setWechatOpen] = useState(false)
   const [aestheticOpen, setAestheticOpen] = useState(initialRoute.aesthetic)
-  const touchStart = useRef({ x: 0, y: 0, inHorizontalScroller: false, interactiveTarget: false, interactiveRegion: false, active: false })
+  const touchStart = useRef({
+    x: 0,
+    y: 0,
+    lastY: 0,
+    lastAt: 0,
+    velocityY: 0,
+    inHorizontalScroller: false,
+    interactiveTarget: false,
+    dragging: false,
+    active: false,
+  })
 
   const navigate = useCallback((target) => {
     const next = Math.max(0, Math.min(sceneIds.length - 1, target))
@@ -1029,8 +1050,14 @@ export default function App() {
     }
 
     setTransitioning(true)
-    transitionRef.current.play(commit, () => setTransitioning(false))
+    transitionRef.current.play(next > active ? 1 : -1, commit, () => setTransitioning(false))
   }, [active, reducedMotion, transitioning])
+
+  useEffect(() => {
+    if (!introActive) return undefined
+    const timer = window.setTimeout(() => setIntroActive(false), 1800)
+    return () => window.clearTimeout(timer)
+  }, [introActive])
 
   const openWechat = useCallback(() => {
     if (window.matchMedia('(max-width: 760px)').matches) {
@@ -1066,7 +1093,7 @@ export default function App() {
     const onWheel = (event) => {
       if (evidenceOpen || workOpen !== null || aestheticOpen || mobileOpen || transitioning || Math.abs(event.deltaY) < 24) return
       if (event.target instanceof Element
-        && event.target.closest('button, a, input, textarea, select, [role="button"], .about-copy, .site-header, .dialog-backdrop')) return
+        && event.target.closest('button, a, input, textarea, select, [role="button"], .site-header, .dialog-backdrop')) return
       event.preventDefault()
       navigate(active + (event.deltaY > 0 ? 1 : -1))
     }
@@ -1085,54 +1112,102 @@ export default function App() {
     }
     const onTouchStart = (event) => {
       const touch = event.changedTouches[0]
+      const now = performance.now()
       touchStart.current = {
         x: touch.clientX,
         y: touch.clientY,
+        lastY: touch.clientY,
+        lastAt: now,
+        velocityY: 0,
         inHorizontalScroller: event.target instanceof Element
           && Boolean(event.target.closest('.film-orbit, .metrics, .album-rail, .film-input-rail, .experience-stack, .mobile-operation-metrics, .artist-selector, .artist-albums')),
         interactiveTarget: event.target instanceof Element
           && Boolean(event.target.closest('button, a, input, textarea, select, [role="button"]')),
-        interactiveRegion: event.target instanceof Element
-          && Boolean(event.target.closest('.about-copy, .site-header, .operations-cover, .contact-actions, .dialog-backdrop')),
+        dragging: false,
         active: true,
+      }
+    }
+    const clearTouchPreview = () => {
+      const shell = appShellRef.current
+      if (!shell) return
+      shell.classList.remove('touch-dragging')
+      shell.style.removeProperty('--scene-drag-y')
+      shell.style.removeProperty('--scene-drag-opacity')
+    }
+    const onTouchMove = (event) => {
+      if (!touchStart.current.active || transitioning) return
+      if (touchStart.current.inHorizontalScroller || touchStart.current.interactiveTarget) return
+      if (event.target instanceof Element && event.target.closest('.dialog-backdrop, .site-header')) return
+
+      const touch = event.changedTouches[0]
+      const deltaX = touchStart.current.x - touch.clientX
+      const deltaY = touchStart.current.y - touch.clientY
+      if (Math.abs(deltaY) < 9 || Math.abs(deltaY) <= Math.abs(deltaX) * 1.08) return
+
+      event.preventDefault()
+      const now = performance.now()
+      const elapsed = Math.max(1, now - touchStart.current.lastAt)
+      touchStart.current.velocityY = (touchStart.current.lastY - touch.clientY) / elapsed
+      touchStart.current.lastY = touch.clientY
+      touchStart.current.lastAt = now
+      touchStart.current.dragging = true
+
+      const progress = Math.min(Math.abs(deltaY) / 150, 1)
+      const dragY = Math.max(-54, Math.min(54, -deltaY * 0.28))
+      const shell = appShellRef.current
+      if (shell) {
+        shell.classList.add('touch-dragging')
+        shell.style.setProperty('--scene-drag-y', `${dragY}px`)
+        shell.style.setProperty('--scene-drag-opacity', String(1 - progress * 0.12))
       }
     }
     const onTouchEnd = (event) => {
       if (!touchStart.current.active) return
       touchStart.current.active = false
+      clearTouchPreview()
       if (evidenceOpen || workOpen !== null || aestheticOpen || mobileOpen || transitioning) return
       if (touchStart.current.interactiveTarget || event.target instanceof Element && event.target.closest('button, a, input, textarea, select, [role="button"]')) return
-      if (touchStart.current.interactiveRegion || event.target instanceof Element && event.target.closest('.about-copy, .site-header, .operations-cover, .contact-actions, .dialog-backdrop')) return
+      if (event.target instanceof Element && event.target.closest('.dialog-backdrop, .site-header')) return
       if (touchStart.current.inHorizontalScroller) return
       const touch = event.changedTouches[0]
       const deltaX = touchStart.current.x - touch.clientX
       const deltaY = touchStart.current.y - touch.clientY
-      const isIntentionalVerticalSwipe = Math.abs(deltaY) > 54
-        && Math.abs(deltaY) > Math.abs(deltaX) * 1.2
+      const distanceIntent = Math.abs(deltaY) > 38
+      const velocityIntent = Math.abs(touchStart.current.velocityY) > 0.32 && Math.abs(deltaY) > 20
+      const isIntentionalVerticalSwipe = (distanceIntent || velocityIntent)
+        && Math.abs(deltaY) > Math.abs(deltaX) * 1.08
       if (isIntentionalVerticalSwipe) navigate(active + (deltaY > 0 ? 1 : -1))
+    }
+    const onTouchCancel = () => {
+      touchStart.current.active = false
+      clearTouchPreview()
     }
 
     window.addEventListener('wheel', onWheel, { passive: false })
     window.addEventListener('keydown', onKey)
     window.addEventListener('touchstart', onTouchStart, { passive: true })
+    window.addEventListener('touchmove', onTouchMove, { passive: false })
     window.addEventListener('touchend', onTouchEnd, { passive: true })
+    window.addEventListener('touchcancel', onTouchCancel, { passive: true })
     return () => {
       window.removeEventListener('wheel', onWheel)
       window.removeEventListener('keydown', onKey)
       window.removeEventListener('touchstart', onTouchStart)
+      window.removeEventListener('touchmove', onTouchMove)
       window.removeEventListener('touchend', onTouchEnd)
+      window.removeEventListener('touchcancel', onTouchCancel)
     }
   }, [active, aestheticOpen, evidenceOpen, mobileOpen, navigate, transitioning, workOpen])
 
   return (
-    <main className="app-shell">
+    <main className="app-shell" ref={appShellRef}>
       <Header
         active={active}
         navigate={navigate}
         mobileOpen={mobileOpen}
         setMobileOpen={setMobileOpen}
       />
-      <HeroScene active={active === 0} next={() => navigate(1)} />
+      <HeroScene active={active === 0} next={() => navigate(1)} intro={introActive} />
       <AboutScene active={active === 1} next={() => navigate(2)} openAesthetic={openAesthetic} />
       <OperationsScene active={active === 2} next={() => navigate(3)} openEvidence={() => setEvidenceOpen(true)} />
       <FilmsScene active={active === 3} next={() => navigate(4)} openWork={setWorkOpen} />
