@@ -540,8 +540,8 @@ function HeroScene({ active, next, intro }) {
       <div className="hero-vignette" aria-hidden="true" />
       <PixelEdge />
       <div className="hero-copy">
-        <h1>邱孝淼</h1>
-        <p>有影像审美的内容运营者</p>
+        <h1><span className="typewriter-line hero-name-line">邱孝淼</span></h1>
+        <p><span className="typewriter-line hero-role-line">有影像审美的内容运营者</span></p>
       </div>
       <ScrollCue onClick={next} />
     </section>
@@ -1059,7 +1059,7 @@ export default function App() {
 
   useEffect(() => {
     if (!introActive) return undefined
-    const timer = window.setTimeout(() => setIntroActive(false), 1800)
+    const timer = window.setTimeout(() => setIntroActive(false), 3000)
     return () => window.clearTimeout(timer)
   }, [introActive])
 
