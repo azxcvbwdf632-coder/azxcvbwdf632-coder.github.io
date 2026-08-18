@@ -9,6 +9,17 @@ import {
 import AestheticDialog from './components/AestheticDialog'
 
 const sceneIds = ['home', 'about', 'operations', 'films', 'contact']
+const imageLogicModes = new Set(['33ac17e', '0bdf53c', 'd105ad8'])
+const requestedImageLogic = new URLSearchParams(window.location.search).get('imageLogic')
+const imageLogicMode = imageLogicModes.has(requestedImageLogic) ? requestedImageLogic : null
+const usesLegacyOperationPreload = imageLogicMode === '33ac17e'
+const usesDelayedFilmLoading = imageLogicMode === 'd105ad8'
+
+function imageWithTestCache(src) {
+  if (!src || !imageLogicMode) return src
+  const separator = src.includes('?') ? '&' : '?'
+  return `${src}${separator}imageLogic=${imageLogicMode}`
+}
 const navItems = [
   { id: 'about', label: '关于我' },
   { id: 'operations', label: '账号运营' },
@@ -781,7 +792,9 @@ function FilmsScene({ active, next, openWork }) {
                 opacity: hiddenBehindOrbit ? 0 : 1,
                 pointerEvents: hiddenBehindOrbit ? 'none' : 'auto',
                 transform: `translateX(-50%) scale(${depthScale})`,
-                backgroundImage: hiddenBehindOrbit ? 'none' : `url(${item.poster})`,
+                backgroundImage: hiddenBehindOrbit || (usesDelayedFilmLoading && !active)
+                  ? 'none'
+                  : `url(${imageWithTestCache(item.poster)})`,
                 backgroundPosition: item.posterPosition,
                 backgroundSize: item.posterSize || 'cover',
               }}
@@ -885,6 +898,17 @@ function EvidenceDialog({ open, onClose }) {
   }, [open])
 
   useEffect(() => {
+    if (!open || !usesLegacyOperationPreload) return undefined
+    const preloaders = operationCases.flatMap((item) => item.images).map((item) => {
+      const image = new Image()
+      image.decoding = 'async'
+      image.src = imageWithTestCache(item.src)
+      return image
+    })
+    return () => preloaders.forEach((image) => { image.src = '' })
+  }, [open])
+
+  useEffect(() => {
     setImageLoaded(false)
   }, [activeImage.src])
 
@@ -930,12 +954,12 @@ function EvidenceDialog({ open, onClose }) {
             >
               {!imageLoaded ? <span className="case-image-loader">图片载入中…</span> : null}
               <img
-                key={activeImage.src}
-                src={activeImage.src}
+                key={`${activeImage.src}-${imageLogicMode || 'default'}`}
+                src={imageWithTestCache(activeImage.src)}
                 alt={activeImage.title}
-                loading="eager"
+                loading={usesLegacyOperationPreload ? undefined : 'eager'}
                 decoding="async"
-                fetchPriority="high"
+                fetchPriority={usesLegacyOperationPreload ? undefined : 'high'}
                 onLoad={() => setImageLoaded(true)}
                 style={{
                   objectPosition: activeImage.objectPosition || 'center',
@@ -953,11 +977,11 @@ function EvidenceDialog({ open, onClose }) {
                   aria-label={`查看${item.title}`}
                 >
                   <img
-                    src={imageLoaded ? item.src : undefined}
+                    src={usesLegacyOperationPreload || imageLoaded ? imageWithTestCache(item.src) : undefined}
                     alt=""
                     loading="lazy"
                     decoding="async"
-                    fetchPriority="low"
+                    fetchPriority={usesLegacyOperationPreload ? undefined : 'low'}
                   />
                 </button>
               ))}
@@ -1011,7 +1035,7 @@ function WorkVideo({ frame }) {
         ref={videoRef}
         className="selected-video"
         src={frame.video}
-        poster={frame.poster}
+        poster={imageWithTestCache(frame.poster)}
         controls
         playsInline
         preload="none"
@@ -1032,9 +1056,20 @@ function WorkVideo({ frame }) {
 
 function WorkDialog({ workIndex, onClose }) {
   const [frameIndex, setFrameIndex] = useState(0)
+  const [showFrameThumbnails, setShowFrameThumbnails] = useState(!usesDelayedFilmLoading)
   const work = workIndex === null ? null : works[workIndex]
 
   useEffect(() => setFrameIndex(0), [workIndex])
+  useEffect(() => {
+    if (workIndex === null) return undefined
+    if (!usesDelayedFilmLoading) {
+      setShowFrameThumbnails(true)
+      return undefined
+    }
+    setShowFrameThumbnails(false)
+    const thumbnailTimer = window.setTimeout(() => setShowFrameThumbnails(true), 300)
+    return () => window.clearTimeout(thumbnailTimer)
+  }, [workIndex])
   useEffect(() => {
     if (!work) return undefined
     const handleKey = (event) => {
@@ -1064,7 +1099,7 @@ function WorkDialog({ workIndex, onClose }) {
             <div
               className="selected-frame"
               style={{
-                backgroundImage: `url(${selectedFrame.image})`,
+                backgroundImage: `url(${imageWithTestCache(selectedFrame.image)})`,
                 backgroundPosition: selectedFrame.position,
                 backgroundSize: selectedFrame.size || '200% 200%',
               }}
@@ -1080,7 +1115,10 @@ function WorkDialog({ workIndex, onClose }) {
                 '--frame-count': work.frames.length,
                 left: `${50 + 47 * Math.cos((index / work.frames.length) * Math.PI * 2 - Math.PI / 2)}%`,
                 top: `${50 + 42 * Math.sin((index / work.frames.length) * Math.PI * 2 - Math.PI / 2)}%`,
-                backgroundImage: `url(${frame.video ? frame.poster : frame.image})`,
+                backgroundImage:
+                  showFrameThumbnails && (frame.video ? frame.poster : frame.image)
+                    ? `url(${imageWithTestCache(frame.video ? frame.poster : frame.image)})`
+                    : 'none',
                 backgroundPosition: frame.position || 'center',
                 backgroundSize: frame.size || 'cover',
               }}
@@ -1129,7 +1167,7 @@ export default function App() {
 
     const commit = () => {
       setActive(next)
-      window.history.replaceState(null, '', `#${sceneIds[next]}`)
+      window.history.replaceState(null, '', `${window.location.search}#${sceneIds[next]}`)
     }
 
     if (reducedMotion) {
@@ -1158,12 +1196,12 @@ export default function App() {
 
   const openAesthetic = useCallback(() => {
     setAestheticOpen(true)
-    window.history.replaceState(null, '', '#about-inputs')
+    window.history.replaceState(null, '', `${window.location.search}#about-inputs`)
   }, [])
 
   const closeAesthetic = useCallback(() => {
     setAestheticOpen(false)
-    if (window.location.hash === '#about-inputs') window.history.replaceState(null, '', '#about')
+    if (window.location.hash === '#about-inputs') window.history.replaceState(null, '', `${window.location.search}#about`)
   }, [])
 
   useEffect(() => {
