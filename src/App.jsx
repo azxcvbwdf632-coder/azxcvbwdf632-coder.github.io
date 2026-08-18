@@ -889,17 +889,6 @@ function EvidenceDialog({ open, onClose }) {
   }, [open])
 
   useEffect(() => {
-    if (!open) return undefined
-    const preloaders = operationCases.flatMap((item) => item.images).map((item) => {
-      const image = new Image()
-      image.decoding = 'async'
-      image.src = item.src
-      return image
-    })
-    return () => preloaders.forEach((image) => { image.src = '' })
-  }, [open])
-
-  useEffect(() => {
     setImageLoaded(false)
   }, [activeImage.src])
 
@@ -939,13 +928,18 @@ function EvidenceDialog({ open, onClose }) {
         </div>
         <div className="case-layout">
           <div className="case-visual">
-            <div className={`case-image-stage ${imageLoaded ? 'image-loaded' : 'image-loading'}`}>
+            <div
+              className={`case-image-stage ${imageLoaded ? 'image-loaded' : 'image-loading'}`}
+              aria-busy={!imageLoaded}
+            >
               {!imageLoaded ? <span className="case-image-loader">图片载入中…</span> : null}
               <img
                 key={activeImage.src}
                 src={activeImage.src}
                 alt={activeImage.title}
+                loading="eager"
                 decoding="async"
+                fetchPriority="high"
                 onLoad={() => setImageLoaded(true)}
                 style={{
                   objectPosition: activeImage.objectPosition || 'center',
@@ -962,7 +956,13 @@ function EvidenceDialog({ open, onClose }) {
                   onClick={() => setImageIndex(index)}
                   aria-label={`查看${item.title}`}
                 >
-                  <img src={item.src} alt="" loading="lazy" decoding="async" />
+                  <img
+                    src={imageLoaded ? item.src : undefined}
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    fetchPriority="low"
+                  />
                 </button>
               ))}
             </div>
