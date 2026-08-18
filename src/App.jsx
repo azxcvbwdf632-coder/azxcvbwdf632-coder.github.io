@@ -161,6 +161,7 @@ const works = [
       { label: '镜面人物', image: '/assets/visual/empty-flower-02.jpg', position: 'center', size: 'cover' },
       { label: '卧室静帧', image: '/assets/visual/empty-flower-03.jpg', position: 'center', size: 'cover' },
       { label: '暗调人物', image: '/assets/visual/empty-flower-04.jpg', position: 'center', size: 'cover' },
+      { label: '剧情静帧 05', image: '/assets/visual/empty-flower-05.png', position: 'center', size: 'cover' },
     ],
   },
   {
@@ -173,10 +174,7 @@ const works = [
     frames: [
       {
         label: '短片片段',
-        image: '/assets/visual/run-away-01.webp',
         video: '/assets/visual/run-away-clip.mp4',
-        position: 'center',
-        size: 'cover',
       },
       { label: '剧情静帧 01', image: '/assets/visual/run-away-01.webp', position: 'center', size: 'cover' },
       { label: '剧情静帧 02', image: '/assets/visual/run-away-02.webp', position: 'center', size: 'cover' },
@@ -189,7 +187,7 @@ const works = [
   {
     title: '《凭谈》',
     type: '剧情片',
-    role: '灯光',
+    role: '跟焦',
     poster: '/assets/visual/pintan-poster.webp',
     posterPosition: 'center',
     posterSize: 'cover',
@@ -221,7 +219,7 @@ const works = [
   {
     title: '《等等》',
     type: '微电影',
-    role: '摄助、跟焦',
+    role: '摄影助理',
     poster: '/assets/visual/void-between-poster.jpg',
     posterPosition: 'center',
     frames: [
@@ -229,36 +227,46 @@ const works = [
       { label: '门前人物', image: '/assets/visual/void-between-02.jpg', position: 'center', size: 'cover' },
       { label: '街巷同行', image: '/assets/visual/void-between-03.jpg', position: 'center', size: 'cover' },
       { label: '远去背影', image: '/assets/visual/void-between-04.jpg', position: 'center', size: 'cover' },
+      { label: '另一版海报', image: '/assets/visual/void-between-alt-poster.jpg', position: 'center', size: 'contain' },
     ],
   },
   {
     title: '《芳死去的那天》',
     type: '剧情片',
-    role: '副摄影 · 灯光',
+    role: '跟焦',
     poster: '/assets/visual/fang-died-new-poster.webp',
     posterPosition: 'center',
     posterSize: 'cover',
     frames: [
       {
         label: '视频片段 01',
-        image: '/assets/visual/fang-died-new-01.webp',
         video: '/assets/visual/fang-died-clip-01.mp4',
-        position: 'center',
-        size: 'cover',
       },
       {
         label: '视频片段 02',
-        image: '/assets/visual/fang-died-new-02.webp',
         video: '/assets/visual/fang-died-clip-02.mp4',
-        position: 'center',
-        size: 'cover',
       },
       { label: '剧情静帧 01', image: '/assets/visual/fang-died-new-01.webp', position: 'center', size: 'cover' },
-      { label: '剧情静帧 02', image: '/assets/visual/fang-died-new-02.webp', position: 'center', size: 'cover' },
-      { label: '剧情静帧 03', image: '/assets/visual/fang-died-new-03.webp', position: 'center', size: 'cover' },
-      { label: '剧情静帧 04', image: '/assets/visual/fang-died-new-04.webp', position: 'center', size: 'cover' },
-      { label: '剧情静帧 05', image: '/assets/visual/fang-died-new-05.webp', position: 'center', size: 'cover' },
-      { label: '剧情静帧 06', image: '/assets/visual/fang-died-new-06.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 02', image: '/assets/visual/fang-died-new-152438.png', position: 'center', size: 'cover' },
+      { label: '剧情静帧 03', image: '/assets/visual/fang-died-new-02.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 04', image: '/assets/visual/fang-died-new-03.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 05', image: '/assets/visual/fang-died-new-04.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 06', image: '/assets/visual/fang-died-new-153730.png', position: 'center', size: 'cover' },
+      { label: '剧情静帧 07', image: '/assets/visual/fang-died-new-05.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 08', image: '/assets/visual/fang-died-new-153943.png', position: 'center', size: 'cover' },
+      { label: '剧情静帧 09', image: '/assets/visual/fang-died-new-06.webp', position: 'center', size: 'cover' },
+    ],
+  },
+  {
+    title: '《生如夏花》',
+    type: '剧情片',
+    role: '男主',
+    poster: '/assets/visual/summer-flower-poster.jpg',
+    posterPosition: 'center',
+    posterSize: 'cover',
+    frames: [
+      { label: '剧情静帧 01', image: '/assets/visual/summer-flower-01.png', position: 'center', size: 'cover' },
+      { label: '剧情静帧 02', image: '/assets/visual/summer-flower-02.png', position: 'center', size: 'cover' },
     ],
   },
   {
@@ -328,7 +336,7 @@ const works = [
   {
     title: '《三百六十行 行行有关羽》',
     type: 'AIGC 短片',
-    role: 'AIGC 角色与场景创作',
+    role: '导演',
     poster: '/assets/visual/guanyu-01.png',
     posterPosition: 'center',
     dialogClass: 'long-title',
@@ -336,13 +344,14 @@ const works = [
       { label: '夜色城市', image: '/assets/visual/guanyu-01.png', position: 'center', size: 'cover' },
       { label: '文化场景', image: '/assets/visual/guanyu-02.png', position: 'center', size: 'cover' },
       { label: '快递关羽', image: '/assets/visual/guanyu-03.png', position: 'center', size: 'cover' },
+      { label: 'AIGC 场景 04', image: '/assets/visual/guanyu-04.png', position: 'center', size: 'cover' },
       { label: '角色三视图', image: '/assets/visual/guanyu-character-sheet.png', position: 'center', size: 'contain' },
     ],
   },
   {
     title: '《升级日志》',
     type: '大广赛 AIGC 短片',
-    role: 'AIGC 视觉创作',
+    role: '导演',
     poster: '/assets/visual/upgrade-log-04.png',
     posterPosition: 'center',
     frames: [
@@ -362,10 +371,7 @@ const works = [
     frames: [
       {
         label: '纪录片片段',
-        image: '/assets/visual/millennium-pen-frame.png',
         video: '/assets/visual/millennium-pen-clip.mp4',
-        position: 'center',
-        size: 'cover',
       },
       { label: '匠心传承', image: '/assets/visual/millennium-pen-frame.png', position: 'center', size: 'cover' },
     ],
@@ -915,6 +921,13 @@ function EvidenceDialog({ open, onClose }) {
   )
 }
 
+function revealVideoFirstFrame(event) {
+  const video = event.currentTarget
+  if (video.currentTime === 0 && Number.isFinite(video.duration) && video.duration > 0) {
+    video.currentTime = Math.min(0.01, video.duration / 100)
+  }
+}
+
 function WorkVideo({ frame }) {
   const videoRef = useRef(null)
   const [playing, setPlaying] = useState(false)
@@ -933,10 +946,10 @@ function WorkVideo({ frame }) {
         ref={videoRef}
         className="selected-video"
         src={frame.video}
-        poster={frame.image}
         controls
         playsInline
         preload="metadata"
+        onLoadedMetadata={revealVideoFirstFrame}
         onPlay={() => setPlaying(true)}
         onPause={() => setPlaying(false)}
         onEnded={() => setPlaying(false)}
@@ -998,14 +1011,27 @@ function WorkDialog({ workIndex, onClose }) {
               style={{
                 '--frame-index': index,
                 '--frame-count': work.frames.length,
-                backgroundImage: `url(${frame.image})`,
-                backgroundPosition: frame.position,
-                backgroundSize: frame.size || '200% 200%',
+                left: `${50 + 47 * Math.cos((index / work.frames.length) * Math.PI * 2 - Math.PI / 2)}%`,
+                top: `${50 + 42 * Math.sin((index / work.frames.length) * Math.PI * 2 - Math.PI / 2)}%`,
+                backgroundImage: frame.video ? 'none' : `url(${frame.image})`,
+                backgroundPosition: frame.position || 'center',
+                backgroundSize: frame.size || 'cover',
               }}
               key={frame.label}
               onClick={() => setFrameIndex(index)}
               aria-label={`查看${frame.label}`}
-            />
+            >
+              {frame.video ? (
+                <video
+                  src={frame.video}
+                  muted
+                  playsInline
+                  preload="metadata"
+                  onLoadedMetadata={revealVideoFirstFrame}
+                  aria-hidden="true"
+                />
+              ) : null}
+            </button>
           ))}
         </div>
         <p className="frame-caption">{selectedFrame.label} · {String(frameIndex + 1).padStart(2, '0')} / {String(work.frames.length).padStart(2, '0')}</p>
