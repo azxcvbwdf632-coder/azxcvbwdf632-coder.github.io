@@ -922,6 +922,8 @@ function WorkVideo({ frame }) {
   const playVideo = () => {
     const video = videoRef.current
     if (!video) return
+    video.muted = false
+    video.volume = 1
     video.play().catch(() => setPlaying(false))
   }
 
@@ -977,7 +979,7 @@ function WorkDialog({ workIndex, onClose }) {
         </header>
         <div className="inner-orbit" data-frame-count={work.frames.length} aria-label={`${work.title}静帧环`}>
           {selectedFrame.video ? (
-            <WorkVideo frame={selectedFrame} />
+            <WorkVideo key={selectedFrame.video} frame={selectedFrame} />
           ) : (
             <div
               className="selected-frame"
