@@ -592,12 +592,7 @@ function HeroScene({ active, next, intro }) {
 function AboutScene({ active, next, openAesthetic }) {
   return (
     <section id="about" className={`scene about-scene ${active ? 'active' : ''}`} aria-hidden={!active}>
-      <div
-        className="about-mobile-scroll"
-        role="region"
-        aria-label="关于我，可横向滑动查看树藤跳水照片"
-      >
-        <div className="about-grid">
+      <div className="about-grid">
           <div className="about-copy">
             <h2>关于我</h2>
             <span className="descent-mark" aria-hidden="true">⋮<br />⌄</span>
@@ -623,7 +618,16 @@ function AboutScene({ active, next, openAesthetic }) {
             <small>闽南师范大学 · 广播电视编导专业 · 2027届</small>
           </div>
           <figure className="about-media">
-            <img src="/assets/vine-jump.webp" alt="在菲律宾体验树藤跳水" loading="lazy" decoding="async" />
+            <picture>
+              <source media="(max-width: 760px)" srcSet="/assets/vine-jump-mobile.webp" />
+              <img
+                src="/assets/vine-jump.webp"
+                alt="在菲律宾体验树藤跳水"
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+              />
+            </picture>
             <PixelEdge />
           </figure>
           <div className="experience-stack" aria-label="个人经历">
@@ -640,13 +644,6 @@ function AboutScene({ active, next, openAesthetic }) {
               </article>
             ))}
           </div>
-          <span className="about-swipe-hint" aria-hidden="true">左滑看现场 <b>→</b></span>
-        </div>
-        <figure className="about-photo-panel">
-          <img src="/assets/vine-jump.webp" alt="在菲律宾体验树藤跳水的现场照片" loading="lazy" decoding="async" />
-          <PixelEdge />
-          <figcaption>菲律宾 · 树藤跳水</figcaption>
-        </figure>
       </div>
       <ScrollCue label="继续下潜" onClick={next} />
     </section>
@@ -1219,7 +1216,7 @@ export default function App() {
         lastAt: now,
         velocityY: 0,
         inHorizontalScroller: event.target instanceof Element
-          && Boolean(event.target.closest('.film-orbit, .metrics, .album-rail, .film-input-rail, .about-mobile-scroll, .experience-stack, .mobile-operation-metrics, .artist-selector, .artist-albums')),
+          && Boolean(event.target.closest('.film-orbit, .metrics, .album-rail, .film-input-rail, .experience-stack, .mobile-operation-metrics, .artist-selector, .artist-albums')),
         interactiveTarget: event.target instanceof Element
           && Boolean(event.target.closest('button, a, input, textarea, select, [role="button"]')),
         dragging: false,
