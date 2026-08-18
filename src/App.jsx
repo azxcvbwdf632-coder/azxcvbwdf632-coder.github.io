@@ -6,6 +6,7 @@ import {
   useRef,
   useState,
 } from 'react'
+import AestheticDialog from './components/AestheticDialog'
 
 const sceneIds = ['home', 'about', 'operations', 'films', 'contact']
 const navItems = [
@@ -14,6 +15,13 @@ const navItems = [
   { id: 'films', label: '影像作品' },
   { id: 'contact', label: '联系我' },
 ]
+
+function getInitialRoute() {
+  const hash = window.location.hash.replace('#', '')
+  if (hash === 'about-inputs') return { index: 1, aesthetic: true }
+  const index = sceneIds.indexOf(hash)
+  return { index: index >= 0 ? index : 0, aesthetic: false }
+}
 
 const experienceGroups = [
   {
@@ -156,9 +164,57 @@ const works = [
     ],
   },
   {
+    title: '《逃跑也没关系》',
+    type: '剧情片',
+    role: '摄影',
+    poster: '/assets/visual/run-away-poster.webp',
+    posterPosition: 'center',
+    posterSize: 'cover',
+    frames: [
+      { label: '剧情镜帧 01', image: '/assets/visual/run-away-01.webp', position: 'center', size: 'cover' },
+      { label: '剧情镜帧 02', image: '/assets/visual/run-away-02.webp', position: 'center', size: 'cover' },
+      { label: '剧情镜帧 03', image: '/assets/visual/run-away-03.webp', position: 'center', size: 'cover' },
+      { label: '剧情镜帧 04', image: '/assets/visual/run-away-04.webp', position: 'center', size: 'cover' },
+      { label: '剧情镜帧 05', image: '/assets/visual/run-away-05.webp', position: 'center', size: 'cover' },
+      { label: '剧情镜帧 06', image: '/assets/visual/run-away-06.webp', position: 'center', size: 'cover' },
+    ],
+  },
+  {
+    title: '《凭谈》',
+    type: '剧情片',
+    role: '灯光',
+    poster: '/assets/visual/pintan-poster.webp',
+    posterPosition: 'center',
+    posterSize: 'cover',
+    frames: [
+      { label: '剧情镜帧 01', image: '/assets/visual/pintan-01.webp', position: 'center', size: 'cover' },
+      { label: '剧情镜帧 02', image: '/assets/visual/pintan-02.webp', position: 'center', size: 'cover' },
+      { label: '剧情镜帧 03', image: '/assets/visual/pintan-03.webp', position: 'center', size: 'cover' },
+      { label: '剧情镜帧 04', image: '/assets/visual/pintan-04.webp', position: 'center', size: 'cover' },
+      { label: '剧情镜帧 05', image: '/assets/visual/pintan-05.webp', position: 'center', size: 'cover' },
+      { label: '剧情镜帧 06', image: '/assets/visual/pintan-06.webp', position: 'center', size: 'cover' },
+    ],
+  },
+  {
+    title: '《绘涩》',
+    type: '剧情片',
+    role: '灯光',
+    poster: '/assets/visual/shaded-canvas-poster.webp',
+    posterPosition: 'center',
+    posterSize: 'cover',
+    frames: [
+      { label: '剧情镜帧 01', image: '/assets/visual/shaded-canvas-01.webp', position: 'center', size: 'cover' },
+      { label: '剧情镜帧 02', image: '/assets/visual/shaded-canvas-02.webp', position: 'center', size: 'cover' },
+      { label: '剧情镜帧 03', image: '/assets/visual/shaded-canvas-03.webp', position: 'center', size: 'cover' },
+      { label: '剧情镜帧 04', image: '/assets/visual/shaded-canvas-04.webp', position: 'center', size: 'cover' },
+      { label: '剧情镜帧 05', image: '/assets/visual/shaded-canvas-05.webp', position: 'center', size: 'cover' },
+      { label: '剧情镜帧 06', image: '/assets/visual/shaded-canvas-06.webp', position: 'center', size: 'cover' },
+    ],
+  },
+  {
     title: '《等等》',
     type: '微电影',
-    role: '摄助',
+    role: '灯光',
     poster: '/assets/visual/void-between-poster.jpg',
     posterPosition: 'center',
     frames: [
@@ -170,13 +226,49 @@ const works = [
   },
   {
     title: '《芳死去的那天》',
-    type: '微电影',
-    role: '摄影',
-    poster: '/assets/visual/fang-died-poster.jpg',
+    type: '剧情片',
+    role: '副摄影 · 灯光',
+    poster: '/assets/visual/fang-died-new-poster.webp',
     posterPosition: 'center',
-    posterSize: 'contain',
+    posterSize: 'cover',
     frames: [
-      { label: '电影海报', image: '/assets/visual/fang-died-poster.jpg', position: 'center', size: 'contain' },
+      { label: '剧情镜帧 01', image: '/assets/visual/fang-died-new-01.webp', position: 'center', size: 'cover' },
+      { label: '剧情镜帧 02', image: '/assets/visual/fang-died-new-02.webp', position: 'center', size: 'cover' },
+      { label: '剧情镜帧 03', image: '/assets/visual/fang-died-new-03.webp', position: 'center', size: 'cover' },
+      { label: '剧情镜帧 04', image: '/assets/visual/fang-died-new-04.webp', position: 'center', size: 'cover' },
+      { label: '剧情镜帧 05', image: '/assets/visual/fang-died-new-05.webp', position: 'center', size: 'cover' },
+      { label: '剧情镜帧 06', image: '/assets/visual/fang-died-new-06.webp', position: 'center', size: 'cover' },
+    ],
+  },
+  {
+    title: '《辅导员的一天》',
+    type: '校园人物短片',
+    role: '摄影 · 策划',
+    poster: '/assets/visual/counselor-day-poster.webp',
+    posterPosition: 'center',
+    posterSize: 'cover',
+    frames: [
+      { label: '人物镜帧 01', image: '/assets/visual/counselor-day-01.webp', position: 'center', size: 'cover' },
+      { label: '人物镜帧 02', image: '/assets/visual/counselor-day-02.webp', position: 'center', size: 'cover' },
+      { label: '人物镜帧 03', image: '/assets/visual/counselor-day-03.webp', position: 'center', size: 'cover' },
+      { label: '人物镜帧 04', image: '/assets/visual/counselor-day-04.webp', position: 'center', size: 'cover' },
+      { label: '人物镜帧 05', image: '/assets/visual/counselor-day-05.webp', position: 'center', size: 'cover' },
+    ],
+  },
+  {
+    title: '《乐享桑愉》',
+    type: '纪录片',
+    role: '导演',
+    poster: '/assets/visual/joyful-sangyu-poster.webp',
+    posterPosition: 'center',
+    posterSize: 'cover',
+    frames: [
+      { label: '纪录片镜帧 01', image: '/assets/visual/joyful-sangyu-01.webp', position: 'center', size: 'cover' },
+      { label: '纪录片镜帧 02', image: '/assets/visual/joyful-sangyu-02.webp', position: 'center', size: 'cover' },
+      { label: '纪录片镜帧 03', image: '/assets/visual/joyful-sangyu-03.webp', position: 'center', size: 'cover' },
+      { label: '纪录片镜帧 04', image: '/assets/visual/joyful-sangyu-04.webp', position: 'center', size: 'cover' },
+      { label: '纪录片镜帧 05', image: '/assets/visual/joyful-sangyu-05.webp', position: 'center', size: 'cover' },
+      { label: '纪录片镜帧 06', image: '/assets/visual/joyful-sangyu-06.webp', position: 'center', size: 'cover' },
     ],
   },
   {
@@ -424,7 +516,7 @@ function HeroScene({ active, next }) {
   )
 }
 
-function AboutScene({ active, next }) {
+function AboutScene({ active, next, openAesthetic }) {
   return (
     <section id="about" className={`scene about-scene ${active ? 'active' : ''}`} aria-hidden={!active}>
       <div className="about-grid">
@@ -437,6 +529,19 @@ function AboutScene({ active, next }) {
             <li>内容运营</li>
             <li>AI 工具</li>
           </ul>
+          <a
+            className="aesthetic-entry"
+            href="#about-inputs"
+            onClick={openAesthetic}
+            onTouchStart={(event) => event.stopPropagation()}
+            onTouchEnd={(event) => {
+              event.stopPropagation()
+              openAesthetic()
+            }}
+          >
+            进入我的输入源
+            <span aria-hidden="true">↘</span>
+          </a>
           <small>闽南师范大学 · 2027</small>
         </div>
         <figure className="about-media">
@@ -860,17 +965,15 @@ function WorkDialog({ workIndex, onClose }) {
 export default function App() {
   const reducedMotion = useReducedMotion()
   const transitionRef = useRef(null)
-  const [active, setActive] = useState(() => {
-    const hash = window.location.hash.replace('#', '')
-    const index = sceneIds.indexOf(hash)
-    return index >= 0 ? index : 0
-  })
+  const initialRoute = getInitialRoute()
+  const [active, setActive] = useState(initialRoute.index)
   const [transitioning, setTransitioning] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [evidenceOpen, setEvidenceOpen] = useState(false)
   const [workOpen, setWorkOpen] = useState(null)
   const [wechatOpen, setWechatOpen] = useState(false)
-  const touchStart = useRef({ x: 0, y: 0, inHorizontalScroller: false })
+  const [aestheticOpen, setAestheticOpen] = useState(initialRoute.aesthetic)
+  const touchStart = useRef({ x: 0, y: 0, inHorizontalScroller: false, interactiveTarget: false, interactiveRegion: false, active: false })
 
   const navigate = useCallback((target) => {
     const next = Math.max(0, Math.min(sceneIds.length - 1, target))
@@ -899,14 +1002,37 @@ export default function App() {
     setWechatOpen(true)
   }, [])
 
+  const openAesthetic = useCallback(() => {
+    setAestheticOpen(true)
+    window.history.replaceState(null, '', '#about-inputs')
+  }, [])
+
+  const closeAesthetic = useCallback(() => {
+    setAestheticOpen(false)
+    if (window.location.hash === '#about-inputs') window.history.replaceState(null, '', '#about')
+  }, [])
+
+  useEffect(() => {
+    const onHashChange = () => {
+      if (window.location.hash === '#about-inputs') {
+        setActive(1)
+        setAestheticOpen(true)
+      }
+    }
+    window.addEventListener('hashchange', onHashChange)
+    return () => window.removeEventListener('hashchange', onHashChange)
+  }, [])
+
   useEffect(() => {
     const onWheel = (event) => {
-      if (evidenceOpen || workOpen !== null || mobileOpen || transitioning || Math.abs(event.deltaY) < 24) return
+      if (evidenceOpen || workOpen !== null || aestheticOpen || mobileOpen || transitioning || Math.abs(event.deltaY) < 24) return
+      if (event.target instanceof Element
+        && event.target.closest('button, a, input, textarea, select, [role="button"], .about-copy, .site-header, .dialog-backdrop')) return
       event.preventDefault()
       navigate(active + (event.deltaY > 0 ? 1 : -1))
     }
     const onKey = (event) => {
-      if (evidenceOpen || workOpen !== null || mobileOpen) return
+      if (evidenceOpen || workOpen !== null || aestheticOpen || mobileOpen) return
       if (['ArrowDown', 'PageDown', ' '].includes(event.key)) {
         event.preventDefault()
         navigate(active + 1)
@@ -924,11 +1050,20 @@ export default function App() {
         x: touch.clientX,
         y: touch.clientY,
         inHorizontalScroller: event.target instanceof Element
-          && Boolean(event.target.closest('.film-orbit, .metrics')),
+          && Boolean(event.target.closest('.film-orbit, .metrics, .album-rail, .film-input-rail')),
+        interactiveTarget: event.target instanceof Element
+          && Boolean(event.target.closest('button, a, input, textarea, select, [role="button"]')),
+        interactiveRegion: event.target instanceof Element
+          && Boolean(event.target.closest('.about-copy, .site-header, .operations-cover, .contact-actions, .dialog-backdrop')),
+        active: true,
       }
     }
     const onTouchEnd = (event) => {
-      if (evidenceOpen || workOpen !== null || mobileOpen || transitioning) return
+      if (!touchStart.current.active) return
+      touchStart.current.active = false
+      if (evidenceOpen || workOpen !== null || aestheticOpen || mobileOpen || transitioning) return
+      if (touchStart.current.interactiveTarget || event.target instanceof Element && event.target.closest('button, a, input, textarea, select, [role="button"]')) return
+      if (touchStart.current.interactiveRegion || event.target instanceof Element && event.target.closest('.about-copy, .site-header, .operations-cover, .contact-actions, .dialog-backdrop')) return
       if (touchStart.current.inHorizontalScroller) return
       const touch = event.changedTouches[0]
       const deltaX = touchStart.current.x - touch.clientX
@@ -948,7 +1083,7 @@ export default function App() {
       window.removeEventListener('touchstart', onTouchStart)
       window.removeEventListener('touchend', onTouchEnd)
     }
-  }, [active, evidenceOpen, mobileOpen, navigate, transitioning, workOpen])
+  }, [active, aestheticOpen, evidenceOpen, mobileOpen, navigate, transitioning, workOpen])
 
   return (
     <main className="app-shell">
@@ -959,7 +1094,7 @@ export default function App() {
         setMobileOpen={setMobileOpen}
       />
       <HeroScene active={active === 0} next={() => navigate(1)} />
-      <AboutScene active={active === 1} next={() => navigate(2)} />
+      <AboutScene active={active === 1} next={() => navigate(2)} openAesthetic={openAesthetic} />
       <OperationsScene active={active === 2} next={() => navigate(3)} openEvidence={() => setEvidenceOpen(true)} />
       <FilmsScene active={active === 3} next={() => navigate(4)} openWork={setWorkOpen} />
       <ContactScene active={active === 4} onWechat={openWechat} />
@@ -972,6 +1107,7 @@ export default function App() {
       <EvidenceDialog open={evidenceOpen} onClose={() => setEvidenceOpen(false)} />
       <WorkDialog workIndex={workOpen} onClose={() => setWorkOpen(null)} />
       <WechatDialog open={wechatOpen} onClose={() => setWechatOpen(false)} />
+      <AestheticDialog open={aestheticOpen} onClose={closeAesthetic} />
     </main>
   )
 }

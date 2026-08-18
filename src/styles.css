@@ -311,6 +311,34 @@ a:focus-visible {
   letter-spacing: .12em;
 }
 
+.aesthetic-entry {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  margin: 0 0 25px;
+  padding: 0 0 9px;
+  border: 0;
+  border-bottom: 1px solid var(--cyan);
+  background: transparent;
+  color: var(--cyan);
+  cursor: pointer;
+  font-family: var(--pixel-font);
+  font-size: 14px;
+  letter-spacing: .12em;
+  text-decoration: none;
+  transition: gap 180ms ease, color 180ms ease;
+}
+
+.aesthetic-entry:hover {
+  gap: 26px;
+  color: #fff;
+}
+
+.aesthetic-entry span {
+  font-size: 21px;
+  line-height: .8;
+}
+
 .about-copy small {
   color: rgba(255, 255, 255, .72);
   font-family: monospace;
@@ -901,6 +929,417 @@ a:focus-visible {
   font-size: 13px;
 }
 
+.aesthetic-backdrop {
+  padding: clamp(14px, 3vw, 42px);
+  background: rgba(0, 7, 14, .92);
+}
+
+.aesthetic-dialog {
+  position: relative;
+  display: flex;
+  width: min(1180px, 96vw);
+  max-height: min(880px, 92svh);
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid rgba(70, 215, 232, .8);
+  background:
+    linear-gradient(125deg, rgba(3, 27, 46, .96), rgba(0, 0, 0, .98) 48%),
+    #000;
+  box-shadow: 12px 12px 0 rgba(21, 143, 210, .24);
+}
+
+.aesthetic-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 30px;
+  padding: clamp(28px, 4vw, 52px) clamp(24px, 4vw, 58px) 25px;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.aesthetic-heading small,
+.section-marker,
+.aesthetic-footer {
+  color: var(--cyan);
+  font-family: monospace;
+  font-size: 11px;
+  letter-spacing: .16em;
+}
+
+.aesthetic-heading h2 {
+  margin: 12px 0 0;
+  font-family: var(--pixel-font);
+  font-size: clamp(34px, 5vw, 68px);
+  letter-spacing: .08em;
+  line-height: 1;
+}
+
+.aesthetic-heading p {
+  max-width: 310px;
+  margin: 0 26px 4px 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.aesthetic-tabs {
+  display: flex;
+  gap: 6px;
+  padding: 13px clamp(24px, 4vw, 58px);
+  border-bottom: 1px solid var(--hairline);
+}
+
+.aesthetic-tabs button {
+  display: inline-flex;
+  min-height: 36px;
+  align-items: center;
+  gap: 13px;
+  padding: 7px 13px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: rgba(255, 255, 255, .58);
+  cursor: pointer;
+  font-family: var(--pixel-font);
+  font-size: 14px;
+  letter-spacing: .1em;
+}
+
+.aesthetic-tabs button:hover,
+.aesthetic-tabs button.active {
+  border-color: var(--cyan);
+  color: #fff;
+}
+
+.aesthetic-tabs button span {
+  color: var(--cyan);
+  font-size: 19px;
+  line-height: .8;
+}
+
+.aesthetic-content {
+  min-height: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+  scrollbar-color: var(--blue) transparent;
+}
+
+.music-layout {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  min-height: 430px;
+}
+
+.input-section,
+.film-input-panel,
+.training-panel {
+  padding: clamp(22px, 2.2vw, 30px) clamp(24px, 4vw, 58px);
+}
+
+.artist-section {
+  border-right: 1px solid var(--hairline);
+}
+
+.input-section h3,
+.film-input-intro h3,
+.training-copy h3 {
+  margin: 18px 0 26px;
+  font-family: var(--pixel-font);
+  font-size: clamp(22px, 2.4vw, 34px);
+  letter-spacing: .08em;
+  line-height: 1.3;
+}
+
+.artist-list {
+  display: grid;
+  border-top: 1px solid var(--hairline);
+}
+
+.artist-list button {
+  display: grid;
+  grid-template-columns: 30px 1fr auto;
+  gap: 15px;
+  align-items: center;
+  min-height: 64px;
+  padding: 0 8px;
+  border: 0;
+  border-bottom: 1px solid var(--hairline);
+  background: transparent;
+  color: rgba(255, 255, 255, .52);
+  cursor: pointer;
+  text-align: left;
+}
+
+.artist-list button:hover,
+.artist-list button.active {
+  background: rgba(21, 143, 210, .16);
+  color: #fff;
+}
+
+.artist-list button > span {
+  color: var(--cyan);
+  font: 11px monospace;
+}
+
+.artist-list strong {
+  font-family: var(--pixel-font);
+  font-size: 18px;
+  letter-spacing: .08em;
+}
+
+.artist-list small {
+  color: var(--muted);
+  font: 11px monospace;
+}
+
+.artist-note {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 14px;
+  margin-top: 28px;
+  color: var(--muted);
+}
+
+.artist-note > span {
+  color: var(--cyan);
+  font-size: 22px;
+}
+
+.artist-note p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.artist-note small {
+  grid-column: 2;
+  color: rgba(255,255,255,.42);
+  font: 11px monospace;
+}
+
+.album-rail,
+.film-input-rail {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 3px 3px 20px;
+  overscroll-behavior-x: contain;
+  scrollbar-color: var(--blue) transparent;
+  touch-action: pan-x;
+}
+
+.album-card {
+  flex: 0 0 clamp(190px, 20vw, 240px);
+}
+
+.album-cover {
+  position: relative;
+  display: flex;
+  height: clamp(190px, 20vw, 240px);
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(70, 215, 232, .7);
+  background:
+    repeating-linear-gradient(135deg, transparent 0 13px, rgba(70, 215, 232, .08) 13px 14px),
+    radial-gradient(circle at 72% 30%, rgba(70, 215, 232, .52), transparent 1px),
+    #061421;
+  background-size: auto, 13px 13px, auto;
+}
+
+.album-cover::after {
+  position: absolute;
+  inset: 16px;
+  border: 1px solid rgba(255,255,255,.22);
+  content: '';
+  pointer-events: none;
+}
+
+.album-cover span {
+  color: var(--cyan);
+  font: 11px monospace;
+}
+
+.album-cover strong {
+  position: relative;
+  z-index: 1;
+  max-width: 175px;
+  font-family: var(--pixel-font);
+  font-size: 20px;
+  letter-spacing: .08em;
+  line-height: 1.25;
+}
+
+.album-cover i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 72px;
+  height: 72px;
+  border: 1px solid var(--cyan);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: .58;
+}
+
+.album-cover i::after {
+  position: absolute;
+  inset: 18px;
+  border: 1px solid var(--cyan);
+  border-radius: 50%;
+  content: '';
+}
+
+.album-card > p {
+  margin: 12px 0 5px;
+  font-family: var(--pixel-font);
+  font-size: 15px;
+}
+
+.album-card > small {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.film-input-panel,
+.training-panel {
+  min-height: 430px;
+}
+
+.film-input-intro {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.film-input-intro h3 {
+  margin-bottom: 8px;
+}
+
+.film-input-intro p {
+  margin: 0 0 28px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.film-input-intro > span {
+  padding-bottom: 31px;
+  color: var(--cyan);
+  font: 11px monospace;
+  letter-spacing: .12em;
+}
+
+.film-input-rail {
+  gap: 15px;
+}
+
+.film-input-card {
+  flex: 0 0 150px;
+}
+
+.film-poster {
+  display: flex;
+  height: 215px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 13px;
+  border: 1px solid rgba(255,255,255,.32);
+  background: linear-gradient(150deg, rgba(21,143,210,.3), rgba(0,0,0,.7) 64%), #07111b;
+  box-shadow: 6px 6px 0 rgba(21, 143, 210, .18);
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.film-input-card:hover .film-poster {
+  border-color: var(--cyan);
+  transform: translateY(-5px);
+}
+
+.film-poster span {
+  color: var(--cyan);
+  font: 11px monospace;
+}
+
+.film-poster strong {
+  font-family: var(--pixel-font);
+  font-size: 18px;
+  letter-spacing: .08em;
+  line-height: 1.35;
+}
+
+.film-poster small {
+  color: var(--muted);
+  font: 10px monospace;
+}
+
+.film-input-card > p {
+  margin: 13px 0 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.training-copy {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: end;
+  gap: 26px;
+  max-width: 700px;
+}
+
+.training-number {
+  margin: 0;
+  color: var(--cyan);
+  font: clamp(82px, 13vw, 160px) / .8 monospace;
+  letter-spacing: -.1em;
+}
+
+.training-copy h3 {
+  margin-bottom: 12px;
+}
+
+.training-copy p:not(.training-number) {
+  max-width: 320px;
+  margin: 0 0 15px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.training-copy small {
+  color: rgba(255,255,255,.4);
+  font: 11px monospace;
+}
+
+.training-placeholders {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 44px;
+}
+
+.training-placeholders div {
+  position: relative;
+  height: 110px;
+  border: 1px dashed rgba(70, 215, 232, .46);
+  background: repeating-linear-gradient(135deg, transparent 0 14px, rgba(70, 215, 232, .06) 14px 15px);
+}
+
+.training-placeholders span {
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  color: var(--cyan);
+  font: 11px monospace;
+}
+
+.aesthetic-footer {
+  padding: 11px clamp(24px, 4vw, 58px);
+  border-top: 1px solid var(--hairline);
+  color: rgba(255,255,255,.38);
+}
+
 .evidence-dialog p {
   line-height: 1.7;
 }
@@ -1461,6 +1900,16 @@ a:focus-visible {
     font-size: 12px;
   }
 
+  .aesthetic-entry {
+    gap: 13px;
+    margin-bottom: 14px;
+    font-size: 11px;
+  }
+
+  .aesthetic-entry span {
+    font-size: 17px;
+  }
+
   .about-media {
     position: absolute;
     z-index: 0;
@@ -1718,6 +2167,171 @@ a:focus-visible {
 
   .wechat-dialog img {
     width: min(250px, 70vw);
+  }
+
+  .aesthetic-backdrop {
+    display: block;
+    padding: 0;
+  }
+
+  .aesthetic-dialog {
+    width: 100%;
+    height: 100svh;
+    max-height: none;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .aesthetic-heading {
+    display: block;
+    padding: 82px 20px 20px;
+  }
+
+  .aesthetic-heading h2 {
+    margin-top: 9px;
+    font-size: 36px;
+  }
+
+  .aesthetic-heading p {
+    max-width: 280px;
+    margin: 17px 0 0;
+    font-size: 12px;
+  }
+
+  .aesthetic-tabs {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    gap: 2px;
+    padding: 9px 16px;
+    background: rgba(0, 7, 14, .96);
+  }
+
+  .aesthetic-tabs button {
+    flex: 1;
+    justify-content: center;
+    min-height: 34px;
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+
+  .aesthetic-content {
+    flex: 1;
+  }
+
+  .music-layout {
+    display: block;
+  }
+
+  .input-section,
+  .film-input-panel,
+  .training-panel {
+    padding: 28px 20px 34px;
+  }
+
+  .artist-section {
+    border-right: 0;
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  .input-section h3,
+  .film-input-intro h3,
+  .training-copy h3 {
+    margin: 13px 0 19px;
+    font-size: 22px;
+  }
+
+  .artist-list button {
+    min-height: 58px;
+    grid-template-columns: 25px 1fr;
+    gap: 9px;
+  }
+
+  .artist-list small {
+    grid-column: 2;
+    margin-top: -17px;
+    font-size: 9px;
+  }
+
+  .artist-list strong {
+    font-size: 16px;
+  }
+
+  .artist-note {
+    margin-top: 20px;
+  }
+
+  .album-rail,
+  .film-input-rail {
+    margin-right: -20px;
+    padding-right: 20px;
+  }
+
+  .album-card {
+    flex-basis: 190px;
+  }
+
+  .album-cover {
+    height: 190px;
+  }
+
+  .film-input-panel,
+  .training-panel {
+    min-height: 0;
+  }
+
+  .film-input-intro {
+    display: block;
+  }
+
+  .film-input-intro > span {
+    display: block;
+    padding-bottom: 18px;
+  }
+
+  .film-input-rail {
+    gap: 12px;
+  }
+
+  .film-input-card {
+    flex-basis: 136px;
+  }
+
+  .film-poster {
+    height: 196px;
+    padding: 11px;
+  }
+
+  .film-poster strong {
+    font-size: 16px;
+  }
+
+  .training-copy {
+    grid-template-columns: 80px 1fr;
+    gap: 17px;
+  }
+
+  .training-number {
+    font-size: 74px;
+  }
+
+  .training-copy p:not(.training-number) {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  .training-placeholders {
+    gap: 8px;
+    margin-top: 30px;
+  }
+
+  .training-placeholders div {
+    height: 84px;
+  }
+
+  .aesthetic-footer {
+    padding: 10px 20px 14px;
+    font-size: 9px;
   }
 
   .case-dialog {
