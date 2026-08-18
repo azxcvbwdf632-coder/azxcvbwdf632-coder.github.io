@@ -277,7 +277,7 @@ const works = [
   {
     title: '《辅导员的一天》',
     type: '校园人物短片',
-    role: '摄影 · 策划',
+    role: '摄影 · 策划 · 第八届全国大学生数字编辑创新大赛闽台赛区优秀奖',
     poster: '/assets/visual/counselor-day-poster.webp',
     posterPosition: 'center',
     posterSize: 'cover',
@@ -308,7 +308,7 @@ const works = [
   {
     title: '《秋听古田》',
     type: '城市宣传片',
-    role: '摄影 · “爱我古田”短视频大赛三等奖',
+    role: '摄影 · 古田县“爱我古田”短视频大赛三等奖 · 第八届全国大学生数字编辑创新大赛闽台赛区三等奖',
     poster: '/assets/visual/autumn-gutian-title.jpg',
     posterPosition: '50% 50%',
     frames: [
@@ -794,7 +794,7 @@ function ContactScene({ active, onWechat }) {
       <div className="contact-vignette" aria-hidden="true" />
       <PixelEdge />
       <div className="contact-copy">
-        <h2>一起做有审美、<br />也有效果的内容。</h2>
+        <h2>一起做有审美、<br />也有意思的内容。</h2>
         <div className="contact-actions">
           <a className="primary-action" href="mailto:1182179009@qq.com">发送邮件</a>
           <button className="secondary-action" type="button" onClick={onWechat}>添加微信</button>
