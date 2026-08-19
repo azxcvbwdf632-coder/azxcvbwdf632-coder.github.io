@@ -3161,6 +3161,13 @@ a:focus-visible {
     overflow-x: hidden;
     overflow-y: auto;
   }
+
+  .work-dialog > .dialog-close {
+    position: fixed;
+    z-index: 20;
+    top: max(8px, env(safe-area-inset-top));
+    touch-action: manipulation;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
