@@ -1870,6 +1870,20 @@ a:focus-visible {
   padding: 0;
 }
 
+.film-poster-preloads {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.film-poster-preloads img {
+  width: 1px;
+  height: 1px;
+}
+
 .work-dialog {
   position: relative;
   width: 100vw;
@@ -3068,9 +3082,11 @@ a:focus-visible {
   }
 
   .work-heading {
-    top: 78px;
-    right: 20px;
-    left: 20px;
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    padding: 70px 20px 0;
   }
 
   .work-heading h2 {
@@ -3099,10 +3115,13 @@ a:focus-visible {
   }
 
   .inner-orbit {
-    top: 55%;
+    position: relative;
+    top: auto;
     width: 84vw;
-    height: 53vh;
-    transform: translate(-50%, -45%);
+    height: min(470px, 54svh);
+    min-height: 360px;
+    margin-top: 38px;
+    transform: translateX(-50%);
   }
 
   .inner-orbit::before {
@@ -3128,10 +3147,19 @@ a:focus-visible {
   }
 
   .frame-caption {
-    bottom: 7vh;
+    position: relative;
+    bottom: auto;
+    left: auto;
     width: 90vw;
+    margin: 12px auto 34px;
+    transform: none;
     font-size: 12px;
     text-align: center;
+  }
+
+  .work-dialog {
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 }
 

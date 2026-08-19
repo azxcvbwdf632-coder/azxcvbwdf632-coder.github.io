@@ -252,13 +252,11 @@ const workCatalog = [
         video: '/assets/visual/fang-died-clip-02-web.mp4',
         poster: '/assets/visual/fang-died-clip-02-poster.webp',
       },
-      { label: '剧情静帧 01', image: '/assets/visual/fang-died-new-01.webp', position: 'center', size: 'cover' },
-      { label: '剧情静帧 02', image: '/assets/visual/fang-died-new-152438.webp', position: 'center', size: 'cover' },
-      { label: '剧情静帧 03', image: '/assets/visual/fang-died-new-03.webp', position: 'center', size: 'cover' },
-      { label: '剧情静帧 04', image: '/assets/visual/fang-died-new-04.webp', position: 'center', size: 'cover' },
-      { label: '剧情静帧 05', image: '/assets/visual/fang-died-new-153730.webp', position: 'center', size: 'cover' },
-      { label: '剧情静帧 06', image: '/assets/visual/fang-died-new-05.webp', position: 'center', size: 'cover' },
-      { label: '剧情静帧 07', image: '/assets/visual/fang-died-new-153943.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 01', image: '/assets/visual/fang-died-new-152438.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 02', image: '/assets/visual/fang-died-new-03.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 03', image: '/assets/visual/fang-died-new-153730.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 04', image: '/assets/visual/fang-died-new-05.webp', position: 'center', size: 'cover' },
+      { label: '剧情静帧 05', image: '/assets/visual/fang-died-new-153943.webp', position: 'center', size: 'cover' },
     ],
   },
   {
@@ -397,6 +395,7 @@ const works = [...workCatalog].sort((left, right) => (
   (featuredWorkRank.get(left.title) ?? Number.MAX_SAFE_INTEGER)
   - (featuredWorkRank.get(right.title) ?? Number.MAX_SAFE_INTEGER)
 ))
+const workPosterSources = [...new Set(works.map((work) => work.poster).filter(Boolean))]
 
 function useReducedMotion() {
   const [reduced, setReduced] = useState(false)
@@ -742,6 +741,11 @@ function FilmsScene({ active, next, openWork }) {
   return (
     <section id="films" className={`scene films-scene ${active ? 'active' : ''}`} aria-hidden={!active}>
       <img className="scene-image sardine-image" src="/assets/sardine-run.webp" alt="水下沙丁鱼风暴" decoding="async" />
+      <div className="film-poster-preloads" aria-hidden="true">
+        {workPosterSources.map((src) => (
+          <img key={src} src={src} alt="" loading="eager" decoding="async" />
+        ))}
+      </div>
       <div className="film-vignette" aria-hidden="true" />
       <PixelEdge />
       <h2>影像作品</h2>
