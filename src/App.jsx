@@ -7,7 +7,7 @@ import {
   useState,
 } from 'react'
 import AestheticDialog from './components/AestheticDialog'
-import { compatibleImageSrc } from './imageSupport'
+import { compatibleImageSrc, fallbackToJpg, jpgFallbackSrc } from './imageSupport'
 
 const sceneIds = ['home', 'about', 'operations', 'films', 'contact']
 const navItems = [
@@ -16,6 +16,26 @@ const navItems = [
   { id: 'films', label: '影像作品' },
   { id: 'contact', label: '联系我' },
 ]
+
+function mediaImageStyle(position = 'center', size = 'cover') {
+  if (size === 'auto 200%') {
+    const alignBottom = position.includes('bottom')
+    return {
+      top: alignBottom ? 'auto' : 0,
+      bottom: alignBottom ? 0 : 'auto',
+      left: '50%',
+      width: 'auto',
+      height: '200%',
+      maxWidth: 'none',
+      transform: 'translateX(-50%)',
+    }
+  }
+
+  return {
+    objectFit: size === 'contain' ? 'contain' : 'cover',
+    objectPosition: position,
+  }
+}
 
 function getInitialRoute() {
   const hash = window.location.hash.replace('#', '')
@@ -574,6 +594,7 @@ function HeroScene({ active, next, intro, loadAssets }) {
           loading="eager"
           decoding="async"
           fetchPriority="high"
+          onError={fallbackToJpg}
           onLoad={() => setHeroReady(true)}
         />
       </picture>
@@ -627,6 +648,7 @@ function AboutScene({ active, next, openAesthetic, loadAssets }) {
                 loading="lazy"
                 fetchPriority="low"
                 decoding="async"
+                onError={fallbackToJpg}
               />
             </picture>
             <PixelEdge />
@@ -749,6 +771,7 @@ function FilmsScene({ active, next, openWork, loadAssets }) {
         alt="水下沙丁鱼风暴"
         loading="lazy"
         decoding="async"
+        onError={fallbackToJpg}
       />
       <div className="film-vignette" aria-hidden="true" />
       <PixelEdge />
@@ -789,11 +812,6 @@ function FilmsScene({ active, next, openWork, loadAssets }) {
                 opacity: hiddenBehindOrbit ? 0 : 1,
                 pointerEvents: hiddenBehindOrbit ? 'none' : 'auto',
                 transform: `translateX(-50%) scale(${depthScale})`,
-                backgroundImage: loadAssets && !hiddenBehindOrbit
-                  ? `url(${compatibleImageSrc(item.poster)})`
-                  : 'none',
-                backgroundPosition: item.posterPosition,
-                backgroundSize: item.posterSize || 'cover',
               }}
               key={item.title}
               onFocus={() => {
@@ -808,6 +826,17 @@ function FilmsScene({ active, next, openWork, loadAssets }) {
               }}
               aria-label={`打开${item.title}`}
             >
+              {loadAssets ? (
+                <img
+                  className="film-frame-image"
+                  src={compatibleImageSrc(item.poster)}
+                  alt=""
+                  loading={hiddenBehindOrbit ? 'lazy' : 'eager'}
+                  decoding="async"
+                  onError={fallbackToJpg}
+                  style={mediaImageStyle(item.posterPosition, item.posterSize)}
+                />
+              ) : null}
               <span>{item.type}</span>
               <strong>{item.title}</strong>
             </button>
@@ -840,6 +869,7 @@ function ContactScene({ active, onWechat, loadAssets }) {
         alt="鲸鲨在深海中游动"
         loading="lazy"
         decoding="async"
+        onError={fallbackToJpg}
       />
       <div className="contact-vignette" aria-hidden="true" />
       <PixelEdge />
@@ -873,7 +903,7 @@ function WechatDialog({ open, onClose }) {
         <button className="dialog-close" type="button" onClick={onClose} aria-label="关闭微信二维码">×</button>
         <small>联系我</small>
         <h2>添加微信</h2>
-        <img src="/assets/wechat-qr.jpg" alt="微信二维码" loading="lazy" decoding="async" />
+        <img src="/assets/wechat-qr.jpg" alt="微信二维码" loading="lazy" decoding="async" onError={fallbackToJpg} />
         <p>请使用微信扫码添加我</p>
       </div>
     </div>
@@ -944,6 +974,7 @@ function EvidenceDialog({ open, onClose }) {
                 src={compatibleImageSrc(activeImage.src)}
                 alt={activeImage.title}
                 decoding="async"
+                onError={fallbackToJpg}
                 onLoad={() => setImageLoaded(true)}
                 style={{
                   objectPosition: activeImage.objectPosition || 'center',
@@ -965,6 +996,7 @@ function EvidenceDialog({ open, onClose }) {
                     alt=""
                     loading="lazy"
                     decoding="async"
+                    onError={fallbackToJpg}
                   />
                 </button>
               ))}
@@ -1018,7 +1050,7 @@ function WorkVideo({ frame }) {
         ref={videoRef}
         className="selected-video"
         src={frame.video}
-        poster={compatibleImageSrc(frame.poster)}
+        poster={jpgFallbackSrc(frame.poster) || compatibleImageSrc(frame.poster)}
         controls
         playsInline
         preload="none"
@@ -1070,14 +1102,20 @@ function WorkDialog({ workIndex, onClose }) {
           ) : (
             <div
               className="selected-frame"
-              style={{
-                backgroundImage: `url(${compatibleImageSrc(selectedFrame.image)})`,
-                backgroundPosition: selectedFrame.position,
-                backgroundSize: selectedFrame.size || '200% 200%',
-              }}
               role="img"
               aria-label={selectedFrame.label}
-            />
+            >
+              <img
+                key={selectedFrame.image}
+                className="frame-media-image"
+                src={compatibleImageSrc(selectedFrame.image)}
+                alt=""
+                loading="eager"
+                decoding="async"
+                onError={fallbackToJpg}
+                style={mediaImageStyle(selectedFrame.position, selectedFrame.size)}
+              />
+            </div>
           )}
           {work.frames.map((frame, index) => (
             <button
@@ -1087,16 +1125,22 @@ function WorkDialog({ workIndex, onClose }) {
                 '--frame-count': work.frames.length,
                 left: `${50 + 47 * Math.cos((index / work.frames.length) * Math.PI * 2 - Math.PI / 2)}%`,
                 top: `${50 + 42 * Math.sin((index / work.frames.length) * Math.PI * 2 - Math.PI / 2)}%`,
-                backgroundImage: (frame.video ? frame.poster : frame.image)
-                  ? `url(${compatibleImageSrc(frame.video ? frame.poster : frame.image)})`
-                  : 'none',
-                backgroundPosition: frame.position || 'center',
-                backgroundSize: frame.size || 'cover',
               }}
               key={frame.label}
               onClick={() => setFrameIndex(index)}
               aria-label={`查看${frame.label}`}
             >
+              {(frame.video ? frame.poster : frame.image) ? (
+                <img
+                  className="frame-media-image"
+                  src={compatibleImageSrc(frame.video ? frame.poster : frame.image)}
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  onError={fallbackToJpg}
+                  style={mediaImageStyle(frame.position, frame.size)}
+                />
+              ) : null}
               {frame.video ? <span className="inner-video-indicator" aria-hidden="true">▶</span> : null}
             </button>
           ))}
