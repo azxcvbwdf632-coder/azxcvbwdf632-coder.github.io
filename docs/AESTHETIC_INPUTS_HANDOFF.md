@@ -272,10 +272,10 @@ src/
 ## 13. Luna 可直接执行的命令说明
 
 ```text
-请在 C:\Users\邱淼淼\personal-portfolio-site 中实现「我的输入源」。
+请在 C:\Users\邱淼淼\个人网站项目\01-网站代码 中实现「我的输入源」。
 
 首先完整阅读：
-C:\Users\邱淼淼\personal-portfolio-site\docs\AESTHETIC_INPUTS_HANDOFF.md
+C:\Users\邱淼淼\个人网站项目\01-网站代码\docs\AESTHETIC_INPUTS_HANDOFF.md
 
 严格按该文档的信息架构、视觉系统、内容清单、手机规则和验收标准实现。
 不编写用户的音乐/电影感想；空感想不渲染。

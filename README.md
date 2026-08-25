@@ -5,7 +5,7 @@
 ## 本地运行
 
 ```powershell
-npm install
+npm ci
 npm run dev
 ```
 
@@ -14,6 +14,19 @@ npm run dev
 ```powershell
 npm run build
 ```
+
+生产构建会输出到 `dist`。网站使用 `#about`、`#operations`、`#films`、`#contact`
+等哈希地址，因此刷新页面时仍然请求根目录的 `index.html`，不需要额外的 SPA
+重写规则。
+
+## EdgeOne 构建配置
+
+- 生产分支：`main`
+- Root Directory：`/`（仓库根目录）
+- Install Command：`npm ci`
+- Build Command：`npm run build`
+- Output Directory：`dist`
+- Node.js Version：`22`
 
 网站内容：
 
