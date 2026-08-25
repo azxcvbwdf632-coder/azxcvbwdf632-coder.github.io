@@ -168,7 +168,7 @@ a:focus-visible {
   background-image: repeating-conic-gradient(from 90deg, rgba(0, 0, 0, .96) 0 25%, transparent 0 50%);
   background-size: 30px 30px;
   mask-image: linear-gradient(to bottom, transparent 52%, rgba(0, 0, 0, .08) 64%, rgba(0, 0, 0, .74) 84%, #000 100%);
-  opacity: .86;
+  opacity: 0;
 }
 
 .pixel-edge::before {
@@ -2158,8 +2158,9 @@ a:focus-visible {
 }
 
 @keyframes hero-pixels-arrive {
-  from { opacity: 0; }
-  to { opacity: .86; }
+  0% { opacity: 0; }
+  46% { opacity: .86; }
+  100% { opacity: 0; }
 }
 
 @keyframes hero-name-type {
