@@ -128,8 +128,8 @@ https://www.qiuxiaomiao.com/assets/operations/x-profile.webp,public/assets/opera
 https://www.qiuxiaomiao.com/assets/sardine-run-w480.avif,public/assets/sardine-run-w480.avif,12685,12.4,avif,480,263,yes,generated responsive candidate for /assets/sardine-run.webp
 https://www.qiuxiaomiao.com/assets/sardine-run-w480.webp,public/assets/sardine-run-w480.webp,21024,20.5,webp,480,263,yes,generated responsive candidate for /assets/sardine-run.webp
 https://www.qiuxiaomiao.com/assets/sardine-run-w828.avif,public/assets/sardine-run-w828.avif,32507,31.7,avif,828,454,yes,generated responsive candidate for /assets/sardine-run.webp
-https://www.qiuxiaomiao.com/assets/sardine-run.jpg,public/assets/sardine-run.jpg,56890,55.6,jpeg,828,454,yes,src/App.jsx:781 (JPG fallback)
-https://www.qiuxiaomiao.com/assets/sardine-run.webp,public/assets/sardine-run.webp,55678,54.4,webp,828,454,yes,src/App.jsx:781
+https://www.qiuxiaomiao.com/assets/sardine-run.jpg,public/assets/sardine-run.jpg,56890,55.6,jpeg,828,454,yes,src/App.jsx:862 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/sardine-run.webp,public/assets/sardine-run.webp,55678,54.4,webp,828,454,yes,src/App.jsx:862
 https://www.qiuxiaomiao.com/assets/sea-hero-pixel-mobile-w480.avif,public/assets/sea-hero-pixel-mobile-w480.avif,38915,38.0,avif,480,853,yes,generated responsive candidate for /assets/sea-hero-pixel-mobile.webp | index.html:9
 https://www.qiuxiaomiao.com/assets/sea-hero-pixel-mobile-w480.webp,public/assets/sea-hero-pixel-mobile-w480.webp,67686,66.1,webp,480,853,yes,generated responsive candidate for /assets/sea-hero-pixel-mobile.webp
 https://www.qiuxiaomiao.com/assets/sea-hero-pixel-mobile-w941.avif,public/assets/sea-hero-pixel-mobile-w941.avif,113938,111.3,avif,941,1672,yes,generated responsive candidate for /assets/sea-hero-pixel-mobile.webp | index.html:9
@@ -142,8 +142,8 @@ https://www.qiuxiaomiao.com/assets/sea-hero-pixel-w960.avif,public/assets/sea-he
 https://www.qiuxiaomiao.com/assets/sea-hero-pixel-w960.webp,public/assets/sea-hero-pixel-w960.webp,64370,62.9,webp,960,721,yes,generated responsive candidate for /assets/sea-hero-pixel.webp | src/styles.css:619
 https://www.qiuxiaomiao.com/assets/sea-hero-pixel.jpg,public/assets/sea-hero-pixel.jpg,145513,142.1,jpeg,1446,1086,yes,src/App.jsx:595 (JPG fallback) | src/App.jsx:597 (JPG fallback) | src/App.jsx:601 | src/styles.css:628
 https://www.qiuxiaomiao.com/assets/sea-hero-pixel.webp,public/assets/sea-hero-pixel.webp,127330,124.3,webp,1446,1086,yes,src/App.jsx:595 | src/App.jsx:597
-https://www.qiuxiaomiao.com/assets/sea-hero-preview-mobile.jpg,public/assets/sea-hero-preview-mobile.jpg,48278,47.1,jpeg,360,640,yes,index.html:8 (JPG fallback) | src/styles.css:2328 | src/styles.css:2332 (JPG fallback) | src/styles.css:2336
-https://www.qiuxiaomiao.com/assets/sea-hero-preview-mobile.webp,public/assets/sea-hero-preview-mobile.webp,33252,32.5,webp,360,640,yes,index.html:8 | src/styles.css:2332
+https://www.qiuxiaomiao.com/assets/sea-hero-preview-mobile.jpg,public/assets/sea-hero-preview-mobile.jpg,48278,47.1,jpeg,360,640,yes,index.html:8 (JPG fallback) | src/styles.css:2352 | src/styles.css:2356 (JPG fallback) | src/styles.css:2360
+https://www.qiuxiaomiao.com/assets/sea-hero-preview-mobile.webp,public/assets/sea-hero-preview-mobile.webp,33252,32.5,webp,360,640,yes,index.html:8 | src/styles.css:2356
 https://www.qiuxiaomiao.com/assets/vine-jump-mobile-w480.avif,public/assets/vine-jump-mobile-w480.avif,63179,61.7,avif,480,853,yes,generated responsive candidate for /assets/vine-jump-mobile.webp
 https://www.qiuxiaomiao.com/assets/vine-jump-mobile-w480.webp,public/assets/vine-jump-mobile-w480.webp,116798,114.1,webp,480,853,yes,generated responsive candidate for /assets/vine-jump-mobile.webp
 https://www.qiuxiaomiao.com/assets/vine-jump-mobile-w720.avif,public/assets/vine-jump-mobile-w720.avif,159730,156.0,avif,720,1280,yes,generated responsive candidate for /assets/vine-jump-mobile.webp
@@ -160,13 +160,24 @@ https://www.qiuxiaomiao.com/assets/visual/autumn-gutian-publish-w480.webp,public
 https://www.qiuxiaomiao.com/assets/visual/autumn-gutian-publish-w960.webp,public/assets/visual/autumn-gutian-publish-w960.webp,142370,139.0,webp,960,1871,yes,generated responsive candidate for /assets/visual/autumn-gutian-publish.webp
 https://www.qiuxiaomiao.com/assets/visual/autumn-gutian-publish.jpg,public/assets/visual/autumn-gutian-publish.jpg,233492,228.0,jpeg,1178,2296,yes,src/App.jsx:341 (JPG fallback)
 https://www.qiuxiaomiao.com/assets/visual/autumn-gutian-publish.webp,public/assets/visual/autumn-gutian-publish.webp,227250,221.9,webp,1178,2296,yes,src/App.jsx:341
-https://www.qiuxiaomiao.com/assets/visual/autumn-gutian-title-w1600.webp,public/assets/visual/autumn-gutian-title-w1600.webp,247702,241.9,webp,1600,928,yes,generated responsive candidate for /assets/visual/autumn-gutian-title.webp
-https://www.qiuxiaomiao.com/assets/visual/autumn-gutian-title-w480.webp,public/assets/visual/autumn-gutian-title-w480.webp,38452,37.6,webp,480,278,yes,generated responsive candidate for /assets/visual/autumn-gutian-title.webp
-https://www.qiuxiaomiao.com/assets/visual/autumn-gutian-title-w960.webp,public/assets/visual/autumn-gutian-title-w960.webp,125284,122.3,webp,960,557,yes,generated responsive candidate for /assets/visual/autumn-gutian-title.webp
+https://www.qiuxiaomiao.com/assets/visual/autumn-gutian-title-w320.avif,public/assets/visual/autumn-gutian-title-w320.avif,13553,13.2,avif,320,186,yes,generated responsive candidate for /assets/visual/autumn-gutian-title.webp
+https://www.qiuxiaomiao.com/assets/visual/autumn-gutian-title-w320.webp,public/assets/visual/autumn-gutian-title-w320.webp,22680,22.1,webp,320,186,yes,generated responsive candidate for /assets/visual/autumn-gutian-title.webp
+https://www.qiuxiaomiao.com/assets/visual/autumn-gutian-title-w480.avif,public/assets/visual/autumn-gutian-title-w480.avif,29677,29.0,avif,480,278,yes,generated responsive candidate for /assets/visual/autumn-gutian-title.webp
+https://www.qiuxiaomiao.com/assets/visual/autumn-gutian-title-w480.webp,public/assets/visual/autumn-gutian-title-w480.webp,48276,47.1,webp,480,278,yes,generated responsive candidate for /assets/visual/autumn-gutian-title.webp
+https://www.qiuxiaomiao.com/assets/visual/autumn-gutian-title-w720.avif,public/assets/visual/autumn-gutian-title-w720.avif,62284,60.8,avif,720,418,yes,generated responsive candidate for /assets/visual/autumn-gutian-title.webp
+https://www.qiuxiaomiao.com/assets/visual/autumn-gutian-title-w720.webp,public/assets/visual/autumn-gutian-title-w720.webp,98690,96.4,webp,720,418,yes,generated responsive candidate for /assets/visual/autumn-gutian-title.webp
+https://www.qiuxiaomiao.com/assets/visual/autumn-gutian-title-w960.avif,public/assets/visual/autumn-gutian-title-w960.avif,100571,98.2,avif,960,557,yes,generated responsive candidate for /assets/visual/autumn-gutian-title.webp
+https://www.qiuxiaomiao.com/assets/visual/autumn-gutian-title-w960.webp,public/assets/visual/autumn-gutian-title-w960.webp,159008,155.3,webp,960,557,yes,generated responsive candidate for /assets/visual/autumn-gutian-title.webp
 https://www.qiuxiaomiao.com/assets/visual/autumn-gutian-title.jpg,public/assets/visual/autumn-gutian-title.jpg,338667,330.7,jpeg,1920,1114,yes,src/App.jsx:337 (JPG fallback) | src/App.jsx:340 (JPG fallback)
 https://www.qiuxiaomiao.com/assets/visual/autumn-gutian-title.webp,public/assets/visual/autumn-gutian-title.webp,364410,355.9,webp,1920,1114,yes,src/App.jsx:337 | src/App.jsx:340
-https://www.qiuxiaomiao.com/assets/visual/campus-video-source-w480.webp,public/assets/visual/campus-video-source-w480.webp,53938,52.7,webp,480,553,yes,generated responsive candidate for /assets/visual/campus-video-source.webp
-https://www.qiuxiaomiao.com/assets/visual/campus-video-source-w960.webp,public/assets/visual/campus-video-source-w960.webp,150860,147.3,webp,960,1107,yes,generated responsive candidate for /assets/visual/campus-video-source.webp
+https://www.qiuxiaomiao.com/assets/visual/campus-video-source-w320.avif,public/assets/visual/campus-video-source-w320.avif,21250,20.8,avif,320,369,yes,generated responsive candidate for /assets/visual/campus-video-source.webp
+https://www.qiuxiaomiao.com/assets/visual/campus-video-source-w320.webp,public/assets/visual/campus-video-source-w320.webp,35282,34.5,webp,320,369,yes,generated responsive candidate for /assets/visual/campus-video-source.webp
+https://www.qiuxiaomiao.com/assets/visual/campus-video-source-w480.avif,public/assets/visual/campus-video-source-w480.avif,40490,39.5,avif,480,553,yes,generated responsive candidate for /assets/visual/campus-video-source.webp
+https://www.qiuxiaomiao.com/assets/visual/campus-video-source-w480.webp,public/assets/visual/campus-video-source-w480.webp,66288,64.7,webp,480,553,yes,generated responsive candidate for /assets/visual/campus-video-source.webp
+https://www.qiuxiaomiao.com/assets/visual/campus-video-source-w720.avif,public/assets/visual/campus-video-source-w720.avif,75570,73.8,avif,720,830,yes,generated responsive candidate for /assets/visual/campus-video-source.webp
+https://www.qiuxiaomiao.com/assets/visual/campus-video-source-w720.webp,public/assets/visual/campus-video-source-w720.webp,125342,122.4,webp,720,830,yes,generated responsive candidate for /assets/visual/campus-video-source.webp
+https://www.qiuxiaomiao.com/assets/visual/campus-video-source-w960.avif,public/assets/visual/campus-video-source-w960.avif,115010,112.3,avif,960,1107,yes,generated responsive candidate for /assets/visual/campus-video-source.webp
+https://www.qiuxiaomiao.com/assets/visual/campus-video-source-w960.webp,public/assets/visual/campus-video-source-w960.webp,193126,188.6,webp,960,1107,yes,generated responsive candidate for /assets/visual/campus-video-source.webp
 https://www.qiuxiaomiao.com/assets/visual/campus-video-source.jpg,public/assets/visual/campus-video-source.jpg,251634,245.7,jpeg,1178,1358,yes,src/App.jsx:348 (JPG fallback) | src/App.jsx:352 (JPG fallback) | src/App.jsx:359 (JPG fallback) | src/App.jsx:363 (JPG fallback)
 https://www.qiuxiaomiao.com/assets/visual/campus-video-source.webp,public/assets/visual/campus-video-source.webp,246738,241.0,webp,1178,1358,yes,src/App.jsx:348 | src/App.jsx:352 | src/App.jsx:359 | src/App.jsx:363
 https://www.qiuxiaomiao.com/assets/visual/counselor-day-01-w480.webp,public/assets/visual/counselor-day-01-w480.webp,14018,13.7,webp,480,275,yes,generated responsive candidate for /assets/visual/counselor-day-01.webp
@@ -189,8 +200,14 @@ https://www.qiuxiaomiao.com/assets/visual/counselor-day-05-w480.webp,public/asse
 https://www.qiuxiaomiao.com/assets/visual/counselor-day-05-w960.webp,public/assets/visual/counselor-day-05-w960.webp,24128,23.6,webp,960,551,yes,generated responsive candidate for /assets/visual/counselor-day-05.webp
 https://www.qiuxiaomiao.com/assets/visual/counselor-day-05.jpg,public/assets/visual/counselor-day-05.jpg,70110,68.5,jpeg,1593,915,yes,src/App.jsx:314 (JPG fallback)
 https://www.qiuxiaomiao.com/assets/visual/counselor-day-05.webp,public/assets/visual/counselor-day-05.webp,44098,43.1,webp,1593,915,yes,src/App.jsx:314
-https://www.qiuxiaomiao.com/assets/visual/counselor-day-poster-w480.webp,public/assets/visual/counselor-day-poster-w480.webp,44682,43.6,webp,480,273,yes,generated responsive candidate for /assets/visual/counselor-day-poster.webp
-https://www.qiuxiaomiao.com/assets/visual/counselor-day-poster-w960.webp,public/assets/visual/counselor-day-poster-w960.webp,141906,138.6,webp,960,547,yes,generated responsive candidate for /assets/visual/counselor-day-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-poster-w320.avif,public/assets/visual/counselor-day-poster-w320.avif,15626,15.3,avif,320,182,yes,generated responsive candidate for /assets/visual/counselor-day-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-poster-w320.webp,public/assets/visual/counselor-day-poster-w320.webp,26988,26.4,webp,320,182,yes,generated responsive candidate for /assets/visual/counselor-day-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-poster-w480.avif,public/assets/visual/counselor-day-poster-w480.avif,33570,32.8,avif,480,273,yes,generated responsive candidate for /assets/visual/counselor-day-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-poster-w480.webp,public/assets/visual/counselor-day-poster-w480.webp,54460,53.2,webp,480,273,yes,generated responsive candidate for /assets/visual/counselor-day-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-poster-w720.avif,public/assets/visual/counselor-day-poster-w720.avif,66917,65.3,avif,720,410,yes,generated responsive candidate for /assets/visual/counselor-day-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-poster-w720.webp,public/assets/visual/counselor-day-poster-w720.webp,109860,107.3,webp,720,410,yes,generated responsive candidate for /assets/visual/counselor-day-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-poster-w960.avif,public/assets/visual/counselor-day-poster-w960.avif,105443,103.0,avif,960,547,yes,generated responsive candidate for /assets/visual/counselor-day-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-poster-w960.webp,public/assets/visual/counselor-day-poster-w960.webp,175196,171.1,webp,960,547,yes,generated responsive candidate for /assets/visual/counselor-day-poster.webp
 https://www.qiuxiaomiao.com/assets/visual/counselor-day-poster.jpg,public/assets/visual/counselor-day-poster.jpg,253451,247.5,jpeg,1400,797,yes,src/App.jsx:306 (JPG fallback)
 https://www.qiuxiaomiao.com/assets/visual/counselor-day-poster.webp,public/assets/visual/counselor-day-poster.webp,261272,255.1,webp,1400,797,yes,src/App.jsx:306
 https://www.qiuxiaomiao.com/assets/visual/empty-flower-01-w1600.webp,public/assets/visual/empty-flower-01-w1600.webp,17660,17.2,webp,1600,900,yes,generated responsive candidate for /assets/visual/empty-flower-01.webp
@@ -218,6 +235,8 @@ https://www.qiuxiaomiao.com/assets/visual/empty-flower-05-w480.webp,public/asset
 https://www.qiuxiaomiao.com/assets/visual/empty-flower-05-w960.webp,public/assets/visual/empty-flower-05-w960.webp,12094,11.8,webp,960,540,yes,generated responsive candidate for /assets/visual/empty-flower-05.webp
 https://www.qiuxiaomiao.com/assets/visual/empty-flower-05.jpg,public/assets/visual/empty-flower-05.jpg,49987,48.8,jpeg,1920,1080,yes,src/App.jsx:193 (JPG fallback)
 https://www.qiuxiaomiao.com/assets/visual/empty-flower-05.webp,public/assets/visual/empty-flower-05.webp,40714,39.8,webp,1920,1080,yes,src/App.jsx:193
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-poster-w320.avif,public/assets/visual/empty-flower-poster-w320.avif,16618,16.2,avif,320,488,yes,generated responsive candidate for /assets/visual/empty-flower-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-poster-w320.webp,public/assets/visual/empty-flower-poster-w320.webp,24522,23.9,webp,320,488,yes,generated responsive candidate for /assets/visual/empty-flower-poster.webp
 https://www.qiuxiaomiao.com/assets/visual/empty-flower-poster.jpg,public/assets/visual/empty-flower-poster.jpg,42327,41.3,jpeg,468,714,yes,src/App.jsx:186 (JPG fallback)
 https://www.qiuxiaomiao.com/assets/visual/empty-flower-poster.webp,public/assets/visual/empty-flower-poster.webp,38432,37.5,webp,468,714,yes,src/App.jsx:186
 https://www.qiuxiaomiao.com/assets/visual/fang-died-clip-01-poster-w1600.webp,public/assets/visual/fang-died-clip-01-poster-w1600.webp,27940,27.3,webp,1600,964,yes,generated responsive candidate for /assets/visual/fang-died-clip-01-poster.webp
@@ -250,13 +269,24 @@ https://www.qiuxiaomiao.com/assets/visual/fang-died-new-153943-w480.webp,public/
 https://www.qiuxiaomiao.com/assets/visual/fang-died-new-153943-w960.webp,public/assets/visual/fang-died-new-153943-w960.webp,12638,12.3,webp,960,413,yes,generated responsive candidate for /assets/visual/fang-died-new-153943.webp
 https://www.qiuxiaomiao.com/assets/visual/fang-died-new-153943.jpg,public/assets/visual/fang-died-new-153943.jpg,36896,36.0,jpeg,1576,678,yes,src/App.jsx:287 (JPG fallback)
 https://www.qiuxiaomiao.com/assets/visual/fang-died-new-153943.webp,public/assets/visual/fang-died-new-153943.webp,30006,29.3,webp,1576,678,yes,src/App.jsx:287
-https://www.qiuxiaomiao.com/assets/visual/fang-died-new-poster-w480.webp,public/assets/visual/fang-died-new-poster-w480.webp,62376,60.9,webp,480,687,yes,generated responsive candidate for /assets/visual/fang-died-new-poster.webp
-https://www.qiuxiaomiao.com/assets/visual/fang-died-new-poster-w960.webp,public/assets/visual/fang-died-new-poster-w960.webp,155864,152.2,webp,960,1375,yes,generated responsive candidate for /assets/visual/fang-died-new-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-poster-w320.avif,public/assets/visual/fang-died-new-poster-w320.avif,26947,26.3,avif,320,458,yes,generated responsive candidate for /assets/visual/fang-died-new-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-poster-w320.webp,public/assets/visual/fang-died-new-poster-w320.webp,43808,42.8,webp,320,458,yes,generated responsive candidate for /assets/visual/fang-died-new-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-poster-w480.avif,public/assets/visual/fang-died-new-poster-w480.avif,49792,48.6,avif,480,687,yes,generated responsive candidate for /assets/visual/fang-died-new-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-poster-w480.webp,public/assets/visual/fang-died-new-poster-w480.webp,81512,79.6,webp,480,687,yes,generated responsive candidate for /assets/visual/fang-died-new-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-poster-w720.avif,public/assets/visual/fang-died-new-poster-w720.avif,88960,86.9,avif,720,1031,yes,generated responsive candidate for /assets/visual/fang-died-new-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-poster-w720.webp,public/assets/visual/fang-died-new-poster-w720.webp,139508,136.2,webp,720,1031,yes,generated responsive candidate for /assets/visual/fang-died-new-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-poster-w960.avif,public/assets/visual/fang-died-new-poster-w960.avif,129438,126.4,avif,960,1375,yes,generated responsive candidate for /assets/visual/fang-died-new-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-poster-w960.webp,public/assets/visual/fang-died-new-poster-w960.webp,203430,198.7,webp,960,1375,yes,generated responsive candidate for /assets/visual/fang-died-new-poster.webp
 https://www.qiuxiaomiao.com/assets/visual/fang-died-new-poster.jpg,public/assets/visual/fang-died-new-poster.jpg,254204,248.2,jpeg,1257,1800,yes,src/App.jsx:269 (JPG fallback)
 https://www.qiuxiaomiao.com/assets/visual/fang-died-new-poster.webp,public/assets/visual/fang-died-new-poster.webp,248980,243.1,webp,1257,1800,yes,src/App.jsx:269
-https://www.qiuxiaomiao.com/assets/visual/guanyu-01-w1600.webp,public/assets/visual/guanyu-01-w1600.webp,129070,126.0,webp,1600,900,yes,generated responsive candidate for /assets/visual/guanyu-01.webp
-https://www.qiuxiaomiao.com/assets/visual/guanyu-01-w480.webp,public/assets/visual/guanyu-01-w480.webp,18032,17.6,webp,480,270,yes,generated responsive candidate for /assets/visual/guanyu-01.webp
-https://www.qiuxiaomiao.com/assets/visual/guanyu-01-w960.webp,public/assets/visual/guanyu-01-w960.webp,61228,59.8,webp,960,540,yes,generated responsive candidate for /assets/visual/guanyu-01.webp
+https://www.qiuxiaomiao.com/assets/visual/guanyu-01-w320.avif,public/assets/visual/guanyu-01-w320.avif,8463,8.3,avif,320,180,yes,generated responsive candidate for /assets/visual/guanyu-01.webp
+https://www.qiuxiaomiao.com/assets/visual/guanyu-01-w320.webp,public/assets/visual/guanyu-01-w320.webp,12484,12.2,webp,320,180,yes,generated responsive candidate for /assets/visual/guanyu-01.webp
+https://www.qiuxiaomiao.com/assets/visual/guanyu-01-w480.avif,public/assets/visual/guanyu-01-w480.avif,16793,16.4,avif,480,270,yes,generated responsive candidate for /assets/visual/guanyu-01.webp
+https://www.qiuxiaomiao.com/assets/visual/guanyu-01-w480.webp,public/assets/visual/guanyu-01-w480.webp,24970,24.4,webp,480,270,yes,generated responsive candidate for /assets/visual/guanyu-01.webp
+https://www.qiuxiaomiao.com/assets/visual/guanyu-01-w720.avif,public/assets/visual/guanyu-01-w720.avif,34309,33.5,avif,720,405,yes,generated responsive candidate for /assets/visual/guanyu-01.webp
+https://www.qiuxiaomiao.com/assets/visual/guanyu-01-w720.webp,public/assets/visual/guanyu-01-w720.webp,52596,51.4,webp,720,405,yes,generated responsive candidate for /assets/visual/guanyu-01.webp
+https://www.qiuxiaomiao.com/assets/visual/guanyu-01-w960.avif,public/assets/visual/guanyu-01-w960.avif,56784,55.5,avif,960,540,yes,generated responsive candidate for /assets/visual/guanyu-01.webp
+https://www.qiuxiaomiao.com/assets/visual/guanyu-01-w960.webp,public/assets/visual/guanyu-01-w960.webp,85058,83.1,webp,960,540,yes,generated responsive candidate for /assets/visual/guanyu-01.webp
 https://www.qiuxiaomiao.com/assets/visual/guanyu-01.jpg,public/assets/visual/guanyu-01.jpg,168431,164.5,jpeg,1672,940,yes,src/App.jsx:370 (JPG fallback) | src/App.jsx:374 (JPG fallback)
 https://www.qiuxiaomiao.com/assets/visual/guanyu-01.webp,public/assets/visual/guanyu-01.webp,186218,181.9,webp,1672,940,yes,src/App.jsx:370 | src/App.jsx:374
 https://www.qiuxiaomiao.com/assets/visual/guanyu-02-w480.webp,public/assets/visual/guanyu-02-w480.webp,21886,21.4,webp,480,268,yes,generated responsive candidate for /assets/visual/guanyu-02.webp
@@ -300,8 +330,14 @@ https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-06-w480.webp,public/asse
 https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-06-w960.webp,public/assets/visual/joyful-sangyu-06-w960.webp,40844,39.9,webp,960,544,yes,generated responsive candidate for /assets/visual/joyful-sangyu-06.webp
 https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-06.jpg,public/assets/visual/joyful-sangyu-06.jpg,105547,103.1,jpeg,1615,916,yes,src/App.jsx:330 (JPG fallback)
 https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-06.webp,public/assets/visual/joyful-sangyu-06.webp,74152,72.4,webp,1615,916,yes,src/App.jsx:330
-https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-poster-w480.webp,public/assets/visual/joyful-sangyu-poster-w480.webp,20128,19.7,webp,480,276,yes,generated responsive candidate for /assets/visual/joyful-sangyu-poster.webp
-https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-poster-w960.webp,public/assets/visual/joyful-sangyu-poster-w960.webp,45784,44.7,webp,960,553,yes,generated responsive candidate for /assets/visual/joyful-sangyu-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-poster-w320.avif,public/assets/visual/joyful-sangyu-poster-w320.avif,9332,9.1,avif,320,184,yes,generated responsive candidate for /assets/visual/joyful-sangyu-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-poster-w320.webp,public/assets/visual/joyful-sangyu-poster-w320.webp,15568,15.2,webp,320,184,yes,generated responsive candidate for /assets/visual/joyful-sangyu-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-poster-w480.avif,public/assets/visual/joyful-sangyu-poster-w480.avif,16437,16.1,avif,480,276,yes,generated responsive candidate for /assets/visual/joyful-sangyu-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-poster-w480.webp,public/assets/visual/joyful-sangyu-poster-w480.webp,25642,25.0,webp,480,276,yes,generated responsive candidate for /assets/visual/joyful-sangyu-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-poster-w720.avif,public/assets/visual/joyful-sangyu-poster-w720.avif,27128,26.5,avif,720,415,yes,generated responsive candidate for /assets/visual/joyful-sangyu-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-poster-w720.webp,public/assets/visual/joyful-sangyu-poster-w720.webp,42544,41.5,webp,720,415,yes,generated responsive candidate for /assets/visual/joyful-sangyu-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-poster-w960.avif,public/assets/visual/joyful-sangyu-poster-w960.avif,38513,37.6,avif,960,553,yes,generated responsive candidate for /assets/visual/joyful-sangyu-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-poster-w960.webp,public/assets/visual/joyful-sangyu-poster-w960.webp,60600,59.2,webp,960,553,yes,generated responsive candidate for /assets/visual/joyful-sangyu-poster.webp
 https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-poster.jpg,public/assets/visual/joyful-sangyu-poster.jpg,94750,92.5,jpeg,1400,806,yes,src/App.jsx:321 (JPG fallback)
 https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-poster.webp,public/assets/visual/joyful-sangyu-poster.webp,80554,78.7,webp,1400,806,yes,src/App.jsx:321
 https://www.qiuxiaomiao.com/assets/visual/millennium-pen-frame-w1600.webp,public/assets/visual/millennium-pen-frame-w1600.webp,45254,44.2,webp,1600,907,yes,generated responsive candidate for /assets/visual/millennium-pen-frame.webp
@@ -309,9 +345,14 @@ https://www.qiuxiaomiao.com/assets/visual/millennium-pen-frame-w480.webp,public/
 https://www.qiuxiaomiao.com/assets/visual/millennium-pen-frame-w960.webp,public/assets/visual/millennium-pen-frame-w960.webp,22746,22.2,webp,960,544,yes,generated responsive candidate for /assets/visual/millennium-pen-frame.webp
 https://www.qiuxiaomiao.com/assets/visual/millennium-pen-frame.jpg,public/assets/visual/millennium-pen-frame.jpg,82615,80.7,jpeg,1908,1082,yes,src/App.jsx:406 (JPG fallback)
 https://www.qiuxiaomiao.com/assets/visual/millennium-pen-frame.webp,public/assets/visual/millennium-pen-frame.webp,73136,71.4,webp,1908,1082,yes,src/App.jsx:406
-https://www.qiuxiaomiao.com/assets/visual/millennium-pen-poster-w1600.webp,public/assets/visual/millennium-pen-poster-w1600.webp,159266,155.5,webp,1600,2401,yes,generated responsive candidate for /assets/visual/millennium-pen-poster.webp
-https://www.qiuxiaomiao.com/assets/visual/millennium-pen-poster-w480.webp,public/assets/visual/millennium-pen-poster-w480.webp,36062,35.2,webp,480,720,yes,generated responsive candidate for /assets/visual/millennium-pen-poster.webp
-https://www.qiuxiaomiao.com/assets/visual/millennium-pen-poster-w960.webp,public/assets/visual/millennium-pen-poster-w960.webp,88120,86.1,webp,960,1441,yes,generated responsive candidate for /assets/visual/millennium-pen-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/millennium-pen-poster-w320.avif,public/assets/visual/millennium-pen-poster-w320.avif,17494,17.1,avif,320,480,yes,generated responsive candidate for /assets/visual/millennium-pen-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/millennium-pen-poster-w320.webp,public/assets/visual/millennium-pen-poster-w320.webp,25886,25.3,webp,320,480,yes,generated responsive candidate for /assets/visual/millennium-pen-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/millennium-pen-poster-w480.avif,public/assets/visual/millennium-pen-poster-w480.avif,32125,31.4,avif,480,720,yes,generated responsive candidate for /assets/visual/millennium-pen-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/millennium-pen-poster-w480.webp,public/assets/visual/millennium-pen-poster-w480.webp,45478,44.4,webp,480,720,yes,generated responsive candidate for /assets/visual/millennium-pen-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/millennium-pen-poster-w720.avif,public/assets/visual/millennium-pen-poster-w720.avif,52704,51.5,avif,720,1080,yes,generated responsive candidate for /assets/visual/millennium-pen-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/millennium-pen-poster-w720.webp,public/assets/visual/millennium-pen-poster-w720.webp,76652,74.9,webp,720,1080,yes,generated responsive candidate for /assets/visual/millennium-pen-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/millennium-pen-poster-w960.avif,public/assets/visual/millennium-pen-poster-w960.avif,77528,75.7,avif,960,1441,yes,generated responsive candidate for /assets/visual/millennium-pen-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/millennium-pen-poster-w960.webp,public/assets/visual/millennium-pen-poster-w960.webp,110376,107.8,webp,960,1441,yes,generated responsive candidate for /assets/visual/millennium-pen-poster.webp
 https://www.qiuxiaomiao.com/assets/visual/millennium-pen-poster.jpg,public/assets/visual/millennium-pen-poster.jpg,277673,271.2,jpeg,1706,2560,yes,src/App.jsx:398 (JPG fallback)
 https://www.qiuxiaomiao.com/assets/visual/millennium-pen-poster.webp,public/assets/visual/millennium-pen-poster.webp,207884,203.0,webp,1706,2560,yes,src/App.jsx:398
 https://www.qiuxiaomiao.com/assets/visual/pintan-01-w480.webp,public/assets/visual/pintan-01-w480.webp,8418,8.2,webp,480,362,yes,generated responsive candidate for /assets/visual/pintan-01.webp
@@ -338,8 +379,13 @@ https://www.qiuxiaomiao.com/assets/visual/pintan-06-w480.webp,public/assets/visu
 https://www.qiuxiaomiao.com/assets/visual/pintan-06-w960.webp,public/assets/visual/pintan-06-w960.webp,5672,5.5,webp,960,749,yes,generated responsive candidate for /assets/visual/pintan-06.webp
 https://www.qiuxiaomiao.com/assets/visual/pintan-06.jpg,public/assets/visual/pintan-06.jpg,14512,14.2,jpeg,1176,917,yes,src/App.jsx:230 (JPG fallback)
 https://www.qiuxiaomiao.com/assets/visual/pintan-06.webp,public/assets/visual/pintan-06.webp,7328,7.2,webp,1176,917,yes,src/App.jsx:230
-https://www.qiuxiaomiao.com/assets/visual/pintan-poster-w480.webp,public/assets/visual/pintan-poster-w480.webp,40160,39.2,webp,480,720,yes,generated responsive candidate for /assets/visual/pintan-poster.webp
-https://www.qiuxiaomiao.com/assets/visual/pintan-poster-w960.webp,public/assets/visual/pintan-poster-w960.webp,122362,119.5,webp,960,1440,yes,generated responsive candidate for /assets/visual/pintan-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/pintan-poster-w320.avif,public/assets/visual/pintan-poster-w320.avif,14302,14.0,avif,320,480,yes,generated responsive candidate for /assets/visual/pintan-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/pintan-poster-w320.webp,public/assets/visual/pintan-poster-w320.webp,25988,25.4,webp,320,480,yes,generated responsive candidate for /assets/visual/pintan-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/pintan-poster-w480.avif,public/assets/visual/pintan-poster-w480.avif,35487,34.7,avif,480,720,yes,generated responsive candidate for /assets/visual/pintan-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/pintan-poster-w480.webp,public/assets/visual/pintan-poster-w480.webp,61376,59.9,webp,480,720,yes,generated responsive candidate for /assets/visual/pintan-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/pintan-poster-w720.avif,public/assets/visual/pintan-poster-w720.avif,72539,70.8,avif,720,1080,yes,generated responsive candidate for /assets/visual/pintan-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/pintan-poster-w720.webp,public/assets/visual/pintan-poster-w720.webp,113264,110.6,webp,720,1080,yes,generated responsive candidate for /assets/visual/pintan-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/pintan-poster-w960.avif,public/assets/visual/pintan-poster-w960.avif,107897,105.4,avif,960,1440,yes,generated responsive candidate for /assets/visual/pintan-poster.webp
 https://www.qiuxiaomiao.com/assets/visual/pintan-poster.jpg,public/assets/visual/pintan-poster.jpg,159646,155.9,jpeg,1080,1620,yes,src/App.jsx:221 (JPG fallback)
 https://www.qiuxiaomiao.com/assets/visual/pintan-poster.webp,public/assets/visual/pintan-poster.webp,172744,168.7,webp,1080,1620,yes,src/App.jsx:221
 https://www.qiuxiaomiao.com/assets/visual/run-away-01-w480.webp,public/assets/visual/run-away-01-w480.webp,10138,9.9,webp,480,256,yes,generated responsive candidate for /assets/visual/run-away-01.webp
@@ -367,8 +413,14 @@ https://www.qiuxiaomiao.com/assets/visual/run-away-06-w480.webp,public/assets/vi
 https://www.qiuxiaomiao.com/assets/visual/run-away-06-w960.webp,public/assets/visual/run-away-06-w960.webp,10790,10.5,webp,960,526,yes,generated responsive candidate for /assets/visual/run-away-06.webp
 https://www.qiuxiaomiao.com/assets/visual/run-away-06.jpg,public/assets/visual/run-away-06.jpg,32247,31.5,jpeg,1563,856,yes,src/App.jsx:213 (JPG fallback)
 https://www.qiuxiaomiao.com/assets/visual/run-away-06.webp,public/assets/visual/run-away-06.webp,19928,19.5,webp,1563,856,yes,src/App.jsx:213
-https://www.qiuxiaomiao.com/assets/visual/run-away-poster-w480.webp,public/assets/visual/run-away-poster-w480.webp,3164,3.1,webp,480,230,yes,generated responsive candidate for /assets/visual/run-away-poster.webp
-https://www.qiuxiaomiao.com/assets/visual/run-away-poster-w960.webp,public/assets/visual/run-away-poster-w960.webp,6868,6.7,webp,960,459,yes,generated responsive candidate for /assets/visual/run-away-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/run-away-poster-w320.avif,public/assets/visual/run-away-poster-w320.avif,2085,2.0,avif,320,153,yes,generated responsive candidate for /assets/visual/run-away-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/run-away-poster-w320.webp,public/assets/visual/run-away-poster-w320.webp,2482,2.4,webp,320,153,yes,generated responsive candidate for /assets/visual/run-away-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/run-away-poster-w480.avif,public/assets/visual/run-away-poster-w480.avif,3200,3.1,avif,480,230,yes,generated responsive candidate for /assets/visual/run-away-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/run-away-poster-w480.webp,public/assets/visual/run-away-poster-w480.webp,4056,4.0,webp,480,230,yes,generated responsive candidate for /assets/visual/run-away-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/run-away-poster-w720.avif,public/assets/visual/run-away-poster-w720.avif,4772,4.7,avif,720,345,yes,generated responsive candidate for /assets/visual/run-away-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/run-away-poster-w720.webp,public/assets/visual/run-away-poster-w720.webp,6552,6.4,webp,720,345,yes,generated responsive candidate for /assets/visual/run-away-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/run-away-poster-w960.avif,public/assets/visual/run-away-poster-w960.avif,6665,6.5,avif,960,459,yes,generated responsive candidate for /assets/visual/run-away-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/run-away-poster-w960.webp,public/assets/visual/run-away-poster-w960.webp,9052,8.8,webp,960,459,yes,generated responsive candidate for /assets/visual/run-away-poster.webp
 https://www.qiuxiaomiao.com/assets/visual/run-away-poster.jpg,public/assets/visual/run-away-poster.jpg,19465,19.0,jpeg,1400,670,yes,src/App.jsx:200 (JPG fallback)
 https://www.qiuxiaomiao.com/assets/visual/run-away-poster.webp,public/assets/visual/run-away-poster.webp,11562,11.3,webp,1400,670,yes,src/App.jsx:200
 https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-01-w480.webp,public/assets/visual/shaded-canvas-01-w480.webp,13628,13.3,webp,480,206,yes,generated responsive candidate for /assets/visual/shaded-canvas-01.webp
@@ -395,7 +447,10 @@ https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-06-w480.webp,public/asse
 https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-06-w960.webp,public/assets/visual/shaded-canvas-06-w960.webp,12588,12.3,webp,960,434,yes,generated responsive candidate for /assets/visual/shaded-canvas-06.webp
 https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-06.jpg,public/assets/visual/shaded-canvas-06.jpg,36107,35.3,jpeg,1588,718,yes,src/App.jsx:247 (JPG fallback)
 https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-06.webp,public/assets/visual/shaded-canvas-06.webp,21954,21.4,webp,1588,718,yes,src/App.jsx:247
-https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-poster-w480.webp,public/assets/visual/shaded-canvas-poster-w480.webp,33256,32.5,webp,480,720,yes,generated responsive candidate for /assets/visual/shaded-canvas-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-poster-w320.avif,public/assets/visual/shaded-canvas-poster-w320.avif,17468,17.1,avif,320,480,yes,generated responsive candidate for /assets/visual/shaded-canvas-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-poster-w320.webp,public/assets/visual/shaded-canvas-poster-w320.webp,26494,25.9,webp,320,480,yes,generated responsive candidate for /assets/visual/shaded-canvas-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-poster-w480.avif,public/assets/visual/shaded-canvas-poster-w480.avif,32508,31.7,avif,480,720,yes,generated responsive candidate for /assets/visual/shaded-canvas-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-poster-w480.webp,public/assets/visual/shaded-canvas-poster-w480.webp,46860,45.8,webp,480,720,yes,generated responsive candidate for /assets/visual/shaded-canvas-poster.webp
 https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-poster.jpg,public/assets/visual/shaded-canvas-poster.jpg,47973,46.8,jpeg,538,807,yes,src/App.jsx:238 (JPG fallback)
 https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-poster.webp,public/assets/visual/shaded-canvas-poster.webp,49776,48.6,webp,538,807,yes,src/App.jsx:238
 https://www.qiuxiaomiao.com/assets/visual/summer-flower-01-w1600.webp,public/assets/visual/summer-flower-01-w1600.webp,25584,25.0,webp,1600,681,yes,generated responsive candidate for /assets/visual/summer-flower-01.webp
@@ -407,8 +462,14 @@ https://www.qiuxiaomiao.com/assets/visual/summer-flower-02-w480.webp,public/asse
 https://www.qiuxiaomiao.com/assets/visual/summer-flower-02-w960.webp,public/assets/visual/summer-flower-02-w960.webp,77950,76.1,webp,960,414,yes,generated responsive candidate for /assets/visual/summer-flower-02.webp
 https://www.qiuxiaomiao.com/assets/visual/summer-flower-02.jpg,public/assets/visual/summer-flower-02.jpg,149394,145.9,jpeg,1588,684,yes,src/App.jsx:299 (JPG fallback)
 https://www.qiuxiaomiao.com/assets/visual/summer-flower-02.webp,public/assets/visual/summer-flower-02.webp,162764,158.9,webp,1588,684,yes,src/App.jsx:299
-https://www.qiuxiaomiao.com/assets/visual/summer-flower-poster-w480.webp,public/assets/visual/summer-flower-poster-w480.webp,114952,112.3,webp,480,720,yes,generated responsive candidate for /assets/visual/summer-flower-poster.webp
-https://www.qiuxiaomiao.com/assets/visual/summer-flower-poster-w960.webp,public/assets/visual/summer-flower-poster-w960.webp,328142,320.5,webp,960,1440,yes,generated responsive candidate for /assets/visual/summer-flower-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/summer-flower-poster-w320.avif,public/assets/visual/summer-flower-poster-w320.avif,41170,40.2,avif,320,480,yes,generated responsive candidate for /assets/visual/summer-flower-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/summer-flower-poster-w320.webp,public/assets/visual/summer-flower-poster-w320.webp,71322,69.7,webp,320,480,yes,generated responsive candidate for /assets/visual/summer-flower-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/summer-flower-poster-w480.avif,public/assets/visual/summer-flower-poster-w480.avif,83370,81.4,avif,480,720,yes,generated responsive candidate for /assets/visual/summer-flower-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/summer-flower-poster-w480.webp,public/assets/visual/summer-flower-poster-w480.webp,142418,139.1,webp,480,720,yes,generated responsive candidate for /assets/visual/summer-flower-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/summer-flower-poster-w720.avif,public/assets/visual/summer-flower-poster-w720.avif,157907,154.2,avif,720,1080,yes,generated responsive candidate for /assets/visual/summer-flower-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/summer-flower-poster-w720.webp,public/assets/visual/summer-flower-poster-w720.webp,274520,268.1,webp,720,1080,yes,generated responsive candidate for /assets/visual/summer-flower-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/summer-flower-poster-w960.avif,public/assets/visual/summer-flower-poster-w960.avif,238985,233.4,avif,960,1440,yes,generated responsive candidate for /assets/visual/summer-flower-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/summer-flower-poster-w960.webp,public/assets/visual/summer-flower-poster-w960.webp,416320,406.6,webp,960,1440,yes,generated responsive candidate for /assets/visual/summer-flower-poster.webp
 https://www.qiuxiaomiao.com/assets/visual/summer-flower-poster.jpg,public/assets/visual/summer-flower-poster.jpg,475804,464.7,jpeg,1280,1920,yes,src/App.jsx:294 (JPG fallback)
 https://www.qiuxiaomiao.com/assets/visual/summer-flower-poster.webp,public/assets/visual/summer-flower-poster.webp,557196,544.1,webp,1280,1920,yes,src/App.jsx:294
 https://www.qiuxiaomiao.com/assets/visual/upgrade-log-01-w1600.webp,public/assets/visual/upgrade-log-01-w1600.webp,7594,7.4,webp,1600,837,yes,generated responsive candidate for /assets/visual/upgrade-log-01.webp
@@ -426,9 +487,14 @@ https://www.qiuxiaomiao.com/assets/visual/upgrade-log-03-w480.webp,public/assets
 https://www.qiuxiaomiao.com/assets/visual/upgrade-log-03-w960.webp,public/assets/visual/upgrade-log-03-w960.webp,35766,34.9,webp,960,526,yes,generated responsive candidate for /assets/visual/upgrade-log-03.webp
 https://www.qiuxiaomiao.com/assets/visual/upgrade-log-03.jpg,public/assets/visual/upgrade-log-03.jpg,114925,112.2,jpeg,1904,1044,yes,src/App.jsx:390 (JPG fallback)
 https://www.qiuxiaomiao.com/assets/visual/upgrade-log-03.webp,public/assets/visual/upgrade-log-03.webp,88124,86.1,webp,1904,1044,yes,src/App.jsx:390
-https://www.qiuxiaomiao.com/assets/visual/upgrade-log-04-w1600.webp,public/assets/visual/upgrade-log-04-w1600.webp,63342,61.9,webp,1600,913,yes,generated responsive candidate for /assets/visual/upgrade-log-04.webp
-https://www.qiuxiaomiao.com/assets/visual/upgrade-log-04-w480.webp,public/assets/visual/upgrade-log-04-w480.webp,13712,13.4,webp,480,274,yes,generated responsive candidate for /assets/visual/upgrade-log-04.webp
-https://www.qiuxiaomiao.com/assets/visual/upgrade-log-04-w960.webp,public/assets/visual/upgrade-log-04-w960.webp,36038,35.2,webp,960,548,yes,generated responsive candidate for /assets/visual/upgrade-log-04.webp
+https://www.qiuxiaomiao.com/assets/visual/upgrade-log-04-w320.avif,public/assets/visual/upgrade-log-04-w320.avif,6673,6.5,avif,320,183,yes,generated responsive candidate for /assets/visual/upgrade-log-04.webp
+https://www.qiuxiaomiao.com/assets/visual/upgrade-log-04-w320.webp,public/assets/visual/upgrade-log-04-w320.webp,9524,9.3,webp,320,183,yes,generated responsive candidate for /assets/visual/upgrade-log-04.webp
+https://www.qiuxiaomiao.com/assets/visual/upgrade-log-04-w480.avif,public/assets/visual/upgrade-log-04-w480.avif,12745,12.4,avif,480,274,yes,generated responsive candidate for /assets/visual/upgrade-log-04.webp
+https://www.qiuxiaomiao.com/assets/visual/upgrade-log-04-w480.webp,public/assets/visual/upgrade-log-04-w480.webp,17834,17.4,webp,480,274,yes,generated responsive candidate for /assets/visual/upgrade-log-04.webp
+https://www.qiuxiaomiao.com/assets/visual/upgrade-log-04-w720.avif,public/assets/visual/upgrade-log-04-w720.avif,22708,22.2,avif,720,411,yes,generated responsive candidate for /assets/visual/upgrade-log-04.webp
+https://www.qiuxiaomiao.com/assets/visual/upgrade-log-04-w720.webp,public/assets/visual/upgrade-log-04-w720.webp,31472,30.7,webp,720,411,yes,generated responsive candidate for /assets/visual/upgrade-log-04.webp
+https://www.qiuxiaomiao.com/assets/visual/upgrade-log-04-w960.avif,public/assets/visual/upgrade-log-04-w960.avif,33228,32.4,avif,960,548,yes,generated responsive candidate for /assets/visual/upgrade-log-04.webp
+https://www.qiuxiaomiao.com/assets/visual/upgrade-log-04-w960.webp,public/assets/visual/upgrade-log-04-w960.webp,45956,44.9,webp,960,548,yes,generated responsive candidate for /assets/visual/upgrade-log-04.webp
 https://www.qiuxiaomiao.com/assets/visual/upgrade-log-04.jpg,public/assets/visual/upgrade-log-04.jpg,120560,117.7,jpeg,1878,1072,yes,src/App.jsx:385 (JPG fallback) | src/App.jsx:391 (JPG fallback)
 https://www.qiuxiaomiao.com/assets/visual/upgrade-log-04.webp,public/assets/visual/upgrade-log-04.webp,91548,89.4,webp,1878,1072,yes,src/App.jsx:385 | src/App.jsx:391
 https://www.qiuxiaomiao.com/assets/visual/void-between-01-w480.webp,public/assets/visual/void-between-01-w480.webp,19196,18.7,webp,480,357,yes,generated responsive candidate for /assets/visual/void-between-01.webp
@@ -443,16 +509,22 @@ https://www.qiuxiaomiao.com/assets/visual/void-between-03.webp,public/assets/vis
 https://www.qiuxiaomiao.com/assets/visual/void-between-04-w480.webp,public/assets/visual/void-between-04-w480.webp,21290,20.8,webp,480,359,yes,generated responsive candidate for /assets/visual/void-between-04.webp
 https://www.qiuxiaomiao.com/assets/visual/void-between-04.jpg,public/assets/visual/void-between-04.jpg,56354,55.0,jpeg,880,658,yes,src/App.jsx:261 (JPG fallback)
 https://www.qiuxiaomiao.com/assets/visual/void-between-04.webp,public/assets/visual/void-between-04.webp,59580,58.2,webp,880,658,yes,src/App.jsx:261
-https://www.qiuxiaomiao.com/assets/visual/void-between-poster-w480.webp,public/assets/visual/void-between-poster-w480.webp,2778,2.7,webp,480,360,yes,generated responsive candidate for /assets/visual/void-between-poster.webp
-https://www.qiuxiaomiao.com/assets/visual/void-between-poster-w960.webp,public/assets/visual/void-between-poster-w960.webp,6540,6.4,webp,960,720,yes,generated responsive candidate for /assets/visual/void-between-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/void-between-poster-w320.avif,public/assets/visual/void-between-poster-w320.avif,1593,1.6,avif,320,240,yes,generated responsive candidate for /assets/visual/void-between-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/void-between-poster-w320.webp,public/assets/visual/void-between-poster-w320.webp,1856,1.8,webp,320,240,yes,generated responsive candidate for /assets/visual/void-between-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/void-between-poster-w480.avif,public/assets/visual/void-between-poster-w480.avif,2479,2.4,avif,480,360,yes,generated responsive candidate for /assets/visual/void-between-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/void-between-poster-w480.webp,public/assets/visual/void-between-poster-w480.webp,3220,3.1,webp,480,360,yes,generated responsive candidate for /assets/visual/void-between-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/void-between-poster-w720.avif,public/assets/visual/void-between-poster-w720.avif,3797,3.7,avif,720,540,yes,generated responsive candidate for /assets/visual/void-between-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/void-between-poster-w720.webp,public/assets/visual/void-between-poster-w720.webp,5276,5.2,webp,720,540,yes,generated responsive candidate for /assets/visual/void-between-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/void-between-poster-w960.avif,public/assets/visual/void-between-poster-w960.avif,5064,4.9,avif,960,720,yes,generated responsive candidate for /assets/visual/void-between-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/void-between-poster-w960.webp,public/assets/visual/void-between-poster-w960.webp,7612,7.4,webp,960,720,yes,generated responsive candidate for /assets/visual/void-between-poster.webp
 https://www.qiuxiaomiao.com/assets/visual/void-between-poster.jpg,public/assets/visual/void-between-poster.jpg,16709,16.3,jpeg,1178,884,yes,src/App.jsx:255 (JPG fallback)
 https://www.qiuxiaomiao.com/assets/visual/void-between-poster.webp,public/assets/visual/void-between-poster.webp,9270,9.1,webp,1178,884,yes,src/App.jsx:255
-https://www.qiuxiaomiao.com/assets/wechat-qr.jpg,public/assets/wechat-qr.jpg,80343,78.5,jpeg,701,723,yes,src/App.jsx:917
+https://www.qiuxiaomiao.com/assets/wechat-qr.jpg,public/assets/wechat-qr.jpg,80343,78.5,jpeg,701,723,yes,src/App.jsx:1002
 https://www.qiuxiaomiao.com/assets/whale-shark-w1600.avif,public/assets/whale-shark-w1600.avif,34585,33.8,avif,1600,900,yes,generated responsive candidate for /assets/whale-shark.webp
 https://www.qiuxiaomiao.com/assets/whale-shark-w1600.webp,public/assets/whale-shark-w1600.webp,43478,42.5,webp,1600,900,yes,generated responsive candidate for /assets/whale-shark.webp
 https://www.qiuxiaomiao.com/assets/whale-shark-w480.avif,public/assets/whale-shark-w480.avif,5739,5.6,avif,480,270,yes,generated responsive candidate for /assets/whale-shark.webp
 https://www.qiuxiaomiao.com/assets/whale-shark-w480.webp,public/assets/whale-shark-w480.webp,7750,7.6,webp,480,270,yes,generated responsive candidate for /assets/whale-shark.webp
 https://www.qiuxiaomiao.com/assets/whale-shark-w960.avif,public/assets/whale-shark-w960.avif,16139,15.8,avif,960,540,yes,generated responsive candidate for /assets/whale-shark.webp
 https://www.qiuxiaomiao.com/assets/whale-shark-w960.webp,public/assets/whale-shark-w960.webp,22678,22.1,webp,960,540,yes,generated responsive candidate for /assets/whale-shark.webp
-https://www.qiuxiaomiao.com/assets/whale-shark.jpg,public/assets/whale-shark.jpg,73166,71.5,jpeg,1920,1080,yes,src/App.jsx:879 (JPG fallback)
-https://www.qiuxiaomiao.com/assets/whale-shark.webp,public/assets/whale-shark.webp,70232,68.6,webp,1920,1080,yes,src/App.jsx:879
+https://www.qiuxiaomiao.com/assets/whale-shark.jpg,public/assets/whale-shark.jpg,73166,71.5,jpeg,1920,1080,yes,src/App.jsx:964 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/whale-shark.webp,public/assets/whale-shark.webp,70232,68.6,webp,1920,1080,yes,src/App.jsx:964

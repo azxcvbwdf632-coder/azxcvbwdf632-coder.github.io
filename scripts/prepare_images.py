@@ -28,15 +28,17 @@ MANIFEST = ROOT / "src" / "imageManifest.js"
 AUDIT_CSV = ROOT / "docs" / "IMAGE_AUDIT.csv"
 AUDIT_MD = ROOT / "docs" / "IMAGE_AUDIT.md"
 SITE_ORIGIN = "https://www.qiuxiaomiao.com"
-WIDTHS = (480, 960, 1600)
+DEFAULT_WIDTHS = (480, 960, 1600)
+POSTER_WIDTHS = (320, 480, 720, 960)
 VARIANT_RE = re.compile(r"-w\d+\.(?:webp|avif)$", re.IGNORECASE)
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp", ".avif", ".gif", ".svg"}
 TEXT_EXTENSIONS = {".html", ".css", ".js", ".jsx", ".json", ".md", ".txt"}
 EXCLUDED_DIRS = {".git", "node_modules", "dist", "tmp", "source-assets", "design-concepts"}
 
-# AVIF is most useful for the full-screen photographic scenes. Other images
-# keep WebP + JPG so decoding remains fast on modest phones.
-AVIF_SOURCES = {
+# Full-screen scenes keep a larger AVIF candidate. Poster-ring images use
+# compact 320/480/720 previews plus 960px for high-density phones, and always
+# retain their original WebP/JPG.
+FULL_AVIF_SOURCES = {
     "/assets/sea-hero-pixel.webp",
     "/assets/sea-hero-pixel-mobile.webp",
     "/assets/vine-jump.webp",
@@ -44,6 +46,25 @@ AVIF_SOURCES = {
     "/assets/sardine-run.webp",
     "/assets/whale-shark.webp",
 }
+
+POSTER_SOURCES = {
+    "/assets/visual/empty-flower-poster.webp",
+    "/assets/visual/void-between-poster.webp",
+    "/assets/visual/pintan-poster.webp",
+    "/assets/visual/fang-died-new-poster.webp",
+    "/assets/visual/shaded-canvas-poster.webp",
+    "/assets/visual/guanyu-01.webp",
+    "/assets/visual/upgrade-log-04.webp",
+    "/assets/visual/run-away-poster.webp",
+    "/assets/visual/summer-flower-poster.webp",
+    "/assets/visual/counselor-day-poster.webp",
+    "/assets/visual/joyful-sangyu-poster.webp",
+    "/assets/visual/autumn-gutian-title.webp",
+    "/assets/visual/campus-video-source.webp",
+    "/assets/visual/millennium-pen-poster.webp",
+}
+
+AVIF_SOURCES = FULL_AVIF_SOURCES | POSTER_SOURCES
 
 
 def public_url(path: Path) -> str:
@@ -84,21 +105,32 @@ def prepare_variants() -> None:
             continue
         with Image.open(source) as image:
             width, height = image.size
-            for target_width in WIDTHS:
+            source_url = public_url(source)
+            target_widths = POSTER_WIDTHS if source_url in POSTER_SOURCES else DEFAULT_WIDTHS
+
+            if source_url in POSTER_SOURCES:
+                for existing in source.parent.glob(f"{source.stem}-w*.*"):
+                    match = re.search(r"-w(\d+)\.(webp|avif)$", existing.name, re.IGNORECASE)
+                    if match and int(match.group(1)) not in POSTER_WIDTHS:
+                        existing.unlink()
+
+            for target_width in target_widths:
                 if target_width >= width:
                     continue
                 target_height = max(1, round(height * target_width / width))
                 resized = image.resize((target_width, target_height), Image.Resampling.LANCZOS)
                 webp_path = source.with_name(f"{source.stem}-w{target_width}.webp")
-                webp_bytes = encoded_image(resized, "WEBP", 82)
+                webp_quality = 88 if source_url in POSTER_SOURCES else 82
+                webp_bytes = encoded_image(resized, "WEBP", webp_quality)
                 write_if_useful(webp_path, webp_bytes, source.stat().st_size)
 
-                if public_url(source) in AVIF_SOURCES:
+                if source_url in AVIF_SOURCES:
                     avif_path = source.with_name(f"{source.stem}-w{target_width}.avif")
-                    avif_bytes = encoded_image(resized, "AVIF", 55)
+                    avif_quality = 65 if source_url in POSTER_SOURCES else 55
+                    avif_bytes = encoded_image(resized, "AVIF", avif_quality)
                     write_if_useful(avif_path, avif_bytes, source.stat().st_size)
 
-            if public_url(source) in AVIF_SOURCES:
+            if source_url in FULL_AVIF_SOURCES:
                 full_width = min(width, 1600)
                 full_height = max(1, round(height * full_width / width))
                 full = image if full_width == width else image.resize(
