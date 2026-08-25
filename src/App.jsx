@@ -718,7 +718,10 @@ function OperationsScene({ active, next, openEvidence }) {
 
 function FilmsScene({ active, next, openWork, loadAssets }) {
   const [orbitOffset, setOrbitOffset] = useState(() => Math.floor((featuredWorkOrder.length - 1) / 2))
+  const [mobileLayout, setMobileLayout] = useState(() => window.matchMedia('(max-width: 760px)').matches)
+  const [mobileFocusIndex, setMobileFocusIndex] = useState(0)
   const [dragging, setDragging] = useState(false)
+  const scrollFrameRef = useRef(null)
   const dragRef = useRef({ pointerId: null, startX: 0, lastX: 0, moved: false, captured: false })
   const suppressClickRef = useRef(false)
 
@@ -774,6 +777,84 @@ function FilmsScene({ active, next, openWork, loadAssets }) {
     return slot
   }
 
+  const priorityIndex = mobileLayout ? mobileFocusIndex : orbitOffset
+
+  const getPriorityDistance = (index) => {
+    const direct = Math.abs(index - priorityIndex)
+    return Math.min(direct, works.length - direct)
+  }
+
+  useEffect(() => {
+    const query = window.matchMedia('(max-width: 760px)')
+    const updateLayout = () => setMobileLayout(query.matches)
+    updateLayout()
+    query.addEventListener('change', updateLayout)
+    return () => query.removeEventListener('change', updateLayout)
+  }, [])
+
+  useEffect(() => {
+    if (!active) return undefined
+
+    const preloadIndices = [
+      (priorityIndex - 1 + works.length) % works.length,
+      priorityIndex,
+      (priorityIndex + 1) % works.length,
+    ]
+    const links = []
+    const seen = new Set()
+
+    preloadIndices.forEach((index) => {
+      const poster = works[index].poster
+      if (seen.has(poster)) return
+      seen.add(poster)
+
+      const avifSrcSet = responsiveSourceSet(poster, 'avif')
+      const webpSrcSet = responsiveSourceSet(poster, 'webp')
+      const selectedSrcSet = avifSrcSet || webpSrcSet
+      const firstCandidate = selectedSrcSet?.split(',')[0]?.trim().split(/\s+/)[0]
+      const link = document.createElement('link')
+      link.rel = 'preload'
+      link.as = 'image'
+      link.fetchPriority = index === priorityIndex ? 'high' : 'auto'
+      link.href = firstCandidate || compatibleImageSrc(poster)
+      if (selectedSrcSet) {
+        link.setAttribute('imagesrcset', selectedSrcSet)
+        link.setAttribute('imagesizes', '(max-width: 760px) 72vw, 138px')
+      }
+      if (avifSrcSet) link.type = 'image/avif'
+      link.dataset.portfolioPosterPreload = 'true'
+      document.head.appendChild(link)
+      links.push(link)
+    })
+
+    return () => links.forEach((link) => link.remove())
+  }, [active, priorityIndex])
+
+  const handleOrbitScroll = (event) => {
+    if (!mobileLayout || scrollFrameRef.current) return
+    const orbit = event.currentTarget
+    scrollFrameRef.current = window.requestAnimationFrame(() => {
+      scrollFrameRef.current = null
+      const viewportCenter = orbit.scrollLeft + orbit.clientWidth / 2
+      const frames = Array.from(orbit.querySelectorAll('.film-frame'))
+      let nearestIndex = 0
+      let nearestDistance = Number.POSITIVE_INFINITY
+      frames.forEach((frame, index) => {
+        const frameCenter = frame.offsetLeft + frame.offsetWidth / 2
+        const distance = Math.abs(frameCenter - viewportCenter)
+        if (distance < nearestDistance) {
+          nearestDistance = distance
+          nearestIndex = index
+        }
+      })
+      setMobileFocusIndex(nearestIndex)
+    })
+  }
+
+  useEffect(() => () => {
+    if (scrollFrameRef.current) window.cancelAnimationFrame(scrollFrameRef.current)
+  }, [])
+
   return (
     <section id="films" className={`scene films-scene ${active ? 'active' : ''}`} aria-hidden={!active}>
       <ResponsiveImage
@@ -800,6 +881,7 @@ function FilmsScene({ active, next, openWork, loadAssets }) {
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerUp}
         onPointerCancel={handlePointerUp}
+        onScroll={handleOrbitScroll}
       >
         {works.map((item, index) => {
           const slot = getOrbitSlot(index)
@@ -812,6 +894,7 @@ function FilmsScene({ active, next, openWork, loadAssets }) {
           // Lower the center poster and lift the outer posters into an inverted U.
           const top = -3 + (1 - Math.pow(orbitDepth, 1.45)) * 40
           const depthScale = 1 - Math.min(distance, visibleRadius) * 0.045
+          const priorityDistance = getPriorityDistance(index)
           return (
             <button
               className="film-frame"
@@ -824,6 +907,8 @@ function FilmsScene({ active, next, openWork, loadAssets }) {
                 pointerEvents: hiddenBehindOrbit ? 'none' : 'auto',
                 transform: `translateX(-50%) scale(${depthScale})`,
               }}
+              data-poster-index={index}
+              data-poster-title={item.title}
               key={item.title}
               onFocus={() => {
                 if (hiddenBehindOrbit) setOrbitOffset(index)
@@ -837,17 +922,17 @@ function FilmsScene({ active, next, openWork, loadAssets }) {
               }}
               aria-label={`打开${item.title}`}
             >
-              {loadAssets && !hiddenBehindOrbit ? (
-                <ResponsiveImage
-                  className="film-frame-image"
-                  src={item.poster}
-                  sizes="(max-width: 760px) 34vw, 13vw"
-                  alt=""
-                  loading={distance <= 2 ? 'eager' : 'lazy'}
-                  decoding="async"
-                  style={mediaImageStyle(item.posterPosition, item.posterSize)}
-                />
-              ) : null}
+              <ResponsiveImage
+                className="film-frame-image"
+                src={item.poster}
+                sizes="(max-width: 760px) 72vw, 138px"
+                alt={`${item.title}海报`}
+                loading={active && priorityDistance <= 1 ? 'eager' : 'lazy'}
+                fetchPriority={active && priorityDistance === 0 ? 'high' : priorityDistance <= 1 ? 'auto' : 'low'}
+                decoding="async"
+                fallbackLabel="海报暂未载入"
+                style={mediaImageStyle(item.posterPosition, item.posterSize)}
+              />
               <span>{item.type}</span>
               <strong>{item.title}</strong>
             </button>

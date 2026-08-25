@@ -734,6 +734,29 @@ a:focus-visible {
   pointer-events: none;
 }
 
+.film-frame-image[data-image-state='failed'] {
+  opacity: 0;
+}
+
+.poster-load-fallback {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  background:
+    linear-gradient(rgba(5, 5, 5, .82), rgba(5, 5, 5, .92)),
+    repeating-linear-gradient(135deg, rgba(70, 215, 232, .18) 0 8px, transparent 8px 16px);
+  color: var(--cyan);
+  font-family: var(--pixel-font);
+  font-size: 12px;
+  font-style: normal;
+  line-height: 1.5;
+  pointer-events: none;
+  text-align: center;
+}
+
 .film-frame::before {
   position: absolute;
   z-index: 1;
