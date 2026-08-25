@@ -608,17 +608,27 @@ a:focus-visible {
   position: absolute;
   z-index: 2;
   inset: -4%;
-  background:
-    linear-gradient(to bottom, rgba(0, 7, 13, .34), rgba(0, 14, 23, .16) 42%, rgba(0, 3, 8, .62) 100%),
-    url('/assets/sea-hero-pixel.jpg') center top / auto 190% no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 7, 13, .34), rgba(0, 14, 23, .16) 42%, rgba(0, 3, 8, .62) 100%);
   filter: saturate(.92) brightness(.82) contrast(1.06);
   animation: operations-water-drift 18s ease-in-out infinite alternate;
 }
 
-.no-webp .operations-water {
+.supports-webp .operations-scene.active .operations-water {
+  background-image:
+    linear-gradient(to bottom, rgba(0, 7, 13, .34), rgba(0, 14, 23, .16) 42%, rgba(0, 3, 8, .62) 100%),
+    url('/assets/sea-hero-pixel-w960.webp');
+  background-position: center top;
+  background-size: auto 190%;
+  background-repeat: no-repeat;
+}
+
+.no-webp .operations-scene.active .operations-water {
   background-image:
     linear-gradient(to bottom, rgba(0, 7, 13, .34), rgba(0, 14, 23, .16) 42%, rgba(0, 3, 8, .62) 100%),
     url('/assets/sea-hero-pixel.jpg');
+  background-position: center top;
+  background-size: auto 190%;
+  background-repeat: no-repeat;
 }
 
 .operations-water::after {
@@ -2316,6 +2326,10 @@ a:focus-visible {
 
   .hero-scene {
     background: #073448 url('/assets/sea-hero-preview-mobile.jpg') center / cover no-repeat;
+  }
+
+  .supports-webp .hero-scene {
+    background-image: url('/assets/sea-hero-preview-mobile.webp');
   }
 
   .no-webp .hero-scene {

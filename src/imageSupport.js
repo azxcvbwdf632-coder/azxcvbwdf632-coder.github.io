@@ -1,4 +1,32 @@
+import imageManifest from './imageManifest'
+
 let webpSupport
+
+function sourceKey(src) {
+  return src?.split('?')[0] || ''
+}
+
+export function responsiveSourceSet(src, format = 'webp') {
+  const candidates = imageManifest[sourceKey(src)]?.[format]
+  if (!candidates?.length) return undefined
+  return candidates.map((candidate) => `${candidate.src} ${candidate.width}w`).join(', ')
+}
+
+export function responsiveImageProps(src, sizes = '100vw') {
+  if (!src) return { src: undefined }
+  const metadata = imageManifest[sourceKey(src)]
+  const srcSet = supportsWebP() && /\.webp(?:$|\?)/i.test(src)
+    ? responsiveSourceSet(src, 'webp')
+    : undefined
+
+  return {
+    src: compatibleImageSrc(src),
+    srcSet,
+    sizes: srcSet ? sizes : undefined,
+    width: metadata?.width,
+    height: metadata?.height,
+  }
+}
 
 export function supportsWebP() {
   if (webpSupport !== undefined) return webpSupport
@@ -19,8 +47,10 @@ export function compatibleImageSrc(src) {
 }
 
 export function jpgFallbackSrc(src) {
-  if (!src || !/\.webp(?:$|\?)/i.test(src)) return null
-  return src.replace(/\.webp(?=$|\?)/i, '.jpg')
+  if (!src || !/\.(?:webp|avif)(?:$|\?)/i.test(src)) return null
+  return src
+    .replace(/-w\d+\.(?:webp|avif)(?=$|\?)/i, '.jpg')
+    .replace(/\.(?:webp|avif)(?=$|\?)/i, '.jpg')
 }
 
 export function fallbackToJpg(event) {
@@ -39,6 +69,8 @@ export function fallbackToJpg(event) {
     source.srcset = ''
   })
 
+  image.removeAttribute('srcset')
+  image.removeAttribute('sizes')
   image.src = fallback
   return true
 }

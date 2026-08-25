@@ -1,0 +1,458 @@
+﻿Final URL,Repository Path,Bytes,KB,Format,Width,Height,Git Tracked,Reference Location
+https://www.qiuxiaomiao.com/assets/douyin-313-w480.webp,public/assets/douyin-313-w480.webp,14200,13.9,webp,480,273,yes,generated responsive candidate for /assets/douyin-313.webp
+https://www.qiuxiaomiao.com/assets/douyin-313-w960.webp,public/assets/douyin-313-w960.webp,33802,33.0,webp,960,546,yes,generated responsive candidate for /assets/douyin-313.webp
+https://www.qiuxiaomiao.com/assets/douyin-313.jpg,public/assets/douyin-313.jpg,64031,62.5,jpeg,1179,670,yes,src/App.jsx:102 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/douyin-313.webp,public/assets/douyin-313.webp,62178,60.7,webp,1179,670,yes,src/App.jsx:102
+https://www.qiuxiaomiao.com/assets/inputs/album-ayue-afternoon-w480.webp,public/assets/inputs/album-ayue-afternoon-w480.webp,29524,28.8,webp,480,480,yes,generated responsive candidate for /assets/inputs/album-ayue-afternoon.webp
+https://www.qiuxiaomiao.com/assets/inputs/album-ayue-afternoon.jpg,public/assets/inputs/album-ayue-afternoon.jpg,117744,115.0,jpeg,900,900,yes,src/data/aestheticInputs.js:16 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/inputs/album-ayue-afternoon.webp,public/assets/inputs/album-ayue-afternoon.webp,140658,137.4,webp,900,900,yes,src/data/aestheticInputs.js:16
+https://www.qiuxiaomiao.com/assets/inputs/album-ayue-feeling-w480.webp,public/assets/inputs/album-ayue-feeling-w480.webp,23422,22.9,webp,480,480,yes,generated responsive candidate for /assets/inputs/album-ayue-feeling.webp
+https://www.qiuxiaomiao.com/assets/inputs/album-ayue-feeling.jpg,public/assets/inputs/album-ayue-feeling.jpg,86554,84.5,jpeg,900,900,yes,src/data/aestheticInputs.js:15 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/inputs/album-ayue-feeling.webp,public/assets/inputs/album-ayue-feeling.webp,76878,75.1,webp,900,900,yes,src/data/aestheticInputs.js:15
+https://www.qiuxiaomiao.com/assets/inputs/album-cheer-adventure-w480.webp,public/assets/inputs/album-cheer-adventure-w480.webp,46156,45.1,webp,480,480,yes,generated responsive candidate for /assets/inputs/album-cheer-adventure.webp
+https://www.qiuxiaomiao.com/assets/inputs/album-cheer-adventure.jpg,public/assets/inputs/album-cheer-adventure.jpg,154927,151.3,jpeg,900,900,yes,src/data/aestheticInputs.js:8 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/inputs/album-cheer-adventure.webp,public/assets/inputs/album-cheer-adventure.webp,176790,172.6,webp,900,900,yes,src/data/aestheticInputs.js:8
+https://www.qiuxiaomiao.com/assets/inputs/album-cheer-guitarist-w480.webp,public/assets/inputs/album-cheer-guitarist-w480.webp,18122,17.7,webp,480,480,yes,generated responsive candidate for /assets/inputs/album-cheer-guitarist.webp
+https://www.qiuxiaomiao.com/assets/inputs/album-cheer-guitarist.jpg,public/assets/inputs/album-cheer-guitarist.jpg,69524,67.9,jpeg,900,900,yes,src/data/aestheticInputs.js:6 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/inputs/album-cheer-guitarist.webp,public/assets/inputs/album-cheer-guitarist.webp,81074,79.2,webp,900,900,yes,src/data/aestheticInputs.js:6
+https://www.qiuxiaomiao.com/assets/inputs/album-cheer-lonely-w480.webp,public/assets/inputs/album-cheer-lonely-w480.webp,20606,20.1,webp,480,480,yes,generated responsive candidate for /assets/inputs/album-cheer-lonely.webp
+https://www.qiuxiaomiao.com/assets/inputs/album-cheer-lonely.jpg,public/assets/inputs/album-cheer-lonely.jpg,67059,65.5,jpeg,900,900,yes,src/data/aestheticInputs.js:7 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/inputs/album-cheer-lonely.webp,public/assets/inputs/album-cheer-lonely.webp,67876,66.3,webp,900,900,yes,src/data/aestheticInputs.js:7
+https://www.qiuxiaomiao.com/assets/inputs/album-crowd-100-w480.webp,public/assets/inputs/album-crowd-100-w480.webp,47042,45.9,webp,480,480,yes,generated responsive candidate for /assets/inputs/album-crowd-100.webp
+https://www.qiuxiaomiao.com/assets/inputs/album-crowd-100.jpg,public/assets/inputs/album-crowd-100.jpg,151168,147.6,jpeg,900,900,yes,src/data/aestheticInputs.js:23 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/inputs/album-crowd-100.webp,public/assets/inputs/album-crowd-100.webp,165268,161.4,webp,900,900,yes,src/data/aestheticInputs.js:23
+https://www.qiuxiaomiao.com/assets/inputs/album-crowd-breakfast-w480.webp,public/assets/inputs/album-crowd-breakfast-w480.webp,17950,17.5,webp,480,480,yes,generated responsive candidate for /assets/inputs/album-crowd-breakfast.webp
+https://www.qiuxiaomiao.com/assets/inputs/album-crowd-breakfast.jpg,public/assets/inputs/album-crowd-breakfast.jpg,57191,55.9,jpeg,900,900,yes,src/data/aestheticInputs.js:25 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/inputs/album-crowd-breakfast.webp,public/assets/inputs/album-crowd-breakfast.webp,54396,53.1,webp,900,900,yes,src/data/aestheticInputs.js:25
+https://www.qiuxiaomiao.com/assets/inputs/album-crowd-inspiration-w480.webp,public/assets/inputs/album-crowd-inspiration-w480.webp,35528,34.7,webp,480,480,yes,generated responsive candidate for /assets/inputs/album-crowd-inspiration.webp
+https://www.qiuxiaomiao.com/assets/inputs/album-crowd-inspiration.jpg,public/assets/inputs/album-crowd-inspiration.jpg,139589,136.3,jpeg,900,900,yes,src/data/aestheticInputs.js:24 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/inputs/album-crowd-inspiration.webp,public/assets/inputs/album-crowd-inspiration.webp,144530,141.1,webp,900,900,yes,src/data/aestheticInputs.js:24
+https://www.qiuxiaomiao.com/assets/inputs/album-pink-floyd-dark-side-w480.webp,public/assets/inputs/album-pink-floyd-dark-side-w480.webp,4416,4.3,webp,480,480,yes,generated responsive candidate for /assets/inputs/album-pink-floyd-dark-side.webp
+https://www.qiuxiaomiao.com/assets/inputs/album-pink-floyd-dark-side.jpg,public/assets/inputs/album-pink-floyd-dark-side.jpg,18925,18.5,jpeg,900,900,yes,src/data/aestheticInputs.js:34 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/inputs/album-pink-floyd-dark-side.webp,public/assets/inputs/album-pink-floyd-dark-side.webp,10810,10.6,webp,900,900,yes,src/data/aestheticInputs.js:34
+https://www.qiuxiaomiao.com/assets/inputs/film-coraline.jpg,public/assets/inputs/film-coraline.jpg,8846,8.6,jpeg,259,384,yes,src/data/aestheticInputs.js:40 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/inputs/film-coraline.webp,public/assets/inputs/film-coraline.webp,8010,7.8,webp,259,384,yes,src/data/aestheticInputs.js:40
+https://www.qiuxiaomiao.com/assets/inputs/film-flying-colors-w480.webp,public/assets/inputs/film-flying-colors-w480.webp,34920,34.1,webp,480,669,yes,generated responsive candidate for /assets/inputs/film-flying-colors.webp
+https://www.qiuxiaomiao.com/assets/inputs/film-flying-colors.jpg,public/assets/inputs/film-flying-colors.jpg,86205,84.2,jpeg,717,1000,yes,src/data/aestheticInputs.js:41 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/inputs/film-flying-colors.webp,public/assets/inputs/film-flying-colors.webp,71036,69.4,webp,717,1000,yes,src/data/aestheticInputs.js:41
+https://www.qiuxiaomiao.com/assets/inputs/film-maxxxine.jpg,public/assets/inputs/film-maxxxine.jpg,18762,18.3,jpeg,259,384,yes,src/data/aestheticInputs.js:45 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/inputs/film-maxxxine.webp,public/assets/inputs/film-maxxxine.webp,16352,16.0,webp,259,384,yes,src/data/aestheticInputs.js:45
+https://www.qiuxiaomiao.com/assets/inputs/film-pearl.jpg,public/assets/inputs/film-pearl.jpg,19985,19.5,jpeg,250,370,yes,src/data/aestheticInputs.js:43 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/inputs/film-pearl.webp,public/assets/inputs/film-pearl.webp,17662,17.2,webp,250,370,yes,src/data/aestheticInputs.js:43
+https://www.qiuxiaomiao.com/assets/inputs/film-run-lola-run.jpg,public/assets/inputs/film-run-lola-run.jpg,19471,19.0,jpeg,259,384,yes,src/data/aestheticInputs.js:46 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/inputs/film-run-lola-run.webp,public/assets/inputs/film-run-lola-run.webp,18820,18.4,webp,259,384,yes,src/data/aestheticInputs.js:46
+https://www.qiuxiaomiao.com/assets/inputs/film-sun-rises-w480.webp,public/assets/inputs/film-sun-rises-w480.webp,56020,54.7,webp,480,720,yes,generated responsive candidate for /assets/inputs/film-sun-rises.webp
+https://www.qiuxiaomiao.com/assets/inputs/film-sun-rises.jpg,public/assets/inputs/film-sun-rises.jpg,212732,207.7,jpeg,900,1350,yes,src/data/aestheticInputs.js:42 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/inputs/film-sun-rises.webp,public/assets/inputs/film-sun-rises.webp,226860,221.5,webp,900,1350,yes,src/data/aestheticInputs.js:42
+https://www.qiuxiaomiao.com/assets/inputs/film-x.jpg,public/assets/inputs/film-x.jpg,25565,25.0,jpeg,258,388,yes,src/data/aestheticInputs.js:44 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/inputs/film-x.webp,public/assets/inputs/film-x.webp,23690,23.1,webp,258,388,yes,src/data/aestheticInputs.js:44
+https://www.qiuxiaomiao.com/assets/inputs/live-simple-life-01-w1600.webp,public/assets/inputs/live-simple-life-01-w1600.webp,56454,55.1,webp,1600,865,yes,generated responsive candidate for /assets/inputs/live-simple-life-01.webp
+https://www.qiuxiaomiao.com/assets/inputs/live-simple-life-01-w480.webp,public/assets/inputs/live-simple-life-01-w480.webp,11308,11.0,webp,480,260,yes,generated responsive candidate for /assets/inputs/live-simple-life-01.webp
+https://www.qiuxiaomiao.com/assets/inputs/live-simple-life-01-w960.webp,public/assets/inputs/live-simple-life-01-w960.webp,29372,28.7,webp,960,519,yes,generated responsive candidate for /assets/inputs/live-simple-life-01.webp
+https://www.qiuxiaomiao.com/assets/inputs/live-simple-life-01.jpg,public/assets/inputs/live-simple-life-01.jpg,92644,90.5,jpeg,1831,990,yes,src/components/AestheticDialog.jsx:150 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/inputs/live-simple-life-01.webp,public/assets/inputs/live-simple-life-01.webp,79960,78.1,webp,1831,990,yes,src/components/AestheticDialog.jsx:150
+https://www.qiuxiaomiao.com/assets/inputs/live-simple-life-02-w1600.webp,public/assets/inputs/live-simple-life-02-w1600.webp,44206,43.2,webp,1600,873,yes,generated responsive candidate for /assets/inputs/live-simple-life-02.webp
+https://www.qiuxiaomiao.com/assets/inputs/live-simple-life-02-w480.webp,public/assets/inputs/live-simple-life-02-w480.webp,8776,8.6,webp,480,262,yes,generated responsive candidate for /assets/inputs/live-simple-life-02.webp
+https://www.qiuxiaomiao.com/assets/inputs/live-simple-life-02-w960.webp,public/assets/inputs/live-simple-life-02-w960.webp,22364,21.8,webp,960,524,yes,generated responsive candidate for /assets/inputs/live-simple-life-02.webp
+https://www.qiuxiaomiao.com/assets/inputs/live-simple-life-02.jpg,public/assets/inputs/live-simple-life-02.jpg,77652,75.8,jpeg,1868,1019,yes,src/components/AestheticDialog.jsx:154 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/inputs/live-simple-life-02.webp,public/assets/inputs/live-simple-life-02.webp,60192,58.8,webp,1868,1019,yes,src/components/AestheticDialog.jsx:154
+https://www.qiuxiaomiao.com/assets/inputs/live-zhang-zhenyue-01-w480.webp,public/assets/inputs/live-zhang-zhenyue-01-w480.webp,44180,43.1,webp,480,854,yes,generated responsive candidate for /assets/inputs/live-zhang-zhenyue-01.webp
+https://www.qiuxiaomiao.com/assets/inputs/live-zhang-zhenyue-01-w960.webp,public/assets/inputs/live-zhang-zhenyue-01-w960.webp,125290,122.4,webp,960,1707,yes,generated responsive candidate for /assets/inputs/live-zhang-zhenyue-01.webp
+https://www.qiuxiaomiao.com/assets/inputs/live-zhang-zhenyue-01.jpg,public/assets/inputs/live-zhang-zhenyue-01.jpg,228221,222.9,jpeg,1280,2276,yes,src/components/AestheticDialog.jsx:137 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/inputs/live-zhang-zhenyue-01.webp,public/assets/inputs/live-zhang-zhenyue-01.webp,212546,207.6,webp,1280,2276,yes,src/components/AestheticDialog.jsx:137
+https://www.qiuxiaomiao.com/assets/inputs/live-zhang-zhenyue-quanzhou-w480.webp,public/assets/inputs/live-zhang-zhenyue-quanzhou-w480.webp,77934,76.1,webp,480,854,yes,generated responsive candidate for /assets/inputs/live-zhang-zhenyue-quanzhou.webp
+https://www.qiuxiaomiao.com/assets/inputs/live-zhang-zhenyue-quanzhou-w960.webp,public/assets/inputs/live-zhang-zhenyue-quanzhou-w960.webp,240890,235.2,webp,960,1707,yes,generated responsive candidate for /assets/inputs/live-zhang-zhenyue-quanzhou.webp
+https://www.qiuxiaomiao.com/assets/inputs/live-zhang-zhenyue-quanzhou.jpg,public/assets/inputs/live-zhang-zhenyue-quanzhou.jpg,374301,365.5,jpeg,1280,2276,yes,src/components/AestheticDialog.jsx:141 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/inputs/live-zhang-zhenyue-quanzhou.webp,public/assets/inputs/live-zhang-zhenyue-quanzhou.webp,430620,420.5,webp,1280,2276,yes,src/components/AestheticDialog.jsx:141
+https://www.qiuxiaomiao.com/assets/inputs/training-arms-w480.webp,public/assets/inputs/training-arms-w480.webp,9444,9.2,webp,480,312,yes,generated responsive candidate for /assets/inputs/training-arms.webp
+https://www.qiuxiaomiao.com/assets/inputs/training-arms-w960.webp,public/assets/inputs/training-arms-w960.webp,24140,23.6,webp,960,624,yes,generated responsive candidate for /assets/inputs/training-arms.webp
+https://www.qiuxiaomiao.com/assets/inputs/training-arms.jpg,public/assets/inputs/training-arms.jpg,59072,57.7,jpeg,1476,960,yes,src/components/AestheticDialog.jsx:208 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/inputs/training-arms.webp,public/assets/inputs/training-arms.webp,55352,54.1,webp,1476,960,yes,src/components/AestheticDialog.jsx:208
+https://www.qiuxiaomiao.com/assets/inputs/training-back-w480.webp,public/assets/inputs/training-back-w480.webp,27726,27.1,webp,480,854,yes,generated responsive candidate for /assets/inputs/training-back.webp
+https://www.qiuxiaomiao.com/assets/inputs/training-back-w960.webp,public/assets/inputs/training-back-w960.webp,66748,65.2,webp,960,1708,yes,generated responsive candidate for /assets/inputs/training-back.webp
+https://www.qiuxiaomiao.com/assets/inputs/training-back.jpg,public/assets/inputs/training-back.jpg,138766,135.5,jpeg,1278,2274,yes,src/components/AestheticDialog.jsx:204 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/inputs/training-back.webp,public/assets/inputs/training-back.webp,131022,128.0,webp,1278,2274,yes,src/components/AestheticDialog.jsx:204
+https://www.qiuxiaomiao.com/assets/operations/campus-live-01-w1600.webp,public/assets/operations/campus-live-01-w1600.webp,35274,34.4,webp,1600,719,yes,generated responsive candidate for /assets/operations/campus-live-01.webp
+https://www.qiuxiaomiao.com/assets/operations/campus-live-01-w480.webp,public/assets/operations/campus-live-01-w480.webp,5870,5.7,webp,480,216,yes,generated responsive candidate for /assets/operations/campus-live-01.webp
+https://www.qiuxiaomiao.com/assets/operations/campus-live-01-w960.webp,public/assets/operations/campus-live-01-w960.webp,17442,17.0,webp,960,431,yes,generated responsive candidate for /assets/operations/campus-live-01.webp
+https://www.qiuxiaomiao.com/assets/operations/campus-live-01.jpg,public/assets/operations/campus-live-01.jpg,68161,66.6,jpeg,1749,786,yes,fallback/original asset; not directly referenced
+https://www.qiuxiaomiao.com/assets/operations/campus-live-01.webp,public/assets/operations/campus-live-01.webp,49562,48.4,webp,1749,786,yes,fallback/original asset; not directly referenced
+https://www.qiuxiaomiao.com/assets/operations/campus-live-02-w1600.webp,public/assets/operations/campus-live-02-w1600.webp,28454,27.8,webp,1600,744,yes,generated responsive candidate for /assets/operations/campus-live-02.webp
+https://www.qiuxiaomiao.com/assets/operations/campus-live-02-w480.webp,public/assets/operations/campus-live-02-w480.webp,5178,5.1,webp,480,223,yes,generated responsive candidate for /assets/operations/campus-live-02.webp
+https://www.qiuxiaomiao.com/assets/operations/campus-live-02-w960.webp,public/assets/operations/campus-live-02-w960.webp,14836,14.5,webp,960,446,yes,generated responsive candidate for /assets/operations/campus-live-02.webp
+https://www.qiuxiaomiao.com/assets/operations/campus-live-02.jpg,public/assets/operations/campus-live-02.jpg,51933,50.7,jpeg,1609,748,yes,fallback/original asset; not directly referenced
+https://www.qiuxiaomiao.com/assets/operations/campus-live-02.webp,public/assets/operations/campus-live-02.webp,35126,34.3,webp,1609,748,yes,fallback/original asset; not directly referenced
+https://www.qiuxiaomiao.com/assets/operations/campus-live-03-w1600.webp,public/assets/operations/campus-live-03-w1600.webp,39972,39.0,webp,1600,790,yes,generated responsive candidate for /assets/operations/campus-live-03.webp
+https://www.qiuxiaomiao.com/assets/operations/campus-live-03-w480.webp,public/assets/operations/campus-live-03-w480.webp,7026,6.9,webp,480,237,yes,generated responsive candidate for /assets/operations/campus-live-03.webp
+https://www.qiuxiaomiao.com/assets/operations/campus-live-03-w960.webp,public/assets/operations/campus-live-03-w960.webp,20100,19.6,webp,960,474,yes,generated responsive candidate for /assets/operations/campus-live-03.webp
+https://www.qiuxiaomiao.com/assets/operations/campus-live-03.jpg,public/assets/operations/campus-live-03.jpg,87886,85.8,jpeg,1891,934,yes,fallback/original asset; not directly referenced
+https://www.qiuxiaomiao.com/assets/operations/campus-live-03.webp,public/assets/operations/campus-live-03.webp,62520,61.1,webp,1891,934,yes,fallback/original asset; not directly referenced
+https://www.qiuxiaomiao.com/assets/operations/campus-live-04-w1600.webp,public/assets/operations/campus-live-04-w1600.webp,41354,40.4,webp,1600,807,yes,generated responsive candidate for /assets/operations/campus-live-04.webp
+https://www.qiuxiaomiao.com/assets/operations/campus-live-04-w480.webp,public/assets/operations/campus-live-04-w480.webp,7658,7.5,webp,480,242,yes,generated responsive candidate for /assets/operations/campus-live-04.webp
+https://www.qiuxiaomiao.com/assets/operations/campus-live-04-w960.webp,public/assets/operations/campus-live-04-w960.webp,21554,21.0,webp,960,484,yes,generated responsive candidate for /assets/operations/campus-live-04.webp
+https://www.qiuxiaomiao.com/assets/operations/campus-live-04.jpg,public/assets/operations/campus-live-04.jpg,91648,89.5,jpeg,1885,951,yes,fallback/original asset; not directly referenced
+https://www.qiuxiaomiao.com/assets/operations/campus-live-04.webp,public/assets/operations/campus-live-04.webp,64248,62.7,webp,1885,951,yes,fallback/original asset; not directly referenced
+https://www.qiuxiaomiao.com/assets/operations/campus-live-05-w1600.webp,public/assets/operations/campus-live-05-w1600.webp,41190,40.2,webp,1600,800,yes,generated responsive candidate for /assets/operations/campus-live-05.webp
+https://www.qiuxiaomiao.com/assets/operations/campus-live-05-w480.webp,public/assets/operations/campus-live-05-w480.webp,7360,7.2,webp,480,240,yes,generated responsive candidate for /assets/operations/campus-live-05.webp
+https://www.qiuxiaomiao.com/assets/operations/campus-live-05-w960.webp,public/assets/operations/campus-live-05-w960.webp,20942,20.5,webp,960,480,yes,generated responsive candidate for /assets/operations/campus-live-05.webp
+https://www.qiuxiaomiao.com/assets/operations/campus-live-05.jpg,public/assets/operations/campus-live-05.jpg,90578,88.5,jpeg,1902,951,yes,fallback/original asset; not directly referenced
+https://www.qiuxiaomiao.com/assets/operations/campus-live-05.webp,public/assets/operations/campus-live-05.webp,64424,62.9,webp,1902,951,yes,fallback/original asset; not directly referenced
+https://www.qiuxiaomiao.com/assets/operations/campus-live-06-w1600.webp,public/assets/operations/campus-live-06-w1600.webp,41196,40.2,webp,1600,814,yes,generated responsive candidate for /assets/operations/campus-live-06.webp
+https://www.qiuxiaomiao.com/assets/operations/campus-live-06-w480.webp,public/assets/operations/campus-live-06-w480.webp,7246,7.1,webp,480,244,yes,generated responsive candidate for /assets/operations/campus-live-06.webp
+https://www.qiuxiaomiao.com/assets/operations/campus-live-06-w960.webp,public/assets/operations/campus-live-06-w960.webp,20470,20.0,webp,960,488,yes,generated responsive candidate for /assets/operations/campus-live-06.webp
+https://www.qiuxiaomiao.com/assets/operations/campus-live-06.jpg,public/assets/operations/campus-live-06.jpg,87308,85.3,jpeg,1858,945,yes,fallback/original asset; not directly referenced
+https://www.qiuxiaomiao.com/assets/operations/campus-live-06.webp,public/assets/operations/campus-live-06.webp,61558,60.1,webp,1858,945,yes,fallback/original asset; not directly referenced
+https://www.qiuxiaomiao.com/assets/operations/campus-project-w480.webp,public/assets/operations/campus-project-w480.webp,33474,32.7,webp,480,1041,yes,generated responsive candidate for /assets/operations/campus-project.webp
+https://www.qiuxiaomiao.com/assets/operations/campus-project-w960.webp,public/assets/operations/campus-project-w960.webp,77986,76.2,webp,960,2081,yes,generated responsive candidate for /assets/operations/campus-project.webp
+https://www.qiuxiaomiao.com/assets/operations/campus-project.jpg,public/assets/operations/campus-project.jpg,151590,148.0,jpeg,1179,2556,yes,src/App.jsx:164 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/operations/campus-project.webp,public/assets/operations/campus-project.webp,146926,143.5,webp,1179,2556,yes,src/App.jsx:164
+https://www.qiuxiaomiao.com/assets/operations/douyin-film-review-w480.webp,public/assets/operations/douyin-film-review-w480.webp,12348,12.1,webp,480,277,yes,generated responsive candidate for /assets/operations/douyin-film-review.webp
+https://www.qiuxiaomiao.com/assets/operations/douyin-film-review-w960.webp,public/assets/operations/douyin-film-review-w960.webp,28522,27.9,webp,960,554,yes,generated responsive candidate for /assets/operations/douyin-film-review.webp
+https://www.qiuxiaomiao.com/assets/operations/douyin-film-review.jpg,public/assets/operations/douyin-film-review.jpg,62881,61.4,jpeg,1179,680,yes,src/App.jsx:117 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/operations/douyin-film-review.webp,public/assets/operations/douyin-film-review.webp,49434,48.3,webp,1179,680,yes,src/App.jsx:117
+https://www.qiuxiaomiao.com/assets/operations/douyin-food-w480.webp,public/assets/operations/douyin-food-w480.webp,10892,10.6,webp,480,202,yes,generated responsive candidate for /assets/operations/douyin-food.webp
+https://www.qiuxiaomiao.com/assets/operations/douyin-food-w960.webp,public/assets/operations/douyin-food-w960.webp,25268,24.7,webp,960,404,yes,generated responsive candidate for /assets/operations/douyin-food.webp
+https://www.qiuxiaomiao.com/assets/operations/douyin-food.jpg,public/assets/operations/douyin-food.jpg,50971,49.8,jpeg,1179,496,yes,src/App.jsx:112 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/operations/douyin-food.webp,public/assets/operations/douyin-food.webp,42198,41.2,webp,1179,496,yes,src/App.jsx:112
+https://www.qiuxiaomiao.com/assets/operations/douyin-hot-topic-w480.webp,public/assets/operations/douyin-hot-topic-w480.webp,11112,10.9,webp,480,206,yes,generated responsive candidate for /assets/operations/douyin-hot-topic.webp
+https://www.qiuxiaomiao.com/assets/operations/douyin-hot-topic-w960.webp,public/assets/operations/douyin-hot-topic-w960.webp,27556,26.9,webp,960,411,yes,generated responsive candidate for /assets/operations/douyin-hot-topic.webp
+https://www.qiuxiaomiao.com/assets/operations/douyin-hot-topic.jpg,public/assets/operations/douyin-hot-topic.jpg,57344,56.0,jpeg,1179,505,yes,src/App.jsx:107 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/operations/douyin-hot-topic.webp,public/assets/operations/douyin-hot-topic.webp,48370,47.2,webp,1179,505,yes,src/App.jsx:107
+https://www.qiuxiaomiao.com/assets/operations/douyin-saving-w480.webp,public/assets/operations/douyin-saving-w480.webp,11012,10.8,webp,480,200,yes,generated responsive candidate for /assets/operations/douyin-saving.webp
+https://www.qiuxiaomiao.com/assets/operations/douyin-saving-w960.webp,public/assets/operations/douyin-saving-w960.webp,24042,23.5,webp,960,401,yes,generated responsive candidate for /assets/operations/douyin-saving.webp
+https://www.qiuxiaomiao.com/assets/operations/douyin-saving.jpg,public/assets/operations/douyin-saving.jpg,51721,50.5,jpeg,1179,492,yes,src/App.jsx:122 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/operations/douyin-saving.webp,public/assets/operations/douyin-saving.webp,40432,39.5,webp,1179,492,yes,src/App.jsx:122
+https://www.qiuxiaomiao.com/assets/operations/x-profile-w480.webp,public/assets/operations/x-profile-w480.webp,21750,21.2,webp,480,398,yes,generated responsive candidate for /assets/operations/x-profile.webp
+https://www.qiuxiaomiao.com/assets/operations/x-profile.jpg,public/assets/operations/x-profile.jpg,49957,48.8,jpeg,667,553,yes,src/App.jsx:142 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/operations/x-profile.webp,public/assets/operations/x-profile.webp,52534,51.3,webp,667,553,yes,src/App.jsx:142
+https://www.qiuxiaomiao.com/assets/sardine-run-w480.avif,public/assets/sardine-run-w480.avif,12685,12.4,avif,480,263,yes,generated responsive candidate for /assets/sardine-run.webp
+https://www.qiuxiaomiao.com/assets/sardine-run-w480.webp,public/assets/sardine-run-w480.webp,21024,20.5,webp,480,263,yes,generated responsive candidate for /assets/sardine-run.webp
+https://www.qiuxiaomiao.com/assets/sardine-run-w828.avif,public/assets/sardine-run-w828.avif,32507,31.7,avif,828,454,yes,generated responsive candidate for /assets/sardine-run.webp
+https://www.qiuxiaomiao.com/assets/sardine-run.jpg,public/assets/sardine-run.jpg,56890,55.6,jpeg,828,454,yes,src/App.jsx:781 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/sardine-run.webp,public/assets/sardine-run.webp,55678,54.4,webp,828,454,yes,src/App.jsx:781
+https://www.qiuxiaomiao.com/assets/sea-hero-pixel-mobile-w480.avif,public/assets/sea-hero-pixel-mobile-w480.avif,38915,38.0,avif,480,853,yes,generated responsive candidate for /assets/sea-hero-pixel-mobile.webp | index.html:9
+https://www.qiuxiaomiao.com/assets/sea-hero-pixel-mobile-w480.webp,public/assets/sea-hero-pixel-mobile-w480.webp,67686,66.1,webp,480,853,yes,generated responsive candidate for /assets/sea-hero-pixel-mobile.webp
+https://www.qiuxiaomiao.com/assets/sea-hero-pixel-mobile-w941.avif,public/assets/sea-hero-pixel-mobile-w941.avif,113938,111.3,avif,941,1672,yes,generated responsive candidate for /assets/sea-hero-pixel-mobile.webp | index.html:9
+https://www.qiuxiaomiao.com/assets/sea-hero-pixel-mobile.jpg,public/assets/sea-hero-pixel-mobile.jpg,182233,178.0,jpeg,941,1672,yes,src/App.jsx:594 (JPG fallback) | src/App.jsx:596 (JPG fallback) | src/App.jsx:598
+https://www.qiuxiaomiao.com/assets/sea-hero-pixel-mobile.webp,public/assets/sea-hero-pixel-mobile.webp,152266,148.7,webp,941,1672,yes,src/App.jsx:594 | src/App.jsx:596
+https://www.qiuxiaomiao.com/assets/sea-hero-pixel-w1446.avif,public/assets/sea-hero-pixel-w1446.avif,86955,84.9,avif,1446,1086,yes,generated responsive candidate for /assets/sea-hero-pixel.webp | index.html:10
+https://www.qiuxiaomiao.com/assets/sea-hero-pixel-w480.avif,public/assets/sea-hero-pixel-w480.avif,16713,16.3,avif,480,360,yes,generated responsive candidate for /assets/sea-hero-pixel.webp | index.html:10
+https://www.qiuxiaomiao.com/assets/sea-hero-pixel-w480.webp,public/assets/sea-hero-pixel-w480.webp,27942,27.3,webp,480,360,yes,generated responsive candidate for /assets/sea-hero-pixel.webp
+https://www.qiuxiaomiao.com/assets/sea-hero-pixel-w960.avif,public/assets/sea-hero-pixel-w960.avif,46459,45.4,avif,960,721,yes,generated responsive candidate for /assets/sea-hero-pixel.webp | index.html:10
+https://www.qiuxiaomiao.com/assets/sea-hero-pixel-w960.webp,public/assets/sea-hero-pixel-w960.webp,64370,62.9,webp,960,721,yes,generated responsive candidate for /assets/sea-hero-pixel.webp | src/styles.css:619
+https://www.qiuxiaomiao.com/assets/sea-hero-pixel.jpg,public/assets/sea-hero-pixel.jpg,145513,142.1,jpeg,1446,1086,yes,src/App.jsx:595 (JPG fallback) | src/App.jsx:597 (JPG fallback) | src/App.jsx:601 | src/styles.css:628
+https://www.qiuxiaomiao.com/assets/sea-hero-pixel.webp,public/assets/sea-hero-pixel.webp,127330,124.3,webp,1446,1086,yes,src/App.jsx:595 | src/App.jsx:597
+https://www.qiuxiaomiao.com/assets/sea-hero-preview-mobile.jpg,public/assets/sea-hero-preview-mobile.jpg,48278,47.1,jpeg,360,640,yes,index.html:8 (JPG fallback) | src/styles.css:2328 | src/styles.css:2332 (JPG fallback) | src/styles.css:2336
+https://www.qiuxiaomiao.com/assets/sea-hero-preview-mobile.webp,public/assets/sea-hero-preview-mobile.webp,33252,32.5,webp,360,640,yes,index.html:8 | src/styles.css:2332
+https://www.qiuxiaomiao.com/assets/vine-jump-mobile-w480.avif,public/assets/vine-jump-mobile-w480.avif,63179,61.7,avif,480,853,yes,generated responsive candidate for /assets/vine-jump-mobile.webp
+https://www.qiuxiaomiao.com/assets/vine-jump-mobile-w480.webp,public/assets/vine-jump-mobile-w480.webp,116798,114.1,webp,480,853,yes,generated responsive candidate for /assets/vine-jump-mobile.webp
+https://www.qiuxiaomiao.com/assets/vine-jump-mobile-w720.avif,public/assets/vine-jump-mobile-w720.avif,159730,156.0,avif,720,1280,yes,generated responsive candidate for /assets/vine-jump-mobile.webp
+https://www.qiuxiaomiao.com/assets/vine-jump-mobile.jpg,public/assets/vine-jump-mobile.jpg,251658,245.8,jpeg,720,1280,yes,src/App.jsx:651 (JPG fallback) | src/App.jsx:653 (JPG fallback) | src/App.jsx:655
+https://www.qiuxiaomiao.com/assets/vine-jump-mobile.webp,public/assets/vine-jump-mobile.webp,195990,191.4,webp,720,1280,yes,src/App.jsx:651 | src/App.jsx:653
+https://www.qiuxiaomiao.com/assets/vine-jump-w1440.avif,public/assets/vine-jump-w1440.avif,588675,574.9,avif,1440,2560,yes,generated responsive candidate for /assets/vine-jump.webp
+https://www.qiuxiaomiao.com/assets/vine-jump-w480.avif,public/assets/vine-jump-w480.avif,65351,63.8,avif,480,853,yes,generated responsive candidate for /assets/vine-jump.webp
+https://www.qiuxiaomiao.com/assets/vine-jump-w480.webp,public/assets/vine-jump-w480.webp,121100,118.3,webp,480,853,yes,generated responsive candidate for /assets/vine-jump.webp
+https://www.qiuxiaomiao.com/assets/vine-jump-w960.avif,public/assets/vine-jump-w960.avif,265007,258.8,avif,960,1707,yes,generated responsive candidate for /assets/vine-jump.webp
+https://www.qiuxiaomiao.com/assets/vine-jump-w960.webp,public/assets/vine-jump-w960.webp,480306,469.0,webp,960,1707,yes,generated responsive candidate for /assets/vine-jump.webp
+https://www.qiuxiaomiao.com/assets/vine-jump.jpg,public/assets/vine-jump.jpg,967806,945.1,jpeg,1440,2560,yes,src/App.jsx:652 (JPG fallback) | src/App.jsx:654 (JPG fallback) | src/App.jsx:657
+https://www.qiuxiaomiao.com/assets/vine-jump.webp,public/assets/vine-jump.webp,1257698,1228.2,webp,1440,2560,yes,src/App.jsx:652 | src/App.jsx:654
+https://www.qiuxiaomiao.com/assets/visual/autumn-gutian-publish-w480.webp,public/assets/visual/autumn-gutian-publish-w480.webp,47604,46.5,webp,480,936,yes,generated responsive candidate for /assets/visual/autumn-gutian-publish.webp
+https://www.qiuxiaomiao.com/assets/visual/autumn-gutian-publish-w960.webp,public/assets/visual/autumn-gutian-publish-w960.webp,142370,139.0,webp,960,1871,yes,generated responsive candidate for /assets/visual/autumn-gutian-publish.webp
+https://www.qiuxiaomiao.com/assets/visual/autumn-gutian-publish.jpg,public/assets/visual/autumn-gutian-publish.jpg,233492,228.0,jpeg,1178,2296,yes,src/App.jsx:341 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/autumn-gutian-publish.webp,public/assets/visual/autumn-gutian-publish.webp,227250,221.9,webp,1178,2296,yes,src/App.jsx:341
+https://www.qiuxiaomiao.com/assets/visual/autumn-gutian-title-w1600.webp,public/assets/visual/autumn-gutian-title-w1600.webp,247702,241.9,webp,1600,928,yes,generated responsive candidate for /assets/visual/autumn-gutian-title.webp
+https://www.qiuxiaomiao.com/assets/visual/autumn-gutian-title-w480.webp,public/assets/visual/autumn-gutian-title-w480.webp,38452,37.6,webp,480,278,yes,generated responsive candidate for /assets/visual/autumn-gutian-title.webp
+https://www.qiuxiaomiao.com/assets/visual/autumn-gutian-title-w960.webp,public/assets/visual/autumn-gutian-title-w960.webp,125284,122.3,webp,960,557,yes,generated responsive candidate for /assets/visual/autumn-gutian-title.webp
+https://www.qiuxiaomiao.com/assets/visual/autumn-gutian-title.jpg,public/assets/visual/autumn-gutian-title.jpg,338667,330.7,jpeg,1920,1114,yes,src/App.jsx:337 (JPG fallback) | src/App.jsx:340 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/autumn-gutian-title.webp,public/assets/visual/autumn-gutian-title.webp,364410,355.9,webp,1920,1114,yes,src/App.jsx:337 | src/App.jsx:340
+https://www.qiuxiaomiao.com/assets/visual/campus-video-source-w480.webp,public/assets/visual/campus-video-source-w480.webp,53938,52.7,webp,480,553,yes,generated responsive candidate for /assets/visual/campus-video-source.webp
+https://www.qiuxiaomiao.com/assets/visual/campus-video-source-w960.webp,public/assets/visual/campus-video-source-w960.webp,150860,147.3,webp,960,1107,yes,generated responsive candidate for /assets/visual/campus-video-source.webp
+https://www.qiuxiaomiao.com/assets/visual/campus-video-source.jpg,public/assets/visual/campus-video-source.jpg,251634,245.7,jpeg,1178,1358,yes,src/App.jsx:348 (JPG fallback) | src/App.jsx:352 (JPG fallback) | src/App.jsx:359 (JPG fallback) | src/App.jsx:363 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/campus-video-source.webp,public/assets/visual/campus-video-source.webp,246738,241.0,webp,1178,1358,yes,src/App.jsx:348 | src/App.jsx:352 | src/App.jsx:359 | src/App.jsx:363
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-01-w480.webp,public/assets/visual/counselor-day-01-w480.webp,14018,13.7,webp,480,275,yes,generated responsive candidate for /assets/visual/counselor-day-01.webp
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-01-w960.webp,public/assets/visual/counselor-day-01-w960.webp,30752,30.0,webp,960,550,yes,generated responsive candidate for /assets/visual/counselor-day-01.webp
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-01.jpg,public/assets/visual/counselor-day-01.jpg,79594,77.7,jpeg,1582,906,yes,src/App.jsx:310 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-01.webp,public/assets/visual/counselor-day-01.webp,49982,48.8,webp,1582,906,yes,src/App.jsx:310
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-02-w480.webp,public/assets/visual/counselor-day-02-w480.webp,14180,13.8,webp,480,274,yes,generated responsive candidate for /assets/visual/counselor-day-02.webp
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-02-w960.webp,public/assets/visual/counselor-day-02-w960.webp,31462,30.7,webp,960,547,yes,generated responsive candidate for /assets/visual/counselor-day-02.webp
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-02.jpg,public/assets/visual/counselor-day-02.jpg,83641,81.7,jpeg,1604,914,yes,src/App.jsx:311 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-02.webp,public/assets/visual/counselor-day-02.webp,54778,53.5,webp,1604,914,yes,src/App.jsx:311
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-03-w480.webp,public/assets/visual/counselor-day-03-w480.webp,6846,6.7,webp,480,273,yes,generated responsive candidate for /assets/visual/counselor-day-03.webp
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-03-w960.webp,public/assets/visual/counselor-day-03-w960.webp,15734,15.4,webp,960,546,yes,generated responsive candidate for /assets/visual/counselor-day-03.webp
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-03.jpg,public/assets/visual/counselor-day-03.jpg,48818,47.7,jpeg,1599,909,yes,src/App.jsx:312 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-03.webp,public/assets/visual/counselor-day-03.webp,27984,27.3,webp,1599,909,yes,src/App.jsx:312
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-04-w480.webp,public/assets/visual/counselor-day-04-w480.webp,12846,12.5,webp,480,274,yes,generated responsive candidate for /assets/visual/counselor-day-04.webp
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-04-w960.webp,public/assets/visual/counselor-day-04-w960.webp,29526,28.8,webp,960,548,yes,generated responsive candidate for /assets/visual/counselor-day-04.webp
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-04.jpg,public/assets/visual/counselor-day-04.jpg,79661,77.8,jpeg,1592,909,yes,src/App.jsx:313 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-04.webp,public/assets/visual/counselor-day-04.webp,53498,52.2,webp,1592,909,yes,src/App.jsx:313
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-05-w480.webp,public/assets/visual/counselor-day-05-w480.webp,11000,10.7,webp,480,276,yes,generated responsive candidate for /assets/visual/counselor-day-05.webp
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-05-w960.webp,public/assets/visual/counselor-day-05-w960.webp,24128,23.6,webp,960,551,yes,generated responsive candidate for /assets/visual/counselor-day-05.webp
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-05.jpg,public/assets/visual/counselor-day-05.jpg,70110,68.5,jpeg,1593,915,yes,src/App.jsx:314 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-05.webp,public/assets/visual/counselor-day-05.webp,44098,43.1,webp,1593,915,yes,src/App.jsx:314
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-poster-w480.webp,public/assets/visual/counselor-day-poster-w480.webp,44682,43.6,webp,480,273,yes,generated responsive candidate for /assets/visual/counselor-day-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-poster-w960.webp,public/assets/visual/counselor-day-poster-w960.webp,141906,138.6,webp,960,547,yes,generated responsive candidate for /assets/visual/counselor-day-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-poster.jpg,public/assets/visual/counselor-day-poster.jpg,253451,247.5,jpeg,1400,797,yes,src/App.jsx:306 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/counselor-day-poster.webp,public/assets/visual/counselor-day-poster.webp,261272,255.1,webp,1400,797,yes,src/App.jsx:306
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-01-w1600.webp,public/assets/visual/empty-flower-01-w1600.webp,17660,17.2,webp,1600,900,yes,generated responsive candidate for /assets/visual/empty-flower-01.webp
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-01-w480.webp,public/assets/visual/empty-flower-01-w480.webp,3626,3.5,webp,480,270,yes,generated responsive candidate for /assets/visual/empty-flower-01.webp
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-01-w960.webp,public/assets/visual/empty-flower-01-w960.webp,8730,8.5,webp,960,540,yes,generated responsive candidate for /assets/visual/empty-flower-01.webp
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-01.jpg,public/assets/visual/empty-flower-01.jpg,32558,31.8,jpeg,1920,1080,yes,src/App.jsx:189 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-01.webp,public/assets/visual/empty-flower-01.webp,40332,39.4,webp,1920,1080,yes,src/App.jsx:189
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-02-w1600.webp,public/assets/visual/empty-flower-02-w1600.webp,27234,26.6,webp,1600,900,yes,generated responsive candidate for /assets/visual/empty-flower-02.webp
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-02-w480.webp,public/assets/visual/empty-flower-02-w480.webp,5790,5.7,webp,480,270,yes,generated responsive candidate for /assets/visual/empty-flower-02.webp
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-02-w960.webp,public/assets/visual/empty-flower-02-w960.webp,13874,13.5,webp,960,540,yes,generated responsive candidate for /assets/visual/empty-flower-02.webp
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-02.jpg,public/assets/visual/empty-flower-02.jpg,47493,46.4,jpeg,1920,1080,yes,src/App.jsx:190 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-02.webp,public/assets/visual/empty-flower-02.webp,48722,47.6,webp,1920,1080,yes,src/App.jsx:190
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-03-w1600.webp,public/assets/visual/empty-flower-03-w1600.webp,40864,39.9,webp,1600,900,yes,generated responsive candidate for /assets/visual/empty-flower-03.webp
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-03-w480.webp,public/assets/visual/empty-flower-03-w480.webp,9096,8.9,webp,480,270,yes,generated responsive candidate for /assets/visual/empty-flower-03.webp
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-03-w960.webp,public/assets/visual/empty-flower-03-w960.webp,21862,21.3,webp,960,540,yes,generated responsive candidate for /assets/visual/empty-flower-03.webp
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-03.jpg,public/assets/visual/empty-flower-03.jpg,76437,74.6,jpeg,1920,1080,yes,src/App.jsx:191 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-03.webp,public/assets/visual/empty-flower-03.webp,68942,67.3,webp,1920,1080,yes,src/App.jsx:191
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-04-w1600.webp,public/assets/visual/empty-flower-04-w1600.webp,13368,13.1,webp,1600,900,yes,generated responsive candidate for /assets/visual/empty-flower-04.webp
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-04-w480.webp,public/assets/visual/empty-flower-04-w480.webp,2432,2.4,webp,480,270,yes,generated responsive candidate for /assets/visual/empty-flower-04.webp
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-04-w960.webp,public/assets/visual/empty-flower-04-w960.webp,6534,6.4,webp,960,540,yes,generated responsive candidate for /assets/visual/empty-flower-04.webp
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-04.jpg,public/assets/visual/empty-flower-04.jpg,27473,26.8,jpeg,1920,1080,yes,src/App.jsx:192 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-04.webp,public/assets/visual/empty-flower-04.webp,24476,23.9,webp,1920,1080,yes,src/App.jsx:192
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-05-w1600.webp,public/assets/visual/empty-flower-05-w1600.webp,23120,22.6,webp,1600,900,yes,generated responsive candidate for /assets/visual/empty-flower-05.webp
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-05-w480.webp,public/assets/visual/empty-flower-05-w480.webp,5160,5.0,webp,480,270,yes,generated responsive candidate for /assets/visual/empty-flower-05.webp
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-05-w960.webp,public/assets/visual/empty-flower-05-w960.webp,12094,11.8,webp,960,540,yes,generated responsive candidate for /assets/visual/empty-flower-05.webp
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-05.jpg,public/assets/visual/empty-flower-05.jpg,49987,48.8,jpeg,1920,1080,yes,src/App.jsx:193 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-05.webp,public/assets/visual/empty-flower-05.webp,40714,39.8,webp,1920,1080,yes,src/App.jsx:193
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-poster.jpg,public/assets/visual/empty-flower-poster.jpg,42327,41.3,jpeg,468,714,yes,src/App.jsx:186 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/empty-flower-poster.webp,public/assets/visual/empty-flower-poster.webp,38432,37.5,webp,468,714,yes,src/App.jsx:186
+https://www.qiuxiaomiao.com/assets/visual/fang-died-clip-01-poster-w1600.webp,public/assets/visual/fang-died-clip-01-poster-w1600.webp,27940,27.3,webp,1600,964,yes,generated responsive candidate for /assets/visual/fang-died-clip-01-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/fang-died-clip-01-poster-w480.webp,public/assets/visual/fang-died-clip-01-poster-w480.webp,6946,6.8,webp,480,289,yes,generated responsive candidate for /assets/visual/fang-died-clip-01-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/fang-died-clip-01-poster-w960.webp,public/assets/visual/fang-died-clip-01-poster-w960.webp,14730,14.4,webp,960,579,yes,generated responsive candidate for /assets/visual/fang-died-clip-01-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/fang-died-clip-01-poster.jpg,public/assets/visual/fang-died-clip-01-poster.jpg,57922,56.6,jpeg,1792,1080,yes,src/App.jsx:276 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/fang-died-clip-01-poster.webp,public/assets/visual/fang-died-clip-01-poster.webp,40564,39.6,webp,1792,1080,yes,src/App.jsx:276
+https://www.qiuxiaomiao.com/assets/visual/fang-died-clip-02-poster-w1600.webp,public/assets/visual/fang-died-clip-02-poster-w1600.webp,25716,25.1,webp,1600,964,yes,generated responsive candidate for /assets/visual/fang-died-clip-02-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/fang-died-clip-02-poster-w480.webp,public/assets/visual/fang-died-clip-02-poster-w480.webp,6240,6.1,webp,480,289,yes,generated responsive candidate for /assets/visual/fang-died-clip-02-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/fang-died-clip-02-poster-w960.webp,public/assets/visual/fang-died-clip-02-poster-w960.webp,13446,13.1,webp,960,579,yes,generated responsive candidate for /assets/visual/fang-died-clip-02-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/fang-died-clip-02-poster.jpg,public/assets/visual/fang-died-clip-02-poster.jpg,57947,56.6,jpeg,1792,1080,yes,src/App.jsx:281 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/fang-died-clip-02-poster.webp,public/assets/visual/fang-died-clip-02-poster.webp,36508,35.7,webp,1792,1080,yes,src/App.jsx:281
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-03-w480.webp,public/assets/visual/fang-died-new-03-w480.webp,5944,5.8,webp,480,208,yes,generated responsive candidate for /assets/visual/fang-died-new-03.webp
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-03-w960.webp,public/assets/visual/fang-died-new-03-w960.webp,14782,14.4,webp,960,416,yes,generated responsive candidate for /assets/visual/fang-died-new-03.webp
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-03.jpg,public/assets/visual/fang-died-new-03.jpg,46396,45.3,jpeg,1575,682,yes,src/App.jsx:284 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-03.webp,public/assets/visual/fang-died-new-03.webp,29030,28.3,webp,1575,682,yes,src/App.jsx:284
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-05-w480.webp,public/assets/visual/fang-died-new-05-w480.webp,6948,6.8,webp,480,209,yes,generated responsive candidate for /assets/visual/fang-died-new-05.webp
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-05-w960.webp,public/assets/visual/fang-died-new-05-w960.webp,14920,14.6,webp,960,418,yes,generated responsive candidate for /assets/visual/fang-died-new-05.webp
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-05.jpg,public/assets/visual/fang-died-new-05.jpg,42116,41.1,jpeg,1568,683,yes,src/App.jsx:286 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-05.webp,public/assets/visual/fang-died-new-05.webp,26368,25.8,webp,1568,683,yes,src/App.jsx:286
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-152438-w480.webp,public/assets/visual/fang-died-new-152438-w480.webp,4548,4.4,webp,480,207,yes,generated responsive candidate for /assets/visual/fang-died-new-152438.webp
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-152438-w960.webp,public/assets/visual/fang-died-new-152438-w960.webp,9904,9.7,webp,960,414,yes,generated responsive candidate for /assets/visual/fang-died-new-152438.webp
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-152438.jpg,public/assets/visual/fang-died-new-152438.jpg,29549,28.9,jpeg,1588,684,yes,src/App.jsx:283 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-152438.webp,public/assets/visual/fang-died-new-152438.webp,22726,22.2,webp,1588,684,yes,src/App.jsx:283
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-153730-w480.webp,public/assets/visual/fang-died-new-153730-w480.webp,4036,3.9,webp,480,210,yes,generated responsive candidate for /assets/visual/fang-died-new-153730.webp
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-153730-w960.webp,public/assets/visual/fang-died-new-153730-w960.webp,9218,9.0,webp,960,420,yes,generated responsive candidate for /assets/visual/fang-died-new-153730.webp
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-153730.jpg,public/assets/visual/fang-died-new-153730.jpg,30314,29.6,jpeg,1572,688,yes,src/App.jsx:285 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-153730.webp,public/assets/visual/fang-died-new-153730.webp,20832,20.3,webp,1572,688,yes,src/App.jsx:285
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-153943-w480.webp,public/assets/visual/fang-died-new-153943-w480.webp,5596,5.5,webp,480,206,yes,generated responsive candidate for /assets/visual/fang-died-new-153943.webp
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-153943-w960.webp,public/assets/visual/fang-died-new-153943-w960.webp,12638,12.3,webp,960,413,yes,generated responsive candidate for /assets/visual/fang-died-new-153943.webp
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-153943.jpg,public/assets/visual/fang-died-new-153943.jpg,36896,36.0,jpeg,1576,678,yes,src/App.jsx:287 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-153943.webp,public/assets/visual/fang-died-new-153943.webp,30006,29.3,webp,1576,678,yes,src/App.jsx:287
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-poster-w480.webp,public/assets/visual/fang-died-new-poster-w480.webp,62376,60.9,webp,480,687,yes,generated responsive candidate for /assets/visual/fang-died-new-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-poster-w960.webp,public/assets/visual/fang-died-new-poster-w960.webp,155864,152.2,webp,960,1375,yes,generated responsive candidate for /assets/visual/fang-died-new-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-poster.jpg,public/assets/visual/fang-died-new-poster.jpg,254204,248.2,jpeg,1257,1800,yes,src/App.jsx:269 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/fang-died-new-poster.webp,public/assets/visual/fang-died-new-poster.webp,248980,243.1,webp,1257,1800,yes,src/App.jsx:269
+https://www.qiuxiaomiao.com/assets/visual/guanyu-01-w1600.webp,public/assets/visual/guanyu-01-w1600.webp,129070,126.0,webp,1600,900,yes,generated responsive candidate for /assets/visual/guanyu-01.webp
+https://www.qiuxiaomiao.com/assets/visual/guanyu-01-w480.webp,public/assets/visual/guanyu-01-w480.webp,18032,17.6,webp,480,270,yes,generated responsive candidate for /assets/visual/guanyu-01.webp
+https://www.qiuxiaomiao.com/assets/visual/guanyu-01-w960.webp,public/assets/visual/guanyu-01-w960.webp,61228,59.8,webp,960,540,yes,generated responsive candidate for /assets/visual/guanyu-01.webp
+https://www.qiuxiaomiao.com/assets/visual/guanyu-01.jpg,public/assets/visual/guanyu-01.jpg,168431,164.5,jpeg,1672,940,yes,src/App.jsx:370 (JPG fallback) | src/App.jsx:374 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/guanyu-01.webp,public/assets/visual/guanyu-01.webp,186218,181.9,webp,1672,940,yes,src/App.jsx:370 | src/App.jsx:374
+https://www.qiuxiaomiao.com/assets/visual/guanyu-02-w480.webp,public/assets/visual/guanyu-02-w480.webp,21886,21.4,webp,480,268,yes,generated responsive candidate for /assets/visual/guanyu-02.webp
+https://www.qiuxiaomiao.com/assets/visual/guanyu-02.jpg,public/assets/visual/guanyu-02.jpg,67225,65.6,jpeg,958,534,yes,src/App.jsx:375 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/guanyu-02.webp,public/assets/visual/guanyu-02.webp,66184,64.6,webp,958,534,yes,src/App.jsx:375
+https://www.qiuxiaomiao.com/assets/visual/guanyu-03-w1600.webp,public/assets/visual/guanyu-03-w1600.webp,75396,73.6,webp,1600,904,yes,generated responsive candidate for /assets/visual/guanyu-03.webp
+https://www.qiuxiaomiao.com/assets/visual/guanyu-03-w480.webp,public/assets/visual/guanyu-03-w480.webp,17772,17.4,webp,480,271,yes,generated responsive candidate for /assets/visual/guanyu-03.webp
+https://www.qiuxiaomiao.com/assets/visual/guanyu-03-w960.webp,public/assets/visual/guanyu-03-w960.webp,41860,40.9,webp,960,542,yes,generated responsive candidate for /assets/visual/guanyu-03.webp
+https://www.qiuxiaomiao.com/assets/visual/guanyu-03.jpg,public/assets/visual/guanyu-03.jpg,110043,107.5,jpeg,1668,942,yes,src/App.jsx:376 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/guanyu-03.webp,public/assets/visual/guanyu-03.webp,98948,96.6,webp,1668,942,yes,src/App.jsx:376
+https://www.qiuxiaomiao.com/assets/visual/guanyu-04-w480.webp,public/assets/visual/guanyu-04-w480.webp,10032,9.8,webp,480,270,yes,generated responsive candidate for /assets/visual/guanyu-04.webp
+https://www.qiuxiaomiao.com/assets/visual/guanyu-04.jpg,public/assets/visual/guanyu-04.jpg,31147,30.4,jpeg,948,534,yes,src/App.jsx:377 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/guanyu-04.webp,public/assets/visual/guanyu-04.webp,24078,23.5,webp,948,534,yes,src/App.jsx:377
+https://www.qiuxiaomiao.com/assets/visual/guanyu-character-sheet-w1600.webp,public/assets/visual/guanyu-character-sheet-w1600.webp,74348,72.6,webp,1600,900,yes,generated responsive candidate for /assets/visual/guanyu-character-sheet.webp
+https://www.qiuxiaomiao.com/assets/visual/guanyu-character-sheet-w480.webp,public/assets/visual/guanyu-character-sheet-w480.webp,15792,15.4,webp,480,270,yes,generated responsive candidate for /assets/visual/guanyu-character-sheet.webp
+https://www.qiuxiaomiao.com/assets/visual/guanyu-character-sheet-w960.webp,public/assets/visual/guanyu-character-sheet-w960.webp,40198,39.3,webp,960,540,yes,generated responsive candidate for /assets/visual/guanyu-character-sheet.webp
+https://www.qiuxiaomiao.com/assets/visual/guanyu-character-sheet.jpg,public/assets/visual/guanyu-character-sheet.jpg,121442,118.6,jpeg,1672,940,yes,src/App.jsx:378 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/guanyu-character-sheet.webp,public/assets/visual/guanyu-character-sheet.webp,95340,93.1,webp,1672,940,yes,src/App.jsx:378
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-01-w480.webp,public/assets/visual/joyful-sangyu-01-w480.webp,20074,19.6,webp,480,276,yes,generated responsive candidate for /assets/visual/joyful-sangyu-01.webp
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-01-w960.webp,public/assets/visual/joyful-sangyu-01-w960.webp,45266,44.2,webp,960,553,yes,generated responsive candidate for /assets/visual/joyful-sangyu-01.webp
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-01.jpg,public/assets/visual/joyful-sangyu-01.jpg,112278,109.6,jpeg,1615,930,yes,src/App.jsx:325 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-01.webp,public/assets/visual/joyful-sangyu-01.webp,80824,78.9,webp,1615,930,yes,src/App.jsx:325
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-02-w480.webp,public/assets/visual/joyful-sangyu-02-w480.webp,48318,47.2,webp,480,268,yes,generated responsive candidate for /assets/visual/joyful-sangyu-02.webp
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-02-w960.webp,public/assets/visual/joyful-sangyu-02-w960.webp,137822,134.6,webp,960,535,yes,generated responsive candidate for /assets/visual/joyful-sangyu-02.webp
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-02.jpg,public/assets/visual/joyful-sangyu-02.jpg,288480,281.7,jpeg,1598,891,yes,src/App.jsx:326 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-02.webp,public/assets/visual/joyful-sangyu-02.webp,251620,245.7,webp,1598,891,yes,src/App.jsx:326
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-03-w1600.webp,public/assets/visual/joyful-sangyu-03-w1600.webp,72818,71.1,webp,1600,903,yes,generated responsive candidate for /assets/visual/joyful-sangyu-03.webp
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-03-w480.webp,public/assets/visual/joyful-sangyu-03-w480.webp,14232,13.9,webp,480,271,yes,generated responsive candidate for /assets/visual/joyful-sangyu-03.webp
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-03-w960.webp,public/assets/visual/joyful-sangyu-03-w960.webp,38394,37.5,webp,960,542,yes,generated responsive candidate for /assets/visual/joyful-sangyu-03.webp
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-03.jpg,public/assets/visual/joyful-sangyu-03.jpg,102273,99.9,jpeg,1615,911,yes,src/App.jsx:327 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-03.webp,public/assets/visual/joyful-sangyu-03.webp,77064,75.3,webp,1615,911,yes,src/App.jsx:327
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-04-w480.webp,public/assets/visual/joyful-sangyu-04-w480.webp,10120,9.9,webp,480,272,yes,generated responsive candidate for /assets/visual/joyful-sangyu-04.webp
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-04-w960.webp,public/assets/visual/joyful-sangyu-04-w960.webp,23896,23.3,webp,960,543,yes,generated responsive candidate for /assets/visual/joyful-sangyu-04.webp
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-04.jpg,public/assets/visual/joyful-sangyu-04.jpg,68108,66.5,jpeg,1594,902,yes,src/App.jsx:328 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-04.webp,public/assets/visual/joyful-sangyu-04.webp,44316,43.3,webp,1594,902,yes,src/App.jsx:328
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-05-w480.webp,public/assets/visual/joyful-sangyu-05-w480.webp,32932,32.2,webp,480,270,yes,generated responsive candidate for /assets/visual/joyful-sangyu-05.webp
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-05-w960.webp,public/assets/visual/joyful-sangyu-05-w960.webp,86482,84.5,webp,960,539,yes,generated responsive candidate for /assets/visual/joyful-sangyu-05.webp
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-05.jpg,public/assets/visual/joyful-sangyu-05.jpg,211958,207.0,jpeg,1609,904,yes,src/App.jsx:329 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-05.webp,public/assets/visual/joyful-sangyu-05.webp,164656,160.8,webp,1609,904,yes,src/App.jsx:329
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-06-w480.webp,public/assets/visual/joyful-sangyu-06-w480.webp,17836,17.4,webp,480,272,yes,generated responsive candidate for /assets/visual/joyful-sangyu-06.webp
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-06-w960.webp,public/assets/visual/joyful-sangyu-06-w960.webp,40844,39.9,webp,960,544,yes,generated responsive candidate for /assets/visual/joyful-sangyu-06.webp
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-06.jpg,public/assets/visual/joyful-sangyu-06.jpg,105547,103.1,jpeg,1615,916,yes,src/App.jsx:330 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-06.webp,public/assets/visual/joyful-sangyu-06.webp,74152,72.4,webp,1615,916,yes,src/App.jsx:330
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-poster-w480.webp,public/assets/visual/joyful-sangyu-poster-w480.webp,20128,19.7,webp,480,276,yes,generated responsive candidate for /assets/visual/joyful-sangyu-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-poster-w960.webp,public/assets/visual/joyful-sangyu-poster-w960.webp,45784,44.7,webp,960,553,yes,generated responsive candidate for /assets/visual/joyful-sangyu-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-poster.jpg,public/assets/visual/joyful-sangyu-poster.jpg,94750,92.5,jpeg,1400,806,yes,src/App.jsx:321 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/joyful-sangyu-poster.webp,public/assets/visual/joyful-sangyu-poster.webp,80554,78.7,webp,1400,806,yes,src/App.jsx:321
+https://www.qiuxiaomiao.com/assets/visual/millennium-pen-frame-w1600.webp,public/assets/visual/millennium-pen-frame-w1600.webp,45254,44.2,webp,1600,907,yes,generated responsive candidate for /assets/visual/millennium-pen-frame.webp
+https://www.qiuxiaomiao.com/assets/visual/millennium-pen-frame-w480.webp,public/assets/visual/millennium-pen-frame-w480.webp,9050,8.8,webp,480,272,yes,generated responsive candidate for /assets/visual/millennium-pen-frame.webp
+https://www.qiuxiaomiao.com/assets/visual/millennium-pen-frame-w960.webp,public/assets/visual/millennium-pen-frame-w960.webp,22746,22.2,webp,960,544,yes,generated responsive candidate for /assets/visual/millennium-pen-frame.webp
+https://www.qiuxiaomiao.com/assets/visual/millennium-pen-frame.jpg,public/assets/visual/millennium-pen-frame.jpg,82615,80.7,jpeg,1908,1082,yes,src/App.jsx:406 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/millennium-pen-frame.webp,public/assets/visual/millennium-pen-frame.webp,73136,71.4,webp,1908,1082,yes,src/App.jsx:406
+https://www.qiuxiaomiao.com/assets/visual/millennium-pen-poster-w1600.webp,public/assets/visual/millennium-pen-poster-w1600.webp,159266,155.5,webp,1600,2401,yes,generated responsive candidate for /assets/visual/millennium-pen-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/millennium-pen-poster-w480.webp,public/assets/visual/millennium-pen-poster-w480.webp,36062,35.2,webp,480,720,yes,generated responsive candidate for /assets/visual/millennium-pen-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/millennium-pen-poster-w960.webp,public/assets/visual/millennium-pen-poster-w960.webp,88120,86.1,webp,960,1441,yes,generated responsive candidate for /assets/visual/millennium-pen-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/millennium-pen-poster.jpg,public/assets/visual/millennium-pen-poster.jpg,277673,271.2,jpeg,1706,2560,yes,src/App.jsx:398 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/millennium-pen-poster.webp,public/assets/visual/millennium-pen-poster.webp,207884,203.0,webp,1706,2560,yes,src/App.jsx:398
+https://www.qiuxiaomiao.com/assets/visual/pintan-01-w480.webp,public/assets/visual/pintan-01-w480.webp,8418,8.2,webp,480,362,yes,generated responsive candidate for /assets/visual/pintan-01.webp
+https://www.qiuxiaomiao.com/assets/visual/pintan-01-w960.webp,public/assets/visual/pintan-01-w960.webp,20012,19.5,webp,960,723,yes,generated responsive candidate for /assets/visual/pintan-01.webp
+https://www.qiuxiaomiao.com/assets/visual/pintan-01.jpg,public/assets/visual/pintan-01.jpg,40475,39.5,jpeg,1212,913,yes,src/App.jsx:225 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/pintan-01.webp,public/assets/visual/pintan-01.webp,28274,27.6,webp,1212,913,yes,src/App.jsx:225
+https://www.qiuxiaomiao.com/assets/visual/pintan-02-w480.webp,public/assets/visual/pintan-02-w480.webp,6312,6.2,webp,480,377,yes,generated responsive candidate for /assets/visual/pintan-02.webp
+https://www.qiuxiaomiao.com/assets/visual/pintan-02-w960.webp,public/assets/visual/pintan-02-w960.webp,13450,13.1,webp,960,754,yes,generated responsive candidate for /assets/visual/pintan-02.webp
+https://www.qiuxiaomiao.com/assets/visual/pintan-02.jpg,public/assets/visual/pintan-02.jpg,29434,28.7,jpeg,1167,916,yes,src/App.jsx:226 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/pintan-02.webp,public/assets/visual/pintan-02.webp,16578,16.2,webp,1167,916,yes,src/App.jsx:226
+https://www.qiuxiaomiao.com/assets/visual/pintan-03-w480.webp,public/assets/visual/pintan-03-w480.webp,4584,4.5,webp,480,373,yes,generated responsive candidate for /assets/visual/pintan-03.webp
+https://www.qiuxiaomiao.com/assets/visual/pintan-03-w960.webp,public/assets/visual/pintan-03-w960.webp,10272,10.0,webp,960,745,yes,generated responsive candidate for /assets/visual/pintan-03.webp
+https://www.qiuxiaomiao.com/assets/visual/pintan-03.jpg,public/assets/visual/pintan-03.jpg,25927,25.3,jpeg,1185,920,yes,src/App.jsx:227 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/pintan-03.webp,public/assets/visual/pintan-03.webp,13690,13.4,webp,1185,920,yes,src/App.jsx:227
+https://www.qiuxiaomiao.com/assets/visual/pintan-04-w480.webp,public/assets/visual/pintan-04-w480.webp,5732,5.6,webp,480,375,yes,generated responsive candidate for /assets/visual/pintan-04.webp
+https://www.qiuxiaomiao.com/assets/visual/pintan-04-w960.webp,public/assets/visual/pintan-04-w960.webp,12748,12.4,webp,960,750,yes,generated responsive candidate for /assets/visual/pintan-04.webp
+https://www.qiuxiaomiao.com/assets/visual/pintan-04.jpg,public/assets/visual/pintan-04.jpg,29591,28.9,jpeg,1183,924,yes,src/App.jsx:228 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/pintan-04.webp,public/assets/visual/pintan-04.webp,16354,16.0,webp,1183,924,yes,src/App.jsx:228
+https://www.qiuxiaomiao.com/assets/visual/pintan-05-w480.webp,public/assets/visual/pintan-05-w480.webp,14324,14.0,webp,480,372,yes,generated responsive candidate for /assets/visual/pintan-05.webp
+https://www.qiuxiaomiao.com/assets/visual/pintan-05-w960.webp,public/assets/visual/pintan-05-w960.webp,31998,31.2,webp,960,744,yes,generated responsive candidate for /assets/visual/pintan-05.webp
+https://www.qiuxiaomiao.com/assets/visual/pintan-05.jpg,public/assets/visual/pintan-05.jpg,56775,55.4,jpeg,1177,912,yes,src/App.jsx:229 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/pintan-05.webp,public/assets/visual/pintan-05.webp,40888,39.9,webp,1177,912,yes,src/App.jsx:229
+https://www.qiuxiaomiao.com/assets/visual/pintan-06-w480.webp,public/assets/visual/pintan-06-w480.webp,2406,2.3,webp,480,374,yes,generated responsive candidate for /assets/visual/pintan-06.webp
+https://www.qiuxiaomiao.com/assets/visual/pintan-06-w960.webp,public/assets/visual/pintan-06-w960.webp,5672,5.5,webp,960,749,yes,generated responsive candidate for /assets/visual/pintan-06.webp
+https://www.qiuxiaomiao.com/assets/visual/pintan-06.jpg,public/assets/visual/pintan-06.jpg,14512,14.2,jpeg,1176,917,yes,src/App.jsx:230 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/pintan-06.webp,public/assets/visual/pintan-06.webp,7328,7.2,webp,1176,917,yes,src/App.jsx:230
+https://www.qiuxiaomiao.com/assets/visual/pintan-poster-w480.webp,public/assets/visual/pintan-poster-w480.webp,40160,39.2,webp,480,720,yes,generated responsive candidate for /assets/visual/pintan-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/pintan-poster-w960.webp,public/assets/visual/pintan-poster-w960.webp,122362,119.5,webp,960,1440,yes,generated responsive candidate for /assets/visual/pintan-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/pintan-poster.jpg,public/assets/visual/pintan-poster.jpg,159646,155.9,jpeg,1080,1620,yes,src/App.jsx:221 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/pintan-poster.webp,public/assets/visual/pintan-poster.webp,172744,168.7,webp,1080,1620,yes,src/App.jsx:221
+https://www.qiuxiaomiao.com/assets/visual/run-away-01-w480.webp,public/assets/visual/run-away-01-w480.webp,10138,9.9,webp,480,256,yes,generated responsive candidate for /assets/visual/run-away-01.webp
+https://www.qiuxiaomiao.com/assets/visual/run-away-01-w960.webp,public/assets/visual/run-away-01-w960.webp,21120,20.6,webp,960,512,yes,generated responsive candidate for /assets/visual/run-away-01.webp
+https://www.qiuxiaomiao.com/assets/visual/run-away-01.jpg,public/assets/visual/run-away-01.jpg,61345,59.9,jpeg,1598,853,yes,src/App.jsx:208 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/run-away-01.webp,public/assets/visual/run-away-01.webp,37810,36.9,webp,1598,853,yes,src/App.jsx:208
+https://www.qiuxiaomiao.com/assets/visual/run-away-02-w480.webp,public/assets/visual/run-away-02-w480.webp,9664,9.4,webp,480,258,yes,generated responsive candidate for /assets/visual/run-away-02.webp
+https://www.qiuxiaomiao.com/assets/visual/run-away-02-w960.webp,public/assets/visual/run-away-02-w960.webp,22038,21.5,webp,960,515,yes,generated responsive candidate for /assets/visual/run-away-02.webp
+https://www.qiuxiaomiao.com/assets/visual/run-away-02.jpg,public/assets/visual/run-away-02.jpg,59398,58.0,jpeg,1601,859,yes,src/App.jsx:209 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/run-away-02.webp,public/assets/visual/run-away-02.webp,37780,36.9,webp,1601,859,yes,src/App.jsx:209
+https://www.qiuxiaomiao.com/assets/visual/run-away-03-w480.webp,public/assets/visual/run-away-03-w480.webp,8884,8.7,webp,480,259,yes,generated responsive candidate for /assets/visual/run-away-03.webp
+https://www.qiuxiaomiao.com/assets/visual/run-away-03-w960.webp,public/assets/visual/run-away-03-w960.webp,20342,19.9,webp,960,518,yes,generated responsive candidate for /assets/visual/run-away-03.webp
+https://www.qiuxiaomiao.com/assets/visual/run-away-03.jpg,public/assets/visual/run-away-03.jpg,53180,51.9,jpeg,1578,851,yes,src/App.jsx:210 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/run-away-03.webp,public/assets/visual/run-away-03.webp,35794,35.0,webp,1578,851,yes,src/App.jsx:210
+https://www.qiuxiaomiao.com/assets/visual/run-away-04-w1600.webp,public/assets/visual/run-away-04-w1600.webp,88468,86.4,webp,1600,853,yes,generated responsive candidate for /assets/visual/run-away-04.webp
+https://www.qiuxiaomiao.com/assets/visual/run-away-04-w480.webp,public/assets/visual/run-away-04-w480.webp,20304,19.8,webp,480,256,yes,generated responsive candidate for /assets/visual/run-away-04.webp
+https://www.qiuxiaomiao.com/assets/visual/run-away-04-w960.webp,public/assets/visual/run-away-04-w960.webp,48908,47.8,webp,960,512,yes,generated responsive candidate for /assets/visual/run-away-04.webp
+https://www.qiuxiaomiao.com/assets/visual/run-away-04.jpg,public/assets/visual/run-away-04.jpg,121127,118.3,jpeg,1608,857,yes,src/App.jsx:211 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/run-away-04.webp,public/assets/visual/run-away-04.webp,93146,91.0,webp,1608,857,yes,src/App.jsx:211
+https://www.qiuxiaomiao.com/assets/visual/run-away-05-w480.webp,public/assets/visual/run-away-05-w480.webp,4942,4.8,webp,480,260,yes,generated responsive candidate for /assets/visual/run-away-05.webp
+https://www.qiuxiaomiao.com/assets/visual/run-away-05-w960.webp,public/assets/visual/run-away-05-w960.webp,10914,10.7,webp,960,520,yes,generated responsive candidate for /assets/visual/run-away-05.webp
+https://www.qiuxiaomiao.com/assets/visual/run-away-05.jpg,public/assets/visual/run-away-05.jpg,37445,36.6,jpeg,1578,854,yes,src/App.jsx:212 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/run-away-05.webp,public/assets/visual/run-away-05.webp,19496,19.0,webp,1578,854,yes,src/App.jsx:212
+https://www.qiuxiaomiao.com/assets/visual/run-away-06-w480.webp,public/assets/visual/run-away-06-w480.webp,4918,4.8,webp,480,263,yes,generated responsive candidate for /assets/visual/run-away-06.webp
+https://www.qiuxiaomiao.com/assets/visual/run-away-06-w960.webp,public/assets/visual/run-away-06-w960.webp,10790,10.5,webp,960,526,yes,generated responsive candidate for /assets/visual/run-away-06.webp
+https://www.qiuxiaomiao.com/assets/visual/run-away-06.jpg,public/assets/visual/run-away-06.jpg,32247,31.5,jpeg,1563,856,yes,src/App.jsx:213 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/run-away-06.webp,public/assets/visual/run-away-06.webp,19928,19.5,webp,1563,856,yes,src/App.jsx:213
+https://www.qiuxiaomiao.com/assets/visual/run-away-poster-w480.webp,public/assets/visual/run-away-poster-w480.webp,3164,3.1,webp,480,230,yes,generated responsive candidate for /assets/visual/run-away-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/run-away-poster-w960.webp,public/assets/visual/run-away-poster-w960.webp,6868,6.7,webp,960,459,yes,generated responsive candidate for /assets/visual/run-away-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/run-away-poster.jpg,public/assets/visual/run-away-poster.jpg,19465,19.0,jpeg,1400,670,yes,src/App.jsx:200 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/run-away-poster.webp,public/assets/visual/run-away-poster.webp,11562,11.3,webp,1400,670,yes,src/App.jsx:200
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-01-w480.webp,public/assets/visual/shaded-canvas-01-w480.webp,13628,13.3,webp,480,206,yes,generated responsive candidate for /assets/visual/shaded-canvas-01.webp
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-01-w960.webp,public/assets/visual/shaded-canvas-01-w960.webp,29350,28.7,webp,960,412,yes,generated responsive candidate for /assets/visual/shaded-canvas-01.webp
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-01.jpg,public/assets/visual/shaded-canvas-01.jpg,72868,71.2,jpeg,1576,676,yes,src/App.jsx:242 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-01.webp,public/assets/visual/shaded-canvas-01.webp,49980,48.8,webp,1576,676,yes,src/App.jsx:242
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-02-w480.webp,public/assets/visual/shaded-canvas-02-w480.webp,7802,7.6,webp,480,210,yes,generated responsive candidate for /assets/visual/shaded-canvas-02.webp
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-02-w960.webp,public/assets/visual/shaded-canvas-02-w960.webp,16342,16.0,webp,960,420,yes,generated responsive candidate for /assets/visual/shaded-canvas-02.webp
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-02.jpg,public/assets/visual/shaded-canvas-02.jpg,44067,43.0,jpeg,1571,687,yes,src/App.jsx:243 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-02.webp,public/assets/visual/shaded-canvas-02.webp,29032,28.4,webp,1571,687,yes,src/App.jsx:243
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-03-w480.webp,public/assets/visual/shaded-canvas-03-w480.webp,15894,15.5,webp,480,210,yes,generated responsive candidate for /assets/visual/shaded-canvas-03.webp
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-03-w960.webp,public/assets/visual/shaded-canvas-03-w960.webp,34316,33.5,webp,960,420,yes,generated responsive candidate for /assets/visual/shaded-canvas-03.webp
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-03.jpg,public/assets/visual/shaded-canvas-03.jpg,85101,83.1,jpeg,1593,697,yes,src/App.jsx:244 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-03.webp,public/assets/visual/shaded-canvas-03.webp,58092,56.7,webp,1593,697,yes,src/App.jsx:244
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-04-w480.webp,public/assets/visual/shaded-canvas-04-w480.webp,9192,9.0,webp,480,210,yes,generated responsive candidate for /assets/visual/shaded-canvas-04.webp
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-04-w960.webp,public/assets/visual/shaded-canvas-04-w960.webp,19266,18.8,webp,960,421,yes,generated responsive candidate for /assets/visual/shaded-canvas-04.webp
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-04.jpg,public/assets/visual/shaded-canvas-04.jpg,58335,57.0,jpeg,1606,704,yes,src/App.jsx:245 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-04.webp,public/assets/visual/shaded-canvas-04.webp,34310,33.5,webp,1606,704,yes,src/App.jsx:245
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-05-w480.webp,public/assets/visual/shaded-canvas-05-w480.webp,24596,24.0,webp,480,211,yes,generated responsive candidate for /assets/visual/shaded-canvas-05.webp
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-05-w960.webp,public/assets/visual/shaded-canvas-05-w960.webp,60054,58.6,webp,960,423,yes,generated responsive candidate for /assets/visual/shaded-canvas-05.webp
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-05.jpg,public/assets/visual/shaded-canvas-05.jpg,124305,121.4,jpeg,1595,702,yes,src/App.jsx:246 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-05.webp,public/assets/visual/shaded-canvas-05.webp,103756,101.3,webp,1595,702,yes,src/App.jsx:246
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-06-w480.webp,public/assets/visual/shaded-canvas-06-w480.webp,5460,5.3,webp,480,217,yes,generated responsive candidate for /assets/visual/shaded-canvas-06.webp
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-06-w960.webp,public/assets/visual/shaded-canvas-06-w960.webp,12588,12.3,webp,960,434,yes,generated responsive candidate for /assets/visual/shaded-canvas-06.webp
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-06.jpg,public/assets/visual/shaded-canvas-06.jpg,36107,35.3,jpeg,1588,718,yes,src/App.jsx:247 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-06.webp,public/assets/visual/shaded-canvas-06.webp,21954,21.4,webp,1588,718,yes,src/App.jsx:247
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-poster-w480.webp,public/assets/visual/shaded-canvas-poster-w480.webp,33256,32.5,webp,480,720,yes,generated responsive candidate for /assets/visual/shaded-canvas-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-poster.jpg,public/assets/visual/shaded-canvas-poster.jpg,47973,46.8,jpeg,538,807,yes,src/App.jsx:238 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/shaded-canvas-poster.webp,public/assets/visual/shaded-canvas-poster.webp,49776,48.6,webp,538,807,yes,src/App.jsx:238
+https://www.qiuxiaomiao.com/assets/visual/summer-flower-01-w1600.webp,public/assets/visual/summer-flower-01-w1600.webp,25584,25.0,webp,1600,681,yes,generated responsive candidate for /assets/visual/summer-flower-01.webp
+https://www.qiuxiaomiao.com/assets/visual/summer-flower-01-w480.webp,public/assets/visual/summer-flower-01-w480.webp,6486,6.3,webp,480,204,yes,generated responsive candidate for /assets/visual/summer-flower-01.webp
+https://www.qiuxiaomiao.com/assets/visual/summer-flower-01-w960.webp,public/assets/visual/summer-flower-01-w960.webp,13970,13.6,webp,960,409,yes,generated responsive candidate for /assets/visual/summer-flower-01.webp
+https://www.qiuxiaomiao.com/assets/visual/summer-flower-01.jpg,public/assets/visual/summer-flower-01.jpg,44960,43.9,jpeg,1612,686,yes,src/App.jsx:298 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/summer-flower-01.webp,public/assets/visual/summer-flower-01.webp,31238,30.5,webp,1612,686,yes,src/App.jsx:298
+https://www.qiuxiaomiao.com/assets/visual/summer-flower-02-w480.webp,public/assets/visual/summer-flower-02-w480.webp,30030,29.3,webp,480,207,yes,generated responsive candidate for /assets/visual/summer-flower-02.webp
+https://www.qiuxiaomiao.com/assets/visual/summer-flower-02-w960.webp,public/assets/visual/summer-flower-02-w960.webp,77950,76.1,webp,960,414,yes,generated responsive candidate for /assets/visual/summer-flower-02.webp
+https://www.qiuxiaomiao.com/assets/visual/summer-flower-02.jpg,public/assets/visual/summer-flower-02.jpg,149394,145.9,jpeg,1588,684,yes,src/App.jsx:299 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/summer-flower-02.webp,public/assets/visual/summer-flower-02.webp,162764,158.9,webp,1588,684,yes,src/App.jsx:299
+https://www.qiuxiaomiao.com/assets/visual/summer-flower-poster-w480.webp,public/assets/visual/summer-flower-poster-w480.webp,114952,112.3,webp,480,720,yes,generated responsive candidate for /assets/visual/summer-flower-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/summer-flower-poster-w960.webp,public/assets/visual/summer-flower-poster-w960.webp,328142,320.5,webp,960,1440,yes,generated responsive candidate for /assets/visual/summer-flower-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/summer-flower-poster.jpg,public/assets/visual/summer-flower-poster.jpg,475804,464.7,jpeg,1280,1920,yes,src/App.jsx:294 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/summer-flower-poster.webp,public/assets/visual/summer-flower-poster.webp,557196,544.1,webp,1280,1920,yes,src/App.jsx:294
+https://www.qiuxiaomiao.com/assets/visual/upgrade-log-01-w1600.webp,public/assets/visual/upgrade-log-01-w1600.webp,7594,7.4,webp,1600,837,yes,generated responsive candidate for /assets/visual/upgrade-log-01.webp
+https://www.qiuxiaomiao.com/assets/visual/upgrade-log-01-w480.webp,public/assets/visual/upgrade-log-01-w480.webp,1670,1.6,webp,480,251,yes,generated responsive candidate for /assets/visual/upgrade-log-01.webp
+https://www.qiuxiaomiao.com/assets/visual/upgrade-log-01-w960.webp,public/assets/visual/upgrade-log-01-w960.webp,4004,3.9,webp,960,502,yes,generated responsive candidate for /assets/visual/upgrade-log-01.webp
+https://www.qiuxiaomiao.com/assets/visual/upgrade-log-01.jpg,public/assets/visual/upgrade-log-01.jpg,23694,23.1,jpeg,1920,1004,yes,src/App.jsx:388 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/upgrade-log-01.webp,public/assets/visual/upgrade-log-01.webp,9810,9.6,webp,1920,1004,yes,src/App.jsx:388
+https://www.qiuxiaomiao.com/assets/visual/upgrade-log-02-w1600.webp,public/assets/visual/upgrade-log-02-w1600.webp,26102,25.5,webp,1600,888,yes,generated responsive candidate for /assets/visual/upgrade-log-02.webp
+https://www.qiuxiaomiao.com/assets/visual/upgrade-log-02-w480.webp,public/assets/visual/upgrade-log-02-w480.webp,6454,6.3,webp,480,266,yes,generated responsive candidate for /assets/visual/upgrade-log-02.webp
+https://www.qiuxiaomiao.com/assets/visual/upgrade-log-02-w960.webp,public/assets/visual/upgrade-log-02-w960.webp,14796,14.4,webp,960,533,yes,generated responsive candidate for /assets/visual/upgrade-log-02.webp
+https://www.qiuxiaomiao.com/assets/visual/upgrade-log-02.jpg,public/assets/visual/upgrade-log-02.jpg,58769,57.4,jpeg,1914,1062,yes,src/App.jsx:389 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/upgrade-log-02.webp,public/assets/visual/upgrade-log-02.webp,38504,37.6,webp,1914,1062,yes,src/App.jsx:389
+https://www.qiuxiaomiao.com/assets/visual/upgrade-log-03-w1600.webp,public/assets/visual/upgrade-log-03-w1600.webp,60228,58.8,webp,1600,877,yes,generated responsive candidate for /assets/visual/upgrade-log-03.webp
+https://www.qiuxiaomiao.com/assets/visual/upgrade-log-03-w480.webp,public/assets/visual/upgrade-log-03-w480.webp,14570,14.2,webp,480,263,yes,generated responsive candidate for /assets/visual/upgrade-log-03.webp
+https://www.qiuxiaomiao.com/assets/visual/upgrade-log-03-w960.webp,public/assets/visual/upgrade-log-03-w960.webp,35766,34.9,webp,960,526,yes,generated responsive candidate for /assets/visual/upgrade-log-03.webp
+https://www.qiuxiaomiao.com/assets/visual/upgrade-log-03.jpg,public/assets/visual/upgrade-log-03.jpg,114925,112.2,jpeg,1904,1044,yes,src/App.jsx:390 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/upgrade-log-03.webp,public/assets/visual/upgrade-log-03.webp,88124,86.1,webp,1904,1044,yes,src/App.jsx:390
+https://www.qiuxiaomiao.com/assets/visual/upgrade-log-04-w1600.webp,public/assets/visual/upgrade-log-04-w1600.webp,63342,61.9,webp,1600,913,yes,generated responsive candidate for /assets/visual/upgrade-log-04.webp
+https://www.qiuxiaomiao.com/assets/visual/upgrade-log-04-w480.webp,public/assets/visual/upgrade-log-04-w480.webp,13712,13.4,webp,480,274,yes,generated responsive candidate for /assets/visual/upgrade-log-04.webp
+https://www.qiuxiaomiao.com/assets/visual/upgrade-log-04-w960.webp,public/assets/visual/upgrade-log-04-w960.webp,36038,35.2,webp,960,548,yes,generated responsive candidate for /assets/visual/upgrade-log-04.webp
+https://www.qiuxiaomiao.com/assets/visual/upgrade-log-04.jpg,public/assets/visual/upgrade-log-04.jpg,120560,117.7,jpeg,1878,1072,yes,src/App.jsx:385 (JPG fallback) | src/App.jsx:391 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/upgrade-log-04.webp,public/assets/visual/upgrade-log-04.webp,91548,89.4,webp,1878,1072,yes,src/App.jsx:385 | src/App.jsx:391
+https://www.qiuxiaomiao.com/assets/visual/void-between-01-w480.webp,public/assets/visual/void-between-01-w480.webp,19196,18.7,webp,480,357,yes,generated responsive candidate for /assets/visual/void-between-01.webp
+https://www.qiuxiaomiao.com/assets/visual/void-between-01.jpg,public/assets/visual/void-between-01.jpg,53950,52.7,jpeg,880,654,yes,src/App.jsx:258 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/void-between-01.webp,public/assets/visual/void-between-01.webp,48032,46.9,webp,880,654,yes,src/App.jsx:258
+https://www.qiuxiaomiao.com/assets/visual/void-between-02-w480.webp,public/assets/visual/void-between-02-w480.webp,18908,18.5,webp,480,354,yes,generated responsive candidate for /assets/visual/void-between-02.webp
+https://www.qiuxiaomiao.com/assets/visual/void-between-02.jpg,public/assets/visual/void-between-02.jpg,46651,45.6,jpeg,870,642,yes,src/App.jsx:259 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/void-between-02.webp,public/assets/visual/void-between-02.webp,46084,45.0,webp,870,642,yes,src/App.jsx:259
+https://www.qiuxiaomiao.com/assets/visual/void-between-03-w480.webp,public/assets/visual/void-between-03-w480.webp,17938,17.5,webp,480,362,yes,generated responsive candidate for /assets/visual/void-between-03.webp
+https://www.qiuxiaomiao.com/assets/visual/void-between-03.jpg,public/assets/visual/void-between-03.jpg,46085,45.0,jpeg,878,662,yes,src/App.jsx:260 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/void-between-03.webp,public/assets/visual/void-between-03.webp,42942,41.9,webp,878,662,yes,src/App.jsx:260
+https://www.qiuxiaomiao.com/assets/visual/void-between-04-w480.webp,public/assets/visual/void-between-04-w480.webp,21290,20.8,webp,480,359,yes,generated responsive candidate for /assets/visual/void-between-04.webp
+https://www.qiuxiaomiao.com/assets/visual/void-between-04.jpg,public/assets/visual/void-between-04.jpg,56354,55.0,jpeg,880,658,yes,src/App.jsx:261 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/void-between-04.webp,public/assets/visual/void-between-04.webp,59580,58.2,webp,880,658,yes,src/App.jsx:261
+https://www.qiuxiaomiao.com/assets/visual/void-between-poster-w480.webp,public/assets/visual/void-between-poster-w480.webp,2778,2.7,webp,480,360,yes,generated responsive candidate for /assets/visual/void-between-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/void-between-poster-w960.webp,public/assets/visual/void-between-poster-w960.webp,6540,6.4,webp,960,720,yes,generated responsive candidate for /assets/visual/void-between-poster.webp
+https://www.qiuxiaomiao.com/assets/visual/void-between-poster.jpg,public/assets/visual/void-between-poster.jpg,16709,16.3,jpeg,1178,884,yes,src/App.jsx:255 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/visual/void-between-poster.webp,public/assets/visual/void-between-poster.webp,9270,9.1,webp,1178,884,yes,src/App.jsx:255
+https://www.qiuxiaomiao.com/assets/wechat-qr.jpg,public/assets/wechat-qr.jpg,80343,78.5,jpeg,701,723,yes,src/App.jsx:917
+https://www.qiuxiaomiao.com/assets/whale-shark-w1600.avif,public/assets/whale-shark-w1600.avif,34585,33.8,avif,1600,900,yes,generated responsive candidate for /assets/whale-shark.webp
+https://www.qiuxiaomiao.com/assets/whale-shark-w1600.webp,public/assets/whale-shark-w1600.webp,43478,42.5,webp,1600,900,yes,generated responsive candidate for /assets/whale-shark.webp
+https://www.qiuxiaomiao.com/assets/whale-shark-w480.avif,public/assets/whale-shark-w480.avif,5739,5.6,avif,480,270,yes,generated responsive candidate for /assets/whale-shark.webp
+https://www.qiuxiaomiao.com/assets/whale-shark-w480.webp,public/assets/whale-shark-w480.webp,7750,7.6,webp,480,270,yes,generated responsive candidate for /assets/whale-shark.webp
+https://www.qiuxiaomiao.com/assets/whale-shark-w960.avif,public/assets/whale-shark-w960.avif,16139,15.8,avif,960,540,yes,generated responsive candidate for /assets/whale-shark.webp
+https://www.qiuxiaomiao.com/assets/whale-shark-w960.webp,public/assets/whale-shark-w960.webp,22678,22.1,webp,960,540,yes,generated responsive candidate for /assets/whale-shark.webp
+https://www.qiuxiaomiao.com/assets/whale-shark.jpg,public/assets/whale-shark.jpg,73166,71.5,jpeg,1920,1080,yes,src/App.jsx:879 (JPG fallback)
+https://www.qiuxiaomiao.com/assets/whale-shark.webp,public/assets/whale-shark.webp,70232,68.6,webp,1920,1080,yes,src/App.jsx:879

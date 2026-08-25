@@ -28,6 +28,25 @@ npm run build
 - Output Directory：`dist`
 - Node.js Version：`22`
 
+`edgeone.json` 同时保存了正式环境的构建参数与缓存规则；`npm run build`
+会把它复制到 `dist`，因此 Git 连接构建和本地直传使用同一份配置。
+
+## 图片处理与审计
+
+原始 JPG/WebP 都放在 `public/assets`，页面只使用 `/assets/...` 形式的同源路径。
+需要补充图片时，先放入对应作品文件夹，再运行：
+
+```powershell
+python scripts/prepare_images.py
+```
+
+脚本不会覆盖原图，只会生成适合手机、平板和电脑的响应式 WebP/AVIF，随后更新
+`src/imageManifest.js`。逐图正式 URL、体积、格式、尺寸、Git 状态和引用位置记录在
+`docs/IMAGE_AUDIT.csv`；摘要在 `docs/IMAGE_AUDIT.md`。
+
+构建后可以用 `node scripts/verify_image_urls.mjs http://127.0.0.1:4173 GET`
+逐一检查产物中的图片状态、类型和实际字节数。
+
 网站内容：
 
 - 关于我

@@ -7,7 +7,14 @@ import {
   useState,
 } from 'react'
 import AestheticDialog from './components/AestheticDialog'
-import { compatibleImageSrc, fallbackToJpg, jpgFallbackSrc } from './imageSupport'
+import ResponsiveImage from './components/ResponsiveImage'
+import {
+  compatibleImageSrc,
+  fallbackToJpg,
+  jpgFallbackSrc,
+  responsiveImageProps,
+  responsiveSourceSet,
+} from './imageSupport'
 
 const sceneIds = ['home', 'about', 'operations', 'films', 'contact']
 const navItems = [
@@ -584,12 +591,14 @@ function HeroScene({ active, next, intro, loadAssets }) {
       aria-hidden={!active}
     >
       <picture>
-        <source media="(max-width: 760px)" srcSet={loadAssets ? '/assets/sea-hero-pixel-mobile.webp' : undefined} type="image/webp" />
-        <source media="(min-width: 761px)" srcSet={loadAssets ? '/assets/sea-hero-pixel.webp' : undefined} type="image/webp" />
+        <source media="(max-width: 760px)" srcSet={loadAssets ? responsiveSourceSet('/assets/sea-hero-pixel-mobile.webp', 'avif') : undefined} sizes="100vw" type="image/avif" />
+        <source media="(min-width: 761px)" srcSet={loadAssets ? responsiveSourceSet('/assets/sea-hero-pixel.webp', 'avif') : undefined} sizes="100vw" type="image/avif" />
+        <source media="(max-width: 760px)" srcSet={loadAssets ? responsiveSourceSet('/assets/sea-hero-pixel-mobile.webp') : undefined} sizes="100vw" type="image/webp" />
+        <source media="(min-width: 761px)" srcSet={loadAssets ? responsiveSourceSet('/assets/sea-hero-pixel.webp') : undefined} sizes="100vw" type="image/webp" />
         <source media="(max-width: 760px)" srcSet={loadAssets ? '/assets/sea-hero-pixel-mobile.jpg' : undefined} type="image/jpeg" />
         <img
           className="scene-image hero-image"
-          src={loadAssets ? '/assets/sea-hero-pixel.jpg' : undefined}
+          {...responsiveImageProps(loadAssets ? '/assets/sea-hero-pixel.jpg' : undefined, '100vw')}
           alt="像素海面中漂浮的人物"
           loading="eager"
           decoding="async"
@@ -639,11 +648,13 @@ function AboutScene({ active, next, openAesthetic, loadAssets }) {
           </div>
           <figure className="about-media">
             <picture>
-              <source media="(max-width: 760px)" srcSet={loadAssets ? '/assets/vine-jump-mobile.webp' : undefined} type="image/webp" />
-              <source media="(min-width: 761px)" srcSet={loadAssets ? '/assets/vine-jump.webp' : undefined} type="image/webp" />
+              <source media="(max-width: 760px)" srcSet={loadAssets ? responsiveSourceSet('/assets/vine-jump-mobile.webp', 'avif') : undefined} sizes="100vw" type="image/avif" />
+              <source media="(min-width: 761px)" srcSet={loadAssets ? responsiveSourceSet('/assets/vine-jump.webp', 'avif') : undefined} sizes="40vw" type="image/avif" />
+              <source media="(max-width: 760px)" srcSet={loadAssets ? responsiveSourceSet('/assets/vine-jump-mobile.webp') : undefined} sizes="100vw" type="image/webp" />
+              <source media="(min-width: 761px)" srcSet={loadAssets ? responsiveSourceSet('/assets/vine-jump.webp') : undefined} sizes="40vw" type="image/webp" />
               <source media="(max-width: 760px)" srcSet={loadAssets ? '/assets/vine-jump-mobile.jpg' : undefined} type="image/jpeg" />
               <img
-                src={loadAssets ? '/assets/vine-jump.jpg' : undefined}
+                {...responsiveImageProps(loadAssets ? '/assets/vine-jump.jpg' : undefined, '40vw')}
                 alt="在菲律宾体验树藤跳水"
                 loading="lazy"
                 fetchPriority="low"
@@ -765,13 +776,13 @@ function FilmsScene({ active, next, openWork, loadAssets }) {
 
   return (
     <section id="films" className={`scene films-scene ${active ? 'active' : ''}`} aria-hidden={!active}>
-      <img
+      <ResponsiveImage
         className="scene-image sardine-image"
-        src={loadAssets ? compatibleImageSrc('/assets/sardine-run.webp') : undefined}
+        src={loadAssets ? '/assets/sardine-run.webp' : undefined}
+        sizes="100vw"
         alt="水下沙丁鱼风暴"
         loading="lazy"
         decoding="async"
-        onError={fallbackToJpg}
       />
       <div className="film-vignette" aria-hidden="true" />
       <PixelEdge />
@@ -826,14 +837,14 @@ function FilmsScene({ active, next, openWork, loadAssets }) {
               }}
               aria-label={`打开${item.title}`}
             >
-              {loadAssets ? (
-                <img
+              {loadAssets && !hiddenBehindOrbit ? (
+                <ResponsiveImage
                   className="film-frame-image"
-                  src={compatibleImageSrc(item.poster)}
+                  src={item.poster}
+                  sizes="(max-width: 760px) 34vw, 13vw"
                   alt=""
-                  loading={hiddenBehindOrbit ? 'lazy' : 'eager'}
+                  loading={distance <= 2 ? 'eager' : 'lazy'}
                   decoding="async"
-                  onError={fallbackToJpg}
                   style={mediaImageStyle(item.posterPosition, item.posterSize)}
                 />
               ) : null}
@@ -863,13 +874,13 @@ function FilmsScene({ active, next, openWork, loadAssets }) {
 function ContactScene({ active, onWechat, loadAssets }) {
   return (
     <section id="contact" className={`scene contact-scene ${active ? 'active' : ''}`} aria-hidden={!active}>
-      <img
+      <ResponsiveImage
         className="scene-image contact-video"
-        src={loadAssets ? compatibleImageSrc('/assets/whale-shark.webp') : undefined}
+        src={loadAssets ? '/assets/whale-shark.webp' : undefined}
+        sizes="100vw"
         alt="鲸鲨在深海中游动"
         loading="lazy"
         decoding="async"
-        onError={fallbackToJpg}
       />
       <div className="contact-vignette" aria-hidden="true" />
       <PixelEdge />
@@ -903,7 +914,7 @@ function WechatDialog({ open, onClose }) {
         <button className="dialog-close" type="button" onClick={onClose} aria-label="关闭微信二维码">×</button>
         <small>联系我</small>
         <h2>添加微信</h2>
-        <img src="/assets/wechat-qr.jpg" alt="微信二维码" loading="lazy" decoding="async" onError={fallbackToJpg} />
+        <ResponsiveImage src="/assets/wechat-qr.jpg" sizes="216px" alt="微信二维码" loading="lazy" decoding="async" />
         <p>请使用微信扫码添加我</p>
       </div>
     </div>
@@ -969,12 +980,14 @@ function EvidenceDialog({ open, onClose }) {
               aria-busy={!imageLoaded}
             >
               {!imageLoaded ? <span className="case-image-loader">图片载入中…</span> : null}
-              <img
+              <ResponsiveImage
                 key={activeImage.src}
-                src={compatibleImageSrc(activeImage.src)}
+                src={activeImage.src}
+                sizes="(max-width: 760px) 92vw, 55vw"
                 alt={activeImage.title}
+                loading="eager"
+                fetchPriority="high"
                 decoding="async"
-                onError={fallbackToJpg}
                 onLoad={() => setImageLoaded(true)}
                 style={{
                   objectPosition: activeImage.objectPosition || 'center',
@@ -991,12 +1004,12 @@ function EvidenceDialog({ open, onClose }) {
                   onClick={() => setImageIndex(index)}
                   aria-label={`查看${item.title}`}
                 >
-                  <img
-                    src={compatibleImageSrc(item.src)}
+                  <ResponsiveImage
+                    src={item.src}
+                    sizes="(max-width: 760px) 24vw, 8vw"
                     alt=""
                     loading="lazy"
                     decoding="async"
-                    onError={fallbackToJpg}
                   />
                 </button>
               ))}
@@ -1105,14 +1118,15 @@ function WorkDialog({ workIndex, onClose }) {
               role="img"
               aria-label={selectedFrame.label}
             >
-              <img
+              <ResponsiveImage
                 key={selectedFrame.image}
                 className="frame-media-image"
-                src={compatibleImageSrc(selectedFrame.image)}
+                src={selectedFrame.image}
+                sizes="(max-width: 760px) 94vw, 62vw"
                 alt=""
                 loading="eager"
+                fetchPriority="high"
                 decoding="async"
-                onError={fallbackToJpg}
                 style={mediaImageStyle(selectedFrame.position, selectedFrame.size)}
               />
             </div>
@@ -1131,13 +1145,13 @@ function WorkDialog({ workIndex, onClose }) {
               aria-label={`查看${frame.label}`}
             >
               {(frame.video ? frame.poster : frame.image) ? (
-                <img
+                <ResponsiveImage
                   className="frame-media-image"
-                  src={compatibleImageSrc(frame.video ? frame.poster : frame.image)}
+                  src={frame.video ? frame.poster : frame.image}
+                  sizes="(max-width: 760px) 24vw, 12vw"
                   alt=""
                   loading="lazy"
                   decoding="async"
-                  onError={fallbackToJpg}
                   style={mediaImageStyle(frame.position, frame.size)}
                 />
               ) : null}
