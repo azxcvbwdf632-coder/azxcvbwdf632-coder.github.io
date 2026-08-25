@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { aestheticAlbums, aestheticArtists, aestheticFilms } from '../data/aestheticInputs'
+import { compatibleImageSrc } from '../imageSupport'
 
 const tabs = [
   { id: 'music', label: '音乐' },
@@ -90,7 +91,7 @@ export default function AestheticDialog({ open, onClose }) {
                         {artist.albums.map((album, albumIndex) => (
                           <article className="album-card album-card-compact" key={album.title}>
                             <div className="album-cover">
-                              <img src={album.cover} alt={`${artist.name}《${album.title}》专辑封面`} loading="lazy" decoding="async" />
+                              <img src={compatibleImageSrc(album.cover)} alt={`${artist.name}《${album.title}》专辑封面`} loading="lazy" decoding="async" />
                               <span>{String(albumIndex + 1).padStart(2, '0')}</span>
                             </div>
                             <p>{album.title}</p>
@@ -109,7 +110,7 @@ export default function AestheticDialog({ open, onClose }) {
                   {aestheticAlbums.map((album) => (
                     <article className="album-card" key={album.title}>
                       <div className="album-cover">
-                        <img src={album.cover} alt={`${album.artist}《${album.title}》专辑封面`} loading="lazy" decoding="async" />
+                        <img src={compatibleImageSrc(album.cover)} alt={`${album.artist}《${album.title}》专辑封面`} loading="lazy" decoding="async" />
                         <span>{album.index}</span>
                       </div>
                       <p>{album.title}</p>
@@ -133,11 +134,11 @@ export default function AestheticDialog({ open, onClose }) {
                     <header><strong>张震岳全国演唱会</strong><span>01—02</span></header>
                     <div className="live-event-pair live-event-pair-portrait">
                       <figure className="live-input-photo">
-                        <img src="/assets/inputs/live-zhang-zhenyue-01.webp" alt="张震岳全国演唱会现场留影" loading="lazy" decoding="async" />
+                        <img src={compatibleImageSrc('/assets/inputs/live-zhang-zhenyue-01.webp')} alt="张震岳全国演唱会现场留影" loading="lazy" decoding="async" />
                         <figcaption><span>01</span> 张震岳全国演唱会</figcaption>
                       </figure>
                       <figure className="live-input-photo">
-                        <img src="/assets/inputs/live-zhang-zhenyue-quanzhou.webp" alt="张震岳全国演唱会蓝色舞台现场" loading="lazy" decoding="async" />
+                        <img src={compatibleImageSrc('/assets/inputs/live-zhang-zhenyue-quanzhou.webp')} alt="张震岳全国演唱会蓝色舞台现场" loading="lazy" decoding="async" />
                         <figcaption><span>02</span> 张震岳全国演唱会</figcaption>
                       </figure>
                     </div>
@@ -146,11 +147,11 @@ export default function AestheticDialog({ open, onClose }) {
                     <header><strong>陈绮贞 · 广州草莓音乐节</strong><span>03—04</span></header>
                     <div className="live-event-pair live-event-pair-landscape">
                       <figure className="live-input-photo">
-                        <img src="/assets/inputs/live-simple-life-01.webp" alt="陈绮贞在广州草莓音乐节的舞台现场" loading="lazy" decoding="async" />
+                        <img src={compatibleImageSrc('/assets/inputs/live-simple-life-01.webp')} alt="陈绮贞在广州草莓音乐节的舞台现场" loading="lazy" decoding="async" />
                         <figcaption><span>03</span> 陈绮贞 · 广州草莓音乐节</figcaption>
                       </figure>
                       <figure className="live-input-photo">
-                        <img src="/assets/inputs/live-simple-life-02.webp" alt="陈绮贞在广州草莓音乐节的夜间舞台现场" loading="lazy" decoding="async" />
+                        <img src={compatibleImageSrc('/assets/inputs/live-simple-life-02.webp')} alt="陈绮贞在广州草莓音乐节的夜间舞台现场" loading="lazy" decoding="async" />
                         <figcaption><span>04</span> 陈绮贞 · 广州草莓音乐节</figcaption>
                       </figure>
                     </div>
@@ -174,7 +175,7 @@ export default function AestheticDialog({ open, onClose }) {
                 {aestheticFilms.map((film, index) => (
                   <article className="film-input-card" key={`${film.title}-${index}`}>
                     <div className="film-poster">
-                      <img src={film.poster} alt={`《${film.title}》电影海报`} loading="lazy" decoding="async" />
+                      <img src={compatibleImageSrc(film.poster)} alt={`《${film.title}》电影海报`} loading="lazy" decoding="async" />
                       <span>{String(index + 1).padStart(2, '0')}</span>
                       <div className="film-poster-title">
                         <strong>{film.title}</strong>
@@ -200,11 +201,11 @@ export default function AestheticDialog({ open, onClose }) {
               </div>
               <div className="training-gallery" aria-label="我的训练记录">
                 <figure className="training-photo training-photo-tall">
-                  <img src="/assets/inputs/training-back.webp" alt="健身房里的背部训练记录" loading="lazy" decoding="async" />
+                  <img src={compatibleImageSrc('/assets/inputs/training-back.webp')} alt="健身房里的背部训练记录" loading="lazy" decoding="async" />
                   <figcaption><span>01</span> TRAINING DAY</figcaption>
                 </figure>
                 <figure className="training-photo training-photo-wide">
-                  <img src="/assets/inputs/training-arms.webp" alt="训练后的身体状态记录" loading="lazy" decoding="async" />
+                  <img src={compatibleImageSrc('/assets/inputs/training-arms.webp')} alt="训练后的身体状态记录" loading="lazy" decoding="async" />
                   <figcaption><span>02</span> AFTER TRAINING</figcaption>
                 </figure>
               </div>

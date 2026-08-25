@@ -7,6 +7,7 @@ import {
   useState,
 } from 'react'
 import AestheticDialog from './components/AestheticDialog'
+import { compatibleImageSrc } from './imageSupport'
 
 const sceneIds = ['home', 'about', 'operations', 'films', 'contact']
 const navItems = [
@@ -395,8 +396,6 @@ const works = [...workCatalog].sort((left, right) => (
   (featuredWorkRank.get(left.title) ?? Number.MAX_SAFE_INTEGER)
   - (featuredWorkRank.get(right.title) ?? Number.MAX_SAFE_INTEGER)
 ))
-const workPosterSources = [...new Set(works.map((work) => work.poster).filter(Boolean))]
-
 function useReducedMotion() {
   const [reduced, setReduced] = useState(false)
   useEffect(() => {
@@ -555,7 +554,7 @@ function ScrollCue({ label = '向下潜入', onClick }) {
   )
 }
 
-function HeroScene({ active, next, intro }) {
+function HeroScene({ active, next, intro, loadAssets }) {
   const [heroReady, setHeroReady] = useState(false)
 
   return (
@@ -565,10 +564,12 @@ function HeroScene({ active, next, intro }) {
       aria-hidden={!active}
     >
       <picture>
-        <source media="(max-width: 760px)" srcSet="/assets/sea-hero-pixel-mobile.webp" type="image/webp" />
+        <source media="(max-width: 760px)" srcSet={loadAssets ? '/assets/sea-hero-pixel-mobile.webp' : undefined} type="image/webp" />
+        <source media="(min-width: 761px)" srcSet={loadAssets ? '/assets/sea-hero-pixel.webp' : undefined} type="image/webp" />
+        <source media="(max-width: 760px)" srcSet={loadAssets ? '/assets/sea-hero-pixel-mobile.jpg' : undefined} type="image/jpeg" />
         <img
           className="scene-image hero-image"
-          src="/assets/sea-hero-pixel.webp"
+          src={loadAssets ? '/assets/sea-hero-pixel.jpg' : undefined}
           alt="像素海面中漂浮的人物"
           loading="eager"
           decoding="async"
@@ -587,7 +588,7 @@ function HeroScene({ active, next, intro }) {
   )
 }
 
-function AboutScene({ active, next, openAesthetic }) {
+function AboutScene({ active, next, openAesthetic, loadAssets }) {
   return (
     <section id="about" className={`scene about-scene ${active ? 'active' : ''}`} aria-hidden={!active}>
       <div className="about-grid">
@@ -617,12 +618,14 @@ function AboutScene({ active, next, openAesthetic }) {
           </div>
           <figure className="about-media">
             <picture>
-              <source media="(max-width: 760px)" srcSet="/assets/vine-jump-mobile.webp" />
+              <source media="(max-width: 760px)" srcSet={loadAssets ? '/assets/vine-jump-mobile.webp' : undefined} type="image/webp" />
+              <source media="(min-width: 761px)" srcSet={loadAssets ? '/assets/vine-jump.webp' : undefined} type="image/webp" />
+              <source media="(max-width: 760px)" srcSet={loadAssets ? '/assets/vine-jump-mobile.jpg' : undefined} type="image/jpeg" />
               <img
-                src="/assets/vine-jump.webp"
+                src={loadAssets ? '/assets/vine-jump.jpg' : undefined}
                 alt="在菲律宾体验树藤跳水"
-                loading="eager"
-                fetchPriority="high"
+                loading="lazy"
+                fetchPriority="low"
                 decoding="async"
               />
             </picture>
@@ -680,7 +683,7 @@ function OperationsScene({ active, next, openEvidence }) {
   )
 }
 
-function FilmsScene({ active, next, openWork }) {
+function FilmsScene({ active, next, openWork, loadAssets }) {
   const [orbitOffset, setOrbitOffset] = useState(() => Math.floor((featuredWorkOrder.length - 1) / 2))
   const [dragging, setDragging] = useState(false)
   const dragRef = useRef({ pointerId: null, startX: 0, lastX: 0, moved: false, captured: false })
@@ -740,12 +743,13 @@ function FilmsScene({ active, next, openWork }) {
 
   return (
     <section id="films" className={`scene films-scene ${active ? 'active' : ''}`} aria-hidden={!active}>
-      <img className="scene-image sardine-image" src="/assets/sardine-run.webp" alt="水下沙丁鱼风暴" decoding="async" />
-      <div className="film-poster-preloads" aria-hidden="true">
-        {workPosterSources.map((src) => (
-          <img key={src} src={src} alt="" loading="eager" decoding="async" />
-        ))}
-      </div>
+      <img
+        className="scene-image sardine-image"
+        src={loadAssets ? compatibleImageSrc('/assets/sardine-run.webp') : undefined}
+        alt="水下沙丁鱼风暴"
+        loading="lazy"
+        decoding="async"
+      />
       <div className="film-vignette" aria-hidden="true" />
       <PixelEdge />
       <h2>影像作品</h2>
@@ -785,7 +789,9 @@ function FilmsScene({ active, next, openWork }) {
                 opacity: hiddenBehindOrbit ? 0 : 1,
                 pointerEvents: hiddenBehindOrbit ? 'none' : 'auto',
                 transform: `translateX(-50%) scale(${depthScale})`,
-                backgroundImage: hiddenBehindOrbit ? 'none' : `url(${item.poster})`,
+                backgroundImage: loadAssets && !hiddenBehindOrbit
+                  ? `url(${compatibleImageSrc(item.poster)})`
+                  : 'none',
                 backgroundPosition: item.posterPosition,
                 backgroundSize: item.posterSize || 'cover',
               }}
@@ -825,12 +831,12 @@ function FilmsScene({ active, next, openWork }) {
   )
 }
 
-function ContactScene({ active, onWechat }) {
+function ContactScene({ active, onWechat, loadAssets }) {
   return (
     <section id="contact" className={`scene contact-scene ${active ? 'active' : ''}`} aria-hidden={!active}>
       <img
         className="scene-image contact-video"
-        src="/assets/whale-shark.webp"
+        src={loadAssets ? compatibleImageSrc('/assets/whale-shark.webp') : undefined}
         alt="鲸鲨在深海中游动"
         loading="lazy"
         decoding="async"
@@ -867,7 +873,7 @@ function WechatDialog({ open, onClose }) {
         <button className="dialog-close" type="button" onClick={onClose} aria-label="关闭微信二维码">×</button>
         <small>联系我</small>
         <h2>添加微信</h2>
-        <img src="/assets/wechat-qr.jpg" alt="微信二维码" decoding="async" />
+        <img src="/assets/wechat-qr.jpg" alt="微信二维码" loading="lazy" decoding="async" />
         <p>请使用微信扫码添加我</p>
       </div>
     </div>
@@ -886,17 +892,6 @@ function EvidenceDialog({ open, onClose }) {
     if (!open) return
     setCaseIndex(0)
     setImageIndex(0)
-  }, [open])
-
-  useEffect(() => {
-    if (!open) return undefined
-    const preloaders = operationCases.flatMap((item) => item.images).map((item) => {
-      const image = new Image()
-      image.decoding = 'async'
-      image.src = item.src
-      return image
-    })
-    return () => preloaders.forEach((image) => { image.src = '' })
   }, [open])
 
   useEffect(() => {
@@ -946,7 +941,7 @@ function EvidenceDialog({ open, onClose }) {
               {!imageLoaded ? <span className="case-image-loader">图片载入中…</span> : null}
               <img
                 key={activeImage.src}
-                src={activeImage.src}
+                src={compatibleImageSrc(activeImage.src)}
                 alt={activeImage.title}
                 decoding="async"
                 onLoad={() => setImageLoaded(true)}
@@ -966,7 +961,7 @@ function EvidenceDialog({ open, onClose }) {
                   aria-label={`查看${item.title}`}
                 >
                   <img
-                    src={item.src}
+                    src={compatibleImageSrc(item.src)}
                     alt=""
                     loading="lazy"
                     decoding="async"
@@ -1023,7 +1018,7 @@ function WorkVideo({ frame }) {
         ref={videoRef}
         className="selected-video"
         src={frame.video}
-        poster={frame.poster}
+        poster={compatibleImageSrc(frame.poster)}
         controls
         playsInline
         preload="none"
@@ -1076,7 +1071,7 @@ function WorkDialog({ workIndex, onClose }) {
             <div
               className="selected-frame"
               style={{
-                backgroundImage: `url(${selectedFrame.image})`,
+                backgroundImage: `url(${compatibleImageSrc(selectedFrame.image)})`,
                 backgroundPosition: selectedFrame.position,
                 backgroundSize: selectedFrame.size || '200% 200%',
               }}
@@ -1093,7 +1088,7 @@ function WorkDialog({ workIndex, onClose }) {
                 left: `${50 + 47 * Math.cos((index / work.frames.length) * Math.PI * 2 - Math.PI / 2)}%`,
                 top: `${50 + 42 * Math.sin((index / work.frames.length) * Math.PI * 2 - Math.PI / 2)}%`,
                 backgroundImage: (frame.video ? frame.poster : frame.image)
-                  ? `url(${frame.video ? frame.poster : frame.image})`
+                  ? `url(${compatibleImageSrc(frame.video ? frame.poster : frame.image)})`
                   : 'none',
                 backgroundPosition: frame.position || 'center',
                 backgroundSize: frame.size || 'cover',
@@ -1118,6 +1113,7 @@ export default function App() {
   const transitionRef = useRef(null)
   const initialRoute = getInitialRoute()
   const [active, setActive] = useState(initialRoute.index)
+  const [loadedScenes, setLoadedScenes] = useState(() => [initialRoute.index])
   const [introActive, setIntroActive] = useState(initialRoute.index === 0)
   const [transitioning, setTransitioning] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
@@ -1137,9 +1133,14 @@ export default function App() {
     active: false,
   })
 
+  const prepareScene = useCallback((index) => {
+    setLoadedScenes((current) => (current.includes(index) ? current : [...current, index]))
+  }, [])
+
   const navigate = useCallback((target) => {
     const next = Math.max(0, Math.min(sceneIds.length - 1, target))
     if (next === active || transitioning) return
+    prepareScene(next)
 
     const commit = () => {
       setActive(next)
@@ -1153,7 +1154,7 @@ export default function App() {
 
     setTransitioning(true)
     transitionRef.current.play(next > active ? 1 : -1, commit, () => setTransitioning(false))
-  }, [active, reducedMotion, transitioning])
+  }, [active, prepareScene, reducedMotion, transitioning])
 
   useEffect(() => {
     if (!introActive) return undefined
@@ -1183,13 +1184,14 @@ export default function App() {
   useEffect(() => {
     const onHashChange = () => {
       if (window.location.hash === '#about-inputs') {
+        prepareScene(1)
         setActive(1)
         setAestheticOpen(true)
       }
     }
     window.addEventListener('hashchange', onHashChange)
     return () => window.removeEventListener('hashchange', onHashChange)
-  }, [])
+  }, [prepareScene])
 
   useEffect(() => {
     const onWheel = (event) => {
@@ -1311,11 +1313,11 @@ export default function App() {
         mobileOpen={mobileOpen}
         setMobileOpen={setMobileOpen}
       />
-      <HeroScene active={active === 0} next={() => navigate(1)} intro={introActive} />
-      <AboutScene active={active === 1} next={() => navigate(2)} openAesthetic={openAesthetic} />
+      <HeroScene active={active === 0} next={() => navigate(1)} intro={introActive} loadAssets={loadedScenes.includes(0)} />
+      <AboutScene active={active === 1} next={() => navigate(2)} openAesthetic={openAesthetic} loadAssets={loadedScenes.includes(1)} />
       <OperationsScene active={active === 2} next={() => navigate(3)} openEvidence={() => setEvidenceOpen(true)} />
-      <FilmsScene active={active === 3} next={() => navigate(4)} openWork={setWorkOpen} />
-      <ContactScene active={active === 4} onWechat={openWechat} />
+      <FilmsScene active={active === 3} next={() => navigate(4)} openWork={setWorkOpen} loadAssets={loadedScenes.includes(3)} />
+      <ContactScene active={active === 4} onWechat={openWechat} loadAssets={loadedScenes.includes(4)} />
       <div className="scene-counter" aria-live="polite">
         <span>{String(active).padStart(2, '0')}</span>
         <i />

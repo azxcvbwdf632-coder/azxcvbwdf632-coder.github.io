@@ -615,6 +615,12 @@ a:focus-visible {
   animation: operations-water-drift 18s ease-in-out infinite alternate;
 }
 
+.no-webp .operations-water {
+  background-image:
+    linear-gradient(to bottom, rgba(0, 7, 13, .34), rgba(0, 14, 23, .16) 42%, rgba(0, 3, 8, .62) 100%),
+    url('/assets/sea-hero-pixel.jpg');
+}
+
 .operations-water::after {
   position: absolute;
   inset: 0;
@@ -1870,20 +1876,6 @@ a:focus-visible {
   padding: 0;
 }
 
-.film-poster-preloads {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.film-poster-preloads img {
-  width: 1px;
-  height: 1px;
-}
-
 .work-dialog {
   position: relative;
   width: 100vw;
@@ -2300,6 +2292,10 @@ a:focus-visible {
 
   .hero-scene {
     background: #073448 url('/assets/sea-hero-preview-mobile.webp') center / cover no-repeat;
+  }
+
+  .no-webp .hero-scene {
+    background-image: url('/assets/sea-hero-preview-mobile.jpg');
   }
 
   .hero-copy {
