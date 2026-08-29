@@ -201,10 +201,6 @@ const workCatalog = [
     posterPosition: 'center',
     posterSize: 'cover',
     frames: [
-      {
-        label: '短片片段',
-        video: '/assets/visual/run-away-clip.mp4',
-      },
       { label: '剧情静帧 01', image: '/assets/visual/run-away-01.webp', position: 'center', size: 'cover' },
       { label: '剧情静帧 02', image: '/assets/visual/run-away-02.webp', position: 'center', size: 'cover' },
       { label: '剧情静帧 03', image: '/assets/visual/run-away-03.webp', position: 'center', size: 'cover' },
