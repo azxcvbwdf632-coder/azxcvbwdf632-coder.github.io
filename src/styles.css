@@ -2033,6 +2033,27 @@ a:focus-visible {
   pointer-events: none;
 }
 
+.work-watch-link {
+  position: absolute;
+  z-index: 2;
+  right: 18px;
+  bottom: 18px;
+  padding: 10px 14px;
+  border: 1px solid #fff;
+  background: rgba(0, 0, 0, .72);
+  color: #fff;
+  font-family: var(--pixel-font);
+  font-size: 12px;
+  letter-spacing: .1em;
+  text-decoration: none;
+}
+
+.work-watch-link:hover,
+.work-watch-link:focus-visible {
+  border-color: var(--cyan);
+  color: var(--cyan);
+}
+
 .video-frame-shell {
   overflow: hidden;
   background: #000;

@@ -17,6 +17,7 @@ import {
 } from './imageSupport'
 
 const sceneIds = ['home', 'about', 'operations', 'films', 'contact']
+const RUN_AWAY_FILM_URL = 'https://example.com/run-away-film'
 const navItems = [
   { id: 'about', label: '关于我' },
   { id: 'operations', label: '账号运营' },
@@ -201,6 +202,11 @@ const workCatalog = [
     posterPosition: 'center',
     posterSize: 'cover',
     frames: [
+      {
+        label: '短片片段',
+        image: '/assets/visual/run-away-poster.webp',
+        watchUrl: RUN_AWAY_FILM_URL,
+      },
       { label: '剧情静帧 01', image: '/assets/visual/run-away-01.webp', position: 'center', size: 'cover' },
       { label: '剧情静帧 02', image: '/assets/visual/run-away-02.webp', position: 'center', size: 'cover' },
       { label: '剧情静帧 03', image: '/assets/visual/run-away-03.webp', position: 'center', size: 'cover' },
@@ -1210,6 +1216,16 @@ function WorkDialog({ workIndex, onClose }) {
                 decoding="async"
                 style={mediaImageStyle(selectedFrame.position, selectedFrame.size)}
               />
+              {selectedFrame.watchUrl ? (
+                <a
+                  className="work-watch-link"
+                  href={selectedFrame.watchUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  WATCH FILM ↗
+                </a>
+              ) : null}
             </div>
           )}
           {work.frames.map((frame, index) => (
@@ -1236,7 +1252,7 @@ function WorkDialog({ workIndex, onClose }) {
                   style={mediaImageStyle(frame.position, frame.size)}
                 />
               ) : null}
-              {frame.video ? <span className="inner-video-indicator" aria-hidden="true">▶</span> : null}
+              {frame.video || frame.watchUrl ? <span className="inner-video-indicator" aria-hidden="true">▶</span> : null}
             </button>
           ))}
         </div>
